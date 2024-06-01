@@ -57,3 +57,20 @@ class Solution{
         }
     }
 }
+
+//Alternate solution
+class Solution{
+    //Function to count the frequency of all elements from 1 to N in the array.
+    public static void frequencyCount(int arr[], int N, int P)
+    {
+        // code here
+        HashMap <Integer,Integer> mpp = new HashMap<>();
+        for(int i =0;i<N;i++){
+            mpp.put(arr[i],mpp.getOrDefault(arr[i],0) + 1);
+        }
+        
+        for(int i =0;i<N;i++){
+            arr[i] = mpp.getOrDefault(i+1,0);
+        }
+    }
+}
