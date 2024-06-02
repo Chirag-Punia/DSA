@@ -10,19 +10,34 @@ import java.io.*;
 
 class Solution
 {
+    
+    public static void bubble(int[] arr , int endIndex){
+        if(endIndex == 0){
+            return;
+        }
+        for(int i = 0 ; i< endIndex-1 ; i++){
+            if(arr[i] > arr[i+1]){
+                int temp = arr[i+1];
+                arr[i+1] = arr[i];
+                arr[i] = temp;
+            }
+        }
+        bubble(arr,endIndex - 1);
+    }
     //Function to sort the array using bubble sort algorithm.
 	public static void bubbleSort(int arr[], int n)
     {
         //code here
-        for(int i = 0; i< n ; i++){
-            for(int j = 0; j < n-i-1 ; j++){
-                if(arr[j] > arr[j+ 1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                }
-            }
-        }
+        bubble(arr,n);
+        // for(int i = 0; i< n ; i++){
+        //     for(int j = 0; j < n-i-1 ; j++){
+        //         if(arr[j] > arr[j+ 1]){
+        //             int temp = arr[j];
+        //             arr[j] = arr[j+1];
+        //             arr[j+1] = temp;
+        //         }
+        //     }
+        // }
     }
 }
 
