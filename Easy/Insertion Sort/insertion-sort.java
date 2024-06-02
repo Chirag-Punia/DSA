@@ -35,22 +35,38 @@ class Sorting
 }
 // } Driver Code Ends
 
-
 class Solution
 {
-  
   //Function to sort the array using insertion sort algorithm.
+  public static void insertionSortRecursion(int[] arr , int startIndex){
+      if(startIndex == arr.length){
+          return;
+      }
+      int j = startIndex;
+      while(j > 0 && (arr[j-1] > arr[j])){
+          int temp = arr[j-1];
+          arr[j-1] = arr[j];
+          arr[j] = temp;
+          j--;
+      }
+      insertionSortRecursion(arr,startIndex + 1);
+  }
+  
+  
+  
+  
   public void insertionSort(int arr[], int n)
   {
       //code here
-      for(int i = 1 ; i<n;i++){
-          int j = i;
-          while(j > 0 && (arr[j-1] > arr[j]) ){
-              int temp = arr[j-1];
-              arr[j-1] = arr[j];
-              arr[j] = temp;
-              j--;
-          }
-      }
+      insertionSortRecursion(arr,1);
+    //   for(int i = 1 ; i<n;i++){
+    //       int j = i;
+    //       while(j > 0 && (arr[j-1] > arr[j]) ){
+    //           int temp = arr[j-1];
+    //           arr[j-1] = arr[j];
+    //           arr[j] = temp;
+    //           j--;
+    //       }
+    //   }
   }
 }
