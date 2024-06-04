@@ -49,30 +49,78 @@ class Main
 
 //arr1,arr2 : the arrays
 // n, m: size of arrays
-class Solution
-{
-    //Function to return a list containing the union of the two arrays.
-    public static ArrayList<Integer> findUnion(int arr1[], int arr2[], int n, int m)
-    {
-        // add your code here
-        HashSet<Integer> set = new HashSet<>();
-        ArrayList<Integer> arr = new ArrayList<>();
-        for(int i = 0;i<n;i++){
-            set.add(arr1[i]);
+class Solution {
+  //Function to return a list containing the union of the two arrays.
+  public static ArrayList < Integer > findUnion(int arr1[], int arr2[], int n, int m) {
+
+    //TWO--POINTER APPROACH
+    int i = 0;
+    int j = 0;
+    ArrayList < Integer > arr = new ArrayList < > ();
+    
+    if (arr1[0] >= arr2[0]) {
+        if(arr1[0] == arr2[0]){
+            arr.add(arr2[0]);
+           
+            i++;
         }
-        for(int i = 0;i<m;i++){
-            set.add(arr2[i]);
+        else{
+            arr.add(arr2[0]);
+            
         }
-        for(Integer element : set){
-            arr.add(element);
-        }
-        Collections.sort(arr);
-        return arr;
-        
-        
-        
-        
+        j++;
+      
+    } else {
+      arr.add(arr1[0]);
+      i++;
     }
+
+    while (i < n && j < m) {
+      if(arr1[i] <= arr2[j]){
+          if(arr.size() == 0 || arr.get(arr.size() - 1) != arr1[i]) {     
+              arr.add(arr1[i]);
+          }
+          i++;
+      }
+     
+      else{
+          if(arr.size() == 0 || arr.get(arr.size() - 1) != arr2[j]) {     
+              arr.add(arr2[j]);
+          }
+          j++;
+      }
+    }
+
+    while (i < n) {
+      if (arr.get(arr.size() - 1) != arr1[i]) {
+        arr.add(arr1[i]);
+      }
+      i++;
+    }
+    while (j < m) {
+      if (arr.get(arr.size() - 1) != arr2[j]) {
+        arr.add(arr2[j]);
+      }
+      j++;
+    }
+
+    return arr;
+
+    // BRUTE FORCE
+    // HashSet<Integer> set = new HashSet<>();
+    // ArrayList<Integer> arr = new ArrayList<>();
+    // for(int i = 0;i<n;i++){
+    //     set.add(arr1[i]);
+    // }
+    // for(int i = 0;i<m;i++){
+    //     set.add(arr2[i]);
+    // }
+    // for(Integer element : set){
+    //     arr.add(element);
+    // }
+    // Collections.sort(arr);
+    // return arr;
+  }
 }
 
 
