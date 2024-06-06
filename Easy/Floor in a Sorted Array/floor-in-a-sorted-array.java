@@ -41,6 +41,26 @@ class Solution{
     // n is the size of array
     static int findFloor(long arr[], int n, long x)
     {
+
+
+
+
+        //LEFT points to number just greater than X
+        int left = 0;
+        int right = n - 1;
+        while(left <= right){
+            int mid = (left+right)/2;
+            
+            if(arr[mid] > x){
+                right = mid - 1;
+            }
+            else{
+                left = mid + 1;
+            }
+        }
+        return --left;
+
+        //Brute force
         long ans = 0;
         int index = -1;
         for(int i = 0; i< n ; i++){
