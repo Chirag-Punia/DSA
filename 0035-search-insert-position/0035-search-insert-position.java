@@ -4,7 +4,7 @@ class Solution {
         int left = 0;
         int right = arr.length - 1;
 
-        //Here LEFT point to largest number less than TARGET
+        //Here LEFT point to smallest number greater than TARGET
 
         while(left <= right){
             int mid = (left+right)/2;
