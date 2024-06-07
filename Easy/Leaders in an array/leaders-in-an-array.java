@@ -66,17 +66,30 @@ class Solution{
         }
         return idx;
     }
-    
     static ArrayList<Integer> leaders(int arr[], int n){
         // Your code here
         ArrayList<Integer> ans = new ArrayList<>();
-        int i = 0;
-        while(i < n){
-            int max = max(arr,i,n-1);
-            int maxIndex = maxIndex(arr,i,n-1);
-            i = maxIndex+1;
-            ans.add(max);
+        
+        //if it is equal to the maximum element on its right side
+        int max =0;
+        for(int i = n-1; i >=0;i--){
+            if(arr[i] >= max){
+                max = arr[i];
+                ans.add(max);
+            }
         }
+        Collections.reverse(ans);
         return ans;
+        
+        //Greater than all the elements to its right side 
+        
+        // int i = 0;
+        // while(i < n){
+        //     int max = max(arr,i,n-1);
+        //     int maxIndex = maxIndex(arr,i,n-1);
+        //     i = maxIndex+1;
+        //     ans.add(max);
+        // }
+        // return ans;
     }
 }
