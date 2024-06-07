@@ -4,8 +4,12 @@ class Solution {
         int min = Integer.MAX_VALUE;
         int maxPRO = 0;
         for(int i = 0;i<n;i++){
-            min = Math.min(min,arr[i]);
-            maxPRO = Math.max(maxPRO,arr[i] - min);
+            if(arr[i] < min){
+                min = arr[i];
+            }
+            if(maxPRO < arr[i] - min){
+                maxPRO = arr[i] - min;
+            }
         }
         return maxPRO;
         
