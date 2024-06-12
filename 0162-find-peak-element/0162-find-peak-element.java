@@ -10,6 +10,7 @@ class Solution {
             } else if (arr[mid - 1] > arr[mid] && arr[mid + 1] < arr[mid]) {
                 return binarySearch(arr, left, mid - 1);
             }
+            //FUNNY KISSI BHI TARAF BHEJDO
             else{
                 return binarySearch(arr, left, mid - 1);
             }
