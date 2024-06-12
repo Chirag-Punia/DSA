@@ -26,20 +26,36 @@ this function*/
 // x: element to find square root
 class Solution
 {
+    public static long binarySearch(long x,long ans,long left,long right){
+        long mid = (right+left) / 2;
+        long xx = ans;
+        if(left <= right){
+            if(mid*mid <= x){
+                return binarySearch(x,mid,mid + 1,right);
+            }
+            else{
+                return binarySearch(x,xx,left,mid-1);
+            }
+        }
+        return xx;
+    }
+    
      long floorSqrt(long x)
 	 {
-		// Your code here
-		long ans = 0;
-		for(long i = 0;i<=x;i++){
-		    long val = i * i;
-		    if(val <= x){
-		        ans = i;
-		    }
-		    else{
-		        break;
-		    }
-		}
-		return ans;
+		return binarySearch(x,1,1,x);
+		
+//      BRUTE FORCE
+// 		long ans = 0;
+// 		for(long i = 0;i<=x;i++){
+// 		    long val = i * i;
+// 		    if(val <= x){
+// 		        ans = i;
+// 		    }
+// 		    else{
+// 		        break;
+// 		    }
+// 		}
+// 		return ans;
 		
 	 }
 }
