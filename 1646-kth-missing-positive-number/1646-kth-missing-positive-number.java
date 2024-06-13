@@ -10,27 +10,27 @@ class Solution {
         return x;
     }
 
-    public static int binarySearch(int[] arr, int k, int left, int right, int ansIndex,int ans) {
+    public static int binarySearch(int[] arr, int k, int left, int right, int ansIndex, int ans) {
         int mid = (left + right) / 2;
-        int xx = ansIndex;
-        int x = ans;
-        int temp = arr[xx] + k - x;
+        int prevIndex = ansIndex;
+        int prevVal = ans;
+        int missingNumber = arr[prevIndex] + k - prevVal;
         if (left <= right) {
             int val = arr[mid] - (mid + 1);
-            if(val < k){
-                return binarySearch(arr,k,mid+1,right,mid,val);
-            }
-            else{
-                return binarySearch(arr,k,left,mid - 1,xx,x);
-                
+            if (val < k) {
+                return binarySearch(arr, k, mid + 1, right, mid, val);
+            } else {
+                return binarySearch(arr, k, left, mid - 1, prevIndex, prevVal);
+
             }
         }
-        return temp;
+        return missingNumber;
     }
 
     public int findKthPositive(int[] arr, int k) {
 
-        return binarySearch(arr,k,0,arr.length-1,0,arr[0]);
+        return binarySearch(arr, k, 0, arr.length - 1, 0, arr[0]);
+
         // BRUTE FORCE
         // for(int i = 0; i < arr.length;i++){
         // if(arr[i] <= k){
@@ -44,6 +44,7 @@ class Solution {
         // return k;
 
         // JAMA HI BRUTE FORCE
+
         // int temp = 0;
         // int max = Integer.MIN_VALUE;
         // for(int i= 0;i<arr.length;i++){
