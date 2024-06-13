@@ -56,9 +56,7 @@ class Solution
         
         return binarySearch(n,m,0,m);
         
-        
-        
-        
+        //BRUTE FORCE
         // int ans = -1;
         // for(int i = 0;i<=m;i++){
         //     int val = (int)Math.pow(i,n);
