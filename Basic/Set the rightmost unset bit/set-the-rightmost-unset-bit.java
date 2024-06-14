@@ -27,15 +27,18 @@ class GFG
 class Solution{
     static int setBit(int N){
         // code here
-        int j = N;
-        int count = 0;
-        while(j > 0){
-            if((j & 1) != 1){
-                break;
-            }
-            count++;
-            j >>= 1;
-        }
-        return (1 << count) | N;
+        // int j = N;
+        // int count = 0;
+        // while(j > 0){
+        //     if((j & 1) != 1){
+        //         break;
+        //     }
+        //     count++;
+        //     j >>= 1;
+        // }
+        // return (1 << count) | N;
+        
+        
+        return N | (N + 1);
     }
 }
