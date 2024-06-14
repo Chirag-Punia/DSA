@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
+
         List<List<Integer>> arrMain = new ArrayList<>();
         int n = 1 << nums.length;
         for(int i = 0;i<n;i++){
@@ -18,17 +19,5 @@ class Solution {
             arrMain.add(arr);
         }
         return arrMain;
-
-
-        //BRUTE FORCE
-        // List<List<Integer>> arrMain = new ArrayList<>();
-
-        // for(int i = 0; i<nums.length(); i++){
-        //     List<> arr = new ArrayList<>();
-        //     for(int j = i; j < nums.length(); j++){
-        //         arr.add(nums[j]);
-        //     }
-        //     arrMain.add(arr);
-        // }
     }
 }
