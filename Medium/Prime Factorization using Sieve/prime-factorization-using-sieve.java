@@ -30,43 +30,50 @@ class GFG {
 
 class Solution {
     // You must implement this function
-    static void sieve(){
-        
-    }
-    public static boolean[] isPrime(int n) {
-        boolean[] arr = new boolean[n+1];
+    static void sieve(){}
+    public static int[] isPrime2(int n){
+        int[] arr = new int[n+1];
         for(int i = 0;i<= n;i++){
-            arr[i] = true;
+            arr[i] = i;
         }
         for(int i = 2;i*i<=n;i++){
-           if(arr[i] == true){
+           if(arr[i] == i){
                 for(int j = i*i;j<=n;j = j + i){
-                    arr[j] = false;
+                    if(arr[j] != 1){
+                        arr[j] = i;
+                    }
                 }
            } 
         }
-       
-       return arr;
+        return arr;
     }
-
     static List<Integer> findPrimeFactors(int N) {
         // code here
+        int[] arr = isPrime2(N);
         List<Integer> nums = new ArrayList<>();
-        for(int i = 2;i*i<=N;i++){
-            if(N % i == 0){
-                nums.add(i);
-                N = N / i;
-                while(N % i == 0){
-                    nums.add(i);
-                    N = N / i;
-                }
-            }
-            
+        
+        while(N > 1){
+            nums.add(arr[N]);
+            N = N / arr[N];
         }
-        if(N != 1){
-            nums.add(N);
-        }
+        Collections.sort(nums);
         return nums;
+        
+        //WITHOUT USING SIEVE
+        // List<Integer> nums = new ArrayList<>();
+        // for(int i = 2;i*i<=N;i++){
+        //     if(N % i == 0){
+        //         while(N % i == 0){
+        //             nums.add(i);
+        //             N = N / i;
+        //         }
+        //     }
+            
+        // }
+        // if(N != 1){
+        //     nums.add(N);
+        // }
+        // return nums;
         
     }
 }
