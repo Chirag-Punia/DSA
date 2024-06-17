@@ -90,39 +90,38 @@ class Node
 	}
 }
 */
-class Solution
-{
+class Solution {
     // function returns the head of the linkedlist
-    Node deleteNode(Node head,int x)
-    {
-	// Your code here	
-	Node current = head;
-	int count = 1;
-	if(x == 2){
-	    Node left = current;
-	Node right = current.next.next;
-	current.next = current.next.next;
-	right.prev = left;
-	return head;
-	}
-	while(count < x-1){
-	    current = current.next;
-	    count++;
-	}
-	
-	if(count == 1){
-	    head = current.next;
-	    return head;
-	}
-	if(current.next.next == null){
-	    current.next = null;
-	    return head;
-	}
-	
-	Node left = current;
-	Node right = current.next.next;
-	current.next = current.next.next;
-	right.prev = left;
-	return head;
+    Node deleteNode(Node head, int x) {
+        // Your code here	
+        Node current = head;
+        int count = 1;
+        if (x == 2) {
+            Node left = current;
+            Node right = current.next.next;
+            current.next = current.next.next;
+            right.prev = left;
+            return head;
+        }
+        while (count < x - 1) {
+            current = current.next;
+            count++;
+        }
+
+        if (count == 1) {
+            head = current.next;
+            head.prev = null;
+            return head;
+        }
+        if (current.next.next == null) {
+            current.next = null;
+            return head;
+        }
+
+        Node left = current;
+        Node right = current.next.next;
+        current.next = current.next.next;
+        right.prev = left;
+        return head;
     }
 }
