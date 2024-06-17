@@ -18,7 +18,7 @@ class Solution {
         }
         int j = 0;
         ListNode ans = head;
-        while(j < i/2){
+        while(j < (i/2)){
             ans = ans.next;
             j++;
         }
