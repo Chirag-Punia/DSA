@@ -18,12 +18,11 @@ public class Solution {
     }
     ListNode current = head;
     while(current.next != null){
-        mpp.put(current,mpp.getOrDefault(current,1) + 1);
-        current = current.next;
-        if(mpp.getOrDefault(current,-1) > 1){
+        if(mpp.containsKey(current)){
             return true;
         }
-        
+        mpp.put(current,1);
+        current = current.next;
     }
     return false;
 
