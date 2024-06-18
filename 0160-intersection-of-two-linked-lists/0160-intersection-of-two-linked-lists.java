@@ -27,26 +27,42 @@ public class Solution {
     }
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 
+        if(headA == null || headB == null){
+            return null;
+        }
         ListNode a = headA;
         ListNode b = headB;
-        int n1 = 0;
-        int n2 = 0;
-        while(a != null){
-            n1++;
-            a = a.next;
+
+        while(a!=b){
+            a = (a) == null?headB:a.next;
+            b = (b) == null?headA:b.next;
         }
-        while(b != null){
-            n2++;
-            b = b.next;
-        }
-        a = headA;
-        b = headB;
-        if(n2 >= n1){
-            return collision(a,b,n2-n1);
-        }
-        else{
-            return collision(b,a,n1-n2);
-        }
+        return a;
+
+        //OPTIMAL 1
+        // ListNode a = headA;
+        // ListNode b = headB;
+        // int n1 = 0;
+        // int n2 = 0;
+        // while(a != null){
+        //     n1++;
+        //     a = a.next;
+        // }
+        // while(b != null){
+        //     n2++;
+        //     b = b.next;
+        // }
+        // a = headA;
+        // b = headB;
+        // if(n2 >= n1){
+        //     return collision(a,b,n2-n1);
+        // }
+        // else{
+        //     return collision(b,a,n1-n2);
+        // }
+
+
+        //BRUTE FORCE
         // HashMap<ListNode,Boolean> mpp = new HashMap<>();
         // ListNode a = headA;
         // ListNode b = headB;
