@@ -69,34 +69,73 @@ class Solution {
     // Function to sort a linked list of 0s, 1s and 2s.
     static Node segregate(Node head) {
         // add your code here
-        if(head == null || head.next == null){
-            return head;
-        }
+        Node zeroHead = new Node(-1);
+        Node oneHead = new Node(-1);
+        Node twoHead = new Node(-1);
+        
+        Node zero = zeroHead;
+        Node one = oneHead;
+        Node two = twoHead;
+        
         Node curr = head;
-        int zeroCnt = 0, oneCnt = 0, twoCnt = 0;
+        
         while(curr != null){
-            if(curr.data == 0) zeroCnt++;
-            else if(curr.data == 1) oneCnt++;
-            else if(curr.data == 2) twoCnt++;
+            
+            if(curr.data == 0) {
+                zero.next = curr;
+                zero = zero.next;
+
+            }
+            else if(curr.data == 1){
+                one.next = curr;
+                one = one.next;
+ 
+            }
+            else if(curr.data == 2){
+                two.next = curr;
+                two = two.next;
+
+            }
             curr = curr.next;
         }
-        curr = head;
-        while(zeroCnt > 0){
-            curr.data = 0;
-            curr = curr.next;
-            zeroCnt--;
-        }
-        while(oneCnt > 0){
-            curr.data = 1;
-            curr = curr.next;
-            oneCnt--;
-        }
-        while(twoCnt > 0){
-            curr.data = 2;
-            curr = curr.next;
-            twoCnt--;
-        }
-        return head;
+        
+        
+        zero.next = (oneHead.next) != null?oneHead.next:twoHead.next;
+        one.next = twoHead.next;
+        two.next = null;
+        
+        return zeroHead.next;
+        
+        
+        //BRUTE FORCE
+        // if(head == null || head.next == null){
+        //     return head;
+        // }
+        // Node curr = head;
+        // int zeroCnt = 0, oneCnt = 0, twoCnt = 0;
+        // while(curr != null){
+        //     if(curr.data == 0) zeroCnt++;
+        //     else if(curr.data == 1) oneCnt++;
+        //     else if(curr.data == 2) twoCnt++;
+        //     curr = curr.next;
+        // }
+        // curr = head;
+        // while(zeroCnt > 0){
+        //     curr.data = 0;
+        //     curr = curr.next;
+        //     zeroCnt--;
+        // }
+        // while(oneCnt > 0){
+        //     curr.data = 1;
+        //     curr = curr.next;
+        //     oneCnt--;
+        // }
+        // while(twoCnt > 0){
+        //     curr.data = 2;
+        //     curr = curr.next;
+        //     twoCnt--;
+        // }
+        // return head;
         
         
     }
