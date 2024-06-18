@@ -1,39 +1,33 @@
 /**
  * Definition for singly-linked list.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * int val;
+ * ListNode next;
+ * ListNode() {}
+ * ListNode(int val) { this.val = val; }
+ * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
 class Solution {
 
-    public static ListNode mid(ListNode head){
-        ListNode slow = null;
+    public static ListNode mid(ListNode head) {
+        ListNode slow = head;
         ListNode fast = head;
-        if(head == null || head.next == null){
+        fast = fast.next.next;
+        if (head == null || head.next == null) {
             return head;
         }
-        while(fast != null && fast.next != null){
-            if(slow == null){
-                slow =  head;
-                fast = fast.next.next;
-            }
-            else{
-                slow = slow.next;
-                fast = fast.next.next;
-            }
-            
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
         return slow;
     }
+
     public ListNode deleteMiddle(ListNode head) {
-        if(head == null || head.next == null){
+        if (head == null || head.next == null) {
             return null;
-        }
-        else if(head.next.next == null){
+        } else if (head.next.next == null) {
             head.next = null;
             return head;
         }
