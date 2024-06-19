@@ -61,65 +61,97 @@ class Node{
 class Solution
 
 {
+    public static Node reverse(Node current,Node prev){
+        if(current == null){
+            return prev;
+        }
+        Node next = current.next;
+        current.next = prev;
+        return reverse(next,current);
+    }
+    
     public static Node addOne(Node head) 
     { 
         //code here.
         if(head == null){
             return null;
         }
-        List<Integer> arr = new ArrayList<>();
-        Node curr = head;
-        int digit = 0, num = 0;
-        while(curr != null){
-            digit = curr.data;
-            arr.add(digit);
-            curr = curr.next;
-        }
-        int carry = 0;
-        if(arr.size() == 1){
-            digit = arr.get(0);
-            if(digit + 1 > 9){
-                arr.set(0,1);
-                arr.add(0);
+        
+        Node rev = reverse(head,null);
+        Node temp = rev;
+        int carry = 1;
+        while(temp != null){
+            if(temp.data + carry > 9){
+                temp.data = 0;
+                carry = 1;
             }
             else{
-                arr.set(0,digit+1);
+                temp.data = temp.data + carry;
+                carry = 0;
             }
-            
-        }
-        else{
-           for(int i = arr.size()-1 ;i>=0;i--){
-            digit = arr.get(i);
-            if(i ==  arr.size() - 1){
-                arr.set(i,digit+1);
-                if(digit+1 > 9){
-                    arr.set(i,0);
-                    carry = 1;
-                }
-            }
-            else{
-                arr.set(i,digit+carry);
-                if(digit+carry > 9){
-                    arr.set(i,0);
-                    carry = 1;
-                }
-                else{carry = 0;}
-            }
-               
-           } 
-           if(carry == 1){
-               arr.add(0,1);
-           }
-        }
-        
-        
-        curr = new Node(-1);
-        Node temp = curr;
-        for(int i = 0;i<arr.size();i++){
-            temp.next = new Node(arr.get(i));
             temp = temp.next;
         }
+        head = reverse(rev,null);
+        if(carry == 1){
+            Node x = new Node(1);
+            x.next = head;
+            head = x;
+        }
+        return head;
+        //BRUTE FORCE
+        // List<Integer> arr = new ArrayList<>();
+        // Node curr = head;
+        // int digit = 0, num = 0;
+        // while(curr != null){
+        //     digit = curr.data;
+        //     arr.add(digit);
+        //     curr = curr.next;
+        // }
+        // int carry = 0;
+        // if(arr.size() == 1){
+        //     digit = arr.get(0);
+        //     if(digit + 1 > 9){
+        //         arr.set(0,1);
+        //         arr.add(0);
+        //     }
+        //     else{
+        //         arr.set(0,digit+1);
+        //     }
+            
+        // }
+        // else{
+        //   for(int i = arr.size()-1 ;i>=0;i--){
+        //     digit = arr.get(i);
+        //     if(i ==  arr.size() - 1){
+        //         arr.set(i,digit+1);
+        //         if(digit+1 > 9){
+        //             arr.set(i,0);
+        //             carry = 1;
+        //         }
+        //     }
+        //     else{
+        //         arr.set(i,digit+carry);
+        //         if(digit+carry > 9){
+        //             arr.set(i,0);
+        //             carry = 1;
+        //         }
+        //         else{carry = 0;}
+        //     }
+               
+        //   } 
+        //   if(carry == 1){
+        //       arr.add(0,1);
+        //   }
+        // }
         
-        return curr.next;
+        
+        // curr = new Node(-1);
+        // Node temp = curr;
+        // for(int i = 0;i<arr.size();i++){
+        //     temp.next = new Node(arr.get(i));
+        //     temp = temp.next;
+        // }
+        
+        // return curr.next;
 }
 }
