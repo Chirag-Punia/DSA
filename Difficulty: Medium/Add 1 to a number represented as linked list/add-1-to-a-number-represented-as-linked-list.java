@@ -70,6 +70,21 @@ class Solution
         return reverse(next,current);
     }
     
+    public static int add(Node head,Node temp){
+        if(temp == null){
+            return 1;
+        }
+        
+        int carry = add(head,temp.next);
+        
+        if(temp.data + carry > 9){
+            temp.data = 0;
+            return carry;
+        }
+        
+        temp.data = temp.data + carry;
+        return 0;
+    }
     public static Node addOne(Node head) 
     { 
         //code here.
@@ -77,27 +92,38 @@ class Solution
             return null;
         }
         
-        Node rev = reverse(head,null);
-        Node temp = rev;
-        int carry = 1;
-        while(temp != null){
-            if(temp.data + carry > 9){
-                temp.data = 0;
-                carry = 1;
-            }
-            else{
-                temp.data = temp.data + carry;
-                carry = 0;
-            }
-            temp = temp.next;
-        }
-        head = reverse(rev,null);
+        //OPTIMAL 2
+        int carry = add(head,head);
         if(carry == 1){
             Node x = new Node(1);
             x.next = head;
             head = x;
         }
         return head;
+        //OPTIMAL 1
+        // Node rev = reverse(head,null);
+        // Node temp = rev;
+        // int carry = 1;
+        // while(temp != null){
+        //     if(temp.data + carry > 9){
+        //         temp.data = 0;
+        //         carry = 1;
+        //     }
+        //     else{
+        //         temp.data = temp.data + carry;
+        //         carry = 0;
+        //     }
+        //     temp = temp.next;
+        // }
+        // head = reverse(rev,null);
+        // if(carry == 1){
+        //     Node x = new Node(1);
+        //     x.next = head;
+        //     head = x;
+        // }
+        // return head;
+        
+        
         //BRUTE FORCE
         // List<Integer> arr = new ArrayList<>();
         // Node curr = head;
