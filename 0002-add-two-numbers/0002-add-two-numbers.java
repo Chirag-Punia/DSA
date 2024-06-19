@@ -10,12 +10,12 @@
  */
 class Solution {
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers(ListNode a, ListNode b) {
         
-        ListNode a = l1,b = l2,dummy = new ListNode(-1),temp = dummy;;
+        ListNode dummy = new ListNode(-1),temp = dummy;;
         int sum = 0,carry = 0,ans = 0,digit1 = 0,digit2 = 0;
 
-        while(a!=null || b!=null){
+        while(a!=null || b!=null || carry != 0){
             digit1 = (a)==null?0:a.val;
             digit2 = (b)==null?0:b.val;
 
@@ -29,11 +29,7 @@ class Solution {
             a = (a) == null?null:a.next;
             b = (b) == null?null:b.next;
         }
-        if(carry >= 1){
-            ListNode x = new ListNode(carry);
-            temp.next = x;
-            temp = temp.next;
-        }
+
         temp.next = null;
         return dummy.next;
         
