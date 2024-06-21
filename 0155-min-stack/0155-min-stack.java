@@ -1,52 +1,45 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
-
 class MinStack {
-    Stack<Integer> s;
-    List<Integer> minList;
-    int minTop;
 
+    int min;
+    Stack<Integer> s;
+    List<Integer> arr;
+    int top;
     public MinStack() {
         s = new Stack<>();
-        minTop = -1;
-        minList = new ArrayList<>();
+        top = -1;
+        arr = new ArrayList<>();
     }
-
+    
     public void push(int val) {
         s.push(val);
-        if (minTop == -1 || val <= minList.get(minTop)) {
-            minList.add(val);
-            minTop++;
+        if(top == -1 || val <= arr.get(top)){
+            arr.add(val);
+            top++;
         }
     }
-
+    
     public void pop() {
-        if (s.peek().equals(minList.get(minTop))) {
-            minList.remove(minTop);
-            minTop--;
+        if(s.peek().equals(arr.get(top))){
+            arr.remove(top);
+            top--;
         }
         s.pop();
     }
-
+    
     public int top() {
         return s.peek();
     }
-
+    
     public int getMin() {
-        if (minTop == -1) {
-            throw new RuntimeException("Stack is empty");
+        if(top == -1){
+            return -1;
         }
-        return minList.get(minTop);
-    }
-
-    public boolean isEmpty() {
-        return s.isEmpty();
+        return arr.get(top);
     }
 }
 
 /**
- * Example usage:
+ * Your MinStack object will be instantiated and called as such:
  * MinStack obj = new MinStack();
  * obj.push(val);
  * obj.pop();
