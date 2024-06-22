@@ -3,31 +3,21 @@ class Solution {
 
 
         //OPTIMAL
-        int[] ans = new int[nums2.length];
-        int[] ans2 = new int[nums1.length];
+        int[] ans = new int[nums1.length];
         Stack<Integer> s = new Stack<>();
-        for(int i = nums2.length - 1;i>=0;i--){
+        HashMap<Integer,Integer> mpp = new HashMap<>();
+        for(int i = 0;i<nums2.length;i++){
             int curr = nums2[i];
-            while(!s.isEmpty() && curr >= nums2[s.peek()]){
-                s.pop();
+            while(!s.isEmpty() && curr >= s.peek()){
+                mpp.put(s.pop(),curr);
             }
-            if(s.isEmpty()){
-                ans[i] = -1;
-            }
-            else{
-                ans[i] = nums2[s.peek()];
-            }
-            s.push(i);
+            s.push(curr);
         }
         for(int i = 0;i<nums1.length;i++){
-            int curr = nums1[i];
-            for(int j = 0; j<nums2.length;j++){
-                if(curr == nums2[j]){
-                    ans2[i] = ans[j];
-                }
-            }
+            ans[i] = mpp.getOrDefault(nums1[i],-1);
         }
-        return ans2;
+        
+        return ans;
 
 
 
