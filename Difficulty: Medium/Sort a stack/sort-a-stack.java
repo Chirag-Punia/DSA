@@ -25,31 +25,33 @@ class SortedStack {
 
 /*Complete the function below*/
 class GfG {
-    public static int getSmallest(Stack<Integer> s,int min){
-        
-        if(s.isEmpty()){
-            return min;
+    
+    public static void push(Stack<Integer> s,int n){
+        if(s.isEmpty() || s.peek() < n){
+            s.push(n);
+            return;
         }
-        
-        return getSmallest(s,Math.min(s.pop(),min));
-        
+        int ele = s.pop();
+        push(s,n);
+        s.push(ele);
+        return;
+    }
+    public static void SORT(Stack<Integer> s){
+        if(s.isEmpty()){
+            return;
+        }
+        int ele = s.pop();
+        SORT(s);
+        push(s,ele);
+        return;
     }
     
     public Stack<Integer> sort(Stack<Integer> s) {
         // add code here.
         
-        Stack<Integer> ans = new Stack<>();
-        List<Integer> arr = new ArrayList<>();
-        while(!s.isEmpty()){
-            arr.add(s.pop());
-        }
-        Collections.sort(arr);
-        for(int i = 0;i<arr.size();i++){
-            ans.push(arr.get(i));
-        }
-        return ans;
+        SORT(s);
+        return s;
         
-        
-        
+       
     }
 }
