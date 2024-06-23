@@ -10,12 +10,15 @@ class Solution {
             while(!s.isEmpty() && s.peek() <= c){
                 s.pop();
             }
-            if(s.isEmpty()){
+            if(i < n){
+                if(s.isEmpty()){
                 ans[i % n] = -1;
             }
             else{
                 ans[i % n] = s.peek();
             }
+            }
+            
             s.push(c);
         }
         return ans;
