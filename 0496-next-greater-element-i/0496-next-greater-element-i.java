@@ -6,9 +6,10 @@ class Solution {
         int[] ans = new int[nums1.length];
         Stack<Integer> s = new Stack<>();
         HashMap<Integer,Integer> mpp = new HashMap<>();
-        for(int i = 0;i<nums2.length;i++){
+        for(int i = 0; i < nums2.length;i++){
+
             int curr = nums2[i];
-            while(!s.isEmpty() && curr >= s.peek()){
+            while(!s.isEmpty() && s.peek() <= curr){
                 mpp.put(s.pop(),curr);
             }
             s.push(curr);
@@ -16,7 +17,6 @@ class Solution {
         for(int i = 0;i<nums1.length;i++){
             ans[i] = mpp.getOrDefault(nums1[i],-1);
         }
-        
         return ans;
 
 
