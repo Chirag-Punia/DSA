@@ -28,6 +28,8 @@ class GFG {
 // } Driver Code Ends
 
 
+
+
 //User function Template for Java
 
 class Solution {
@@ -39,13 +41,14 @@ class Solution {
      for(int i = 0;i<N;i++){
          pq.add(arr[i]);
      }
-     int rank = 1; // Start with rank 1
-        while (!pq.isEmpty()) {
-            int element = pq.poll();
-            if (!mpp.containsKey(element)) {
-                mpp.put(element, rank++);
-            }
+     int rank = 1;
+     //rank will only increase when we will find that element
+    while (!pq.isEmpty()) {
+        int element = pq.poll();
+        if (!mpp.containsKey(element)) {
+            mpp.put(element, rank++);
         }
+    }
      for(int i = 0;i<N;i++){
          ans[i] = mpp.get(arr[i]);
      }
