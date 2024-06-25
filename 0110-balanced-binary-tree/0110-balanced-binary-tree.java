@@ -23,16 +23,21 @@ class Solution {
             return 0;
         }
         int l = temp(root.left);
+        if(l == -1){
+            return -1;
+        }
         int r = temp(root.right);
+        if(r == -1){
+            return -1;
+        }
         if(Math.abs(l - r) > 1){
-            ans = false;
+            return -1;
         }
         return  Math.max(l,r) + 1;
     }
 
     public boolean isBalanced(TreeNode root) {
-        temp(root);
-        return ans;
         
+        return temp(root) != -1;
     }
 }
