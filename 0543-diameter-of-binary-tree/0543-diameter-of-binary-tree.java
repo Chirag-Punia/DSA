@@ -24,19 +24,14 @@ class Solution {
         }
         return Math.max(h(root.left),h(root.right)) + 1;
     }
-    public static void dia(TreeNode root){
+    public static int dia(TreeNode root){
         if(root == null){
-            return;
+            return 0;
         }
-        int l = h(root.left);
-        int r = h(root.right);
-
+        int l = dia(root.left);
+        int r = dia(root.right);
         maxi = Math.max(maxi,l+r);
-
-        dia(root.left);
-        dia(root.right);
-        return;
-
+        return (Math.max(l , r) + 1);
     }
     public int diameterOfBinaryTree(TreeNode root) {
         if(root == null){
