@@ -24,28 +24,25 @@ class Solution {
         }
         q.add(root);
         q.add(null);
-        int count = 0;
         boolean leftToRight = true;
         while(!q.isEmpty()){
-            TreeNode c = q.remove();
+            TreeNode c = q.poll();
             if(c == null){
-                count++;
-                if(count % 2 == 0){
-                    Collections.reverse(temp);
-                    ans.add(temp);
-                }
-                else ans.add(temp); 
+                ans.add(temp); 
                 temp = new ArrayList<>();
                 if(q.isEmpty()){
                     break;
                 }
                 q.offer(null);
+                leftToRight = !leftToRight;
             }
             else{
-                temp.add(c.val);
+                if(leftToRight) temp.add(c.val);
+                else temp.add(0,c.val);
                 if(c.left != null) q.offer(c.left);
                 if(c.right != null) q.offer(c.right);
             }
+            
         }
         return ans;
     }
