@@ -16,24 +16,11 @@
 class Solution {
     public static class nodeInfo{
         TreeNode node;
-        int col;
         int row;
-        nodeInfo(TreeNode node,int row,int col){
+        nodeInfo(TreeNode node,int row){
             this.node = node;
-            this.col = col;
             this.row = row;
         }
-    }
-    public static int maxi(List<nodeInfo> xx){
-        int max = Integer.MIN_VALUE;
-        nodeInfo temp = new nodeInfo(null,0,0);
-        for(int i = 0;i<xx.size();i++){
-            if(xx.get(i).col > max){
-                max = xx.get(i).col;
-                temp = xx.get(i);
-            }
-        }
-        return temp.node.val;
     }
     public List<Integer> rightSideView(TreeNode root) {
 
@@ -43,15 +30,15 @@ class Solution {
         if(root == null){
             return ans;
         }
-        q.offer(new nodeInfo(root,0,0));
+        q.offer(new nodeInfo(root,0));
         while(!q.isEmpty()){
             nodeInfo c = q.poll();
             mpp.computeIfAbsent(c.row,k -> new ArrayList<>()).add(c.node.val);
             if(c.node.left != null){
-                q.offer(new nodeInfo(c.node.left,c.row + 1,c.col - 1));
+                q.offer(new nodeInfo(c.node.left,c.row + 1));
             }
             if(c.node.right != null){
-                q.offer(new nodeInfo(c.node.right,c.row + 1,c.col + 1));
+                q.offer(new nodeInfo(c.node.right,c.row + 1));
             }
         }
         
