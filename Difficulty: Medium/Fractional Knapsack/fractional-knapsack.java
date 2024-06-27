@@ -1,40 +1,75 @@
+//{ Driver Code Starts
+import java.io.*;
+import java.lang.*;
+import java.util.*;
 
+class Item {
+    int value, weight;
 
-
-
-class Solution
-{
- 
-//Function to get the maximum total value in the knapsack.
-doublefractionalKnapsack(intW, Itemarr[], intn)
-{
- 
-//1. sort Value/weight
-Arrays.sort(arr,(a,b)->{
-returnDouble.compare((double)(b.value)/(double)(b.weight), (double)(a.value)/(double)(a.weight));
-});
- 
-intcurrWeight=0;
-doublecurrValue=0;
- 
-//traverse the array
-for(int i=0; i<n; i++){
- 
-if(currWeight+arr[i].weight<=W){
-currWeight+=arr[i].weight;
-currValue+=arr[i].value;
- 
-}else{
-int remaining=W-currWeight;
-currValue+= (double)(arr[i].value)/(double)(arr[i].weight) * (double)remaining;
-break;
-}
-}
- 
-returncurrValue;
-}
+    Item(int x, int y) {
+        this.value = x;
+        this.weight = y;
+    }
 }
 
- 
+class GfG {
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(br.readLine().trim());
+        while (t-- > 0) {
+            String inputLine[] = br.readLine().trim().split(" ");
+            int n = Integer.parseInt(inputLine[0]);
+            int w = Integer.parseInt(inputLine[1]);
+            Item[] arr = new Item[n];
+            inputLine = br.readLine().trim().split(" ");
+            for (int i = 0, k = 0; i < n; i++) {
+                arr[i] = new Item(Integer.parseInt(inputLine[k++]),
+                                  Integer.parseInt(inputLine[k++]));
+            }
+            System.out.println(
+                String.format("%.6f", new Solution().fractionalKnapsack(w, arr, n)));
+        }
+    }
+}
+// } Driver Code Ends
 
 
+/*
+class Item {
+    int value, weight;
+    Item(int x, int y){
+        this.value = x;
+        this.weight = y;
+    }
+}
+*/
+
+class Solution {
+     double fractionalKnapsack(int w, Item arr[], int n) {
+        double dp[][] = new double[n][2];
+        double ans = 0;
+        
+        for (int i = 0; i < n; i++) {
+            dp[i][0] = i;
+            dp[i][1] = (double) arr[i].value / arr[i].weight;
+        }
+        Arrays.sort(dp, new Comparator<double[]>() {
+            public int compare(double[] a, double[] b) {
+                return Double.compare(b[1], a[1]);
+            }
+        });
+        for (int i = 0; i < n; i++) {
+            int idx = (int) dp[i][0];
+            if (arr[idx].weight <= w) {
+                ans += (double) arr[idx].value;
+                w -= arr[idx].weight;
+            } else {
+                ans += dp[i][1] * (double) w;
+                break;
+            }
+        }
+        
+        return ans;
+    }
+}
