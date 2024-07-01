@@ -1,31 +1,40 @@
 class Solution {
 
-    public static boolean ans;
-    public static HashMap<Integer,Boolean> visited;
+    private boolean ans;
+    private HashMap<Integer, Boolean> visited;
 
-    public static void dfs(Map<Integer,ArrayList<Integer>> mpp,int s,int d){
-        visited.put(s,true);
-        if(s == d) {ans = true; return;}
-        for(int j = 0;j<mpp.get(s).size();j++){
-            int c = mpp.get(s).get(j);
-            if(!visited.getOrDefault(c,false)) dfs(mpp,c,d);
+    private void dfs(Map<Integer, ArrayList<Integer>> graph, int currentNode, int destination) {
+        visited.put(currentNode, true);
+        if (currentNode == destination) {
+            ans = true;
+            return;
+        }
+        for (int neighbor : graph.getOrDefault(currentNode, new ArrayList<>())) {
+            if (!visited.getOrDefault(neighbor, false)) {
+                dfs(graph, neighbor, destination);
+            }
         }
     }
-    public boolean validPath(int n, int[][] edg, int s, int d) {
+
+    public boolean validPath(int n, int[][] edges, int start, int destination) {
         ans = false;
         visited = new HashMap<>();
-        Map<Integer,ArrayList<Integer>> mpp = new HashMap<>();
-        for(int[] e : edg){
-            int n1 = e[0];
-            int n2 = e[1];
+        Map<Integer, ArrayList<Integer>> graph = new HashMap<>();
 
-            mpp.putIfAbsent(n1,new ArrayList<>());
-            mpp.putIfAbsent(n2,new ArrayList<>());
+        // Building the graph
+        for (int[] edge : edges) {
+            int node1 = edge[0];
+            int node2 = edge[1];
 
-            mpp.get(n1).add(n2);
-            mpp.get(n2).add(n1);
+            graph.putIfAbsent(node1, new ArrayList<>());
+            graph.putIfAbsent(node2, new ArrayList<>());
+
+            graph.get(node1).add(node2);
+            graph.get(node2).add(node1);
         }
-        dfs(mpp,s,d);
+
+        // Perform DFS
+        dfs(graph, start, destination);
         return ans;
     }
 }
