@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0099-recover-binary-search-tree](https://github.com/Chirag-Punia/DSA/tree/master/0099-recover-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Chirag-Punia/DSA/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0547-number-of-provinces](https://github.com/Chirag-Punia/DSA/tree/master/0547-number-of-provinces) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Chirag-Punia/DSA/tree/master/2121-find-if-path-exists-in-graph) |
 ## Array
@@ -91,14 +92,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0547-number-of-provinces](https://github.com/Chirag-Punia/DSA/tree/master/0547-number-of-provinces) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Chirag-Punia/DSA/tree/master/2121-find-if-path-exists-in-graph) |
 ## Union Find
 |  |
 | ------- |
+| [0547-number-of-provinces](https://github.com/Chirag-Punia/DSA/tree/master/0547-number-of-provinces) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Chirag-Punia/DSA/tree/master/2121-find-if-path-exists-in-graph) |
 ## Graph
 |  |
 | ------- |
+| [0547-number-of-provinces](https://github.com/Chirag-Punia/DSA/tree/master/0547-number-of-provinces) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Chirag-Punia/DSA/tree/master/2121-find-if-path-exists-in-graph) |
 <!---LeetCode Topics End-->
