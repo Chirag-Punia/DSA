@@ -5,8 +5,10 @@ class Solution {
         List<Integer> ans= new ArrayList<>();
         for(int num:nums){
             mpp.put(num,mpp.getOrDefault(num,0)+1);
-            if(mpp.get(num) > Math.floor(n/3)) ans.add(num);
         }
+        mpp.forEach((key,value) -> {
+            if(value > Math.floor(n/3)) ans.add(key);
+        });
         return ans;
     }
 }
