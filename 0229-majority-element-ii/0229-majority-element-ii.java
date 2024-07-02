@@ -10,7 +10,7 @@ class Solution {
         //     if(value > Math.floor(n/3)) ans.add(key);
         // });
         // return ans;
-        int cnt1=0,cnt2=0,ele1=-1,ele2=-1;
+        int cnt1=0,cnt2=0,ele1=Integer.MAX_VALUE,ele2=Integer.MAX_VALUE;
         for(int i=0;i<nums.length;i++){
             if(cnt1==0 && nums[i] != ele2){
                 cnt1++;
