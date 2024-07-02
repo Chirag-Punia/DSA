@@ -83,7 +83,7 @@ class Solution {
         int m = grid[0].length;
         int cnt1 = 0;
         cnt2 = 0;
-        mpp = new HashMap<>()
+        mpp = new HashMap<>();
 
         Queue<Pair> q = new LinkedList<>();
         int ans = 0;
