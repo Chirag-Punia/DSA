@@ -8,6 +8,18 @@ class Solution {
             this.j=j;
             this.min=min;
         }
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Pair pair = (Pair) o;
+            return i == pair.i && j == pair.j && min == pair.min;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(i, j, min);
+        }
     }
     public static int cnt2 = 0;
     public static HashMap<Pair,Boolean> mpp = new HashMap<>();
@@ -71,6 +83,7 @@ class Solution {
         int m = grid[0].length;
         int cnt1 = 0;
         cnt2 = 0;
+        mpp = new HashMap<>()
 
         Queue<Pair> q = new LinkedList<>();
         int ans = 0;
