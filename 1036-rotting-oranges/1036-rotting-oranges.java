@@ -60,10 +60,10 @@ class Solution {
     // }
 
     public static void makeIt2(int[][] grid,int i,int j,int n,int m,int min,Queue<Pair> q){
-            if(i + 1 < n && grid[i+1][j] == 1 && !mpp.getOrDefault(new Pair(i+1,j,min),false)) {grid[i+1][j] = 2;q.offer(new Pair(i+1,j,min+1));++cnt2;}
-            if(i - 1 >= 0 && grid[i-1][j] == 1 && !mpp.getOrDefault(new Pair(i-1,j,min),false)) {grid[i-1][j] = 2;q.offer(new Pair(i-1,j,min+1));++cnt2;}
-            if(j + 1 < m && grid[i][j+1] == 1 && !mpp.getOrDefault(new Pair(i,j+1,min),false)) {grid[i][j+1] = 2;q.offer(new Pair(i,j+1,min+1));++cnt2;}
-            if(j - 1 >= 0 && grid[i][j-1] == 1 && !mpp.getOrDefault(new Pair(i,j-1,min),false)) {grid[i][j-1] = 2;q.offer(new Pair(i,j-1,min+1));++cnt2;}
+            if(i + 1 < n && grid[i+1][j] == 1 && !mpp.getOrDefault(new Pair(i+1,j,min),false)) {grid[i+1][j] = 2;q.offer(new Pair(i+1,j,min+1));++cnt2;mpp.put(new Pair(i+1,j,min+1),true);}
+            if(i - 1 >= 0 && grid[i-1][j] == 1 && !mpp.getOrDefault(new Pair(i-1,j,min),false)) {grid[i-1][j] = 2;q.offer(new Pair(i-1,j,min+1));++cnt2;mpp.put(new Pair(i-1,j,min+1),true);}
+            if(j + 1 < m && grid[i][j+1] == 1 && !mpp.getOrDefault(new Pair(i,j+1,min),false)) {grid[i][j+1] = 2;q.offer(new Pair(i,j+1,min+1));++cnt2;mpp.put(new Pair(i,j+1,min+1),true);}
+            if(j - 1 >= 0 && grid[i][j-1] == 1 && !mpp.getOrDefault(new Pair(i,j-1,min),false)) {grid[i][j-1] = 2;q.offer(new Pair(i,j-1,min+1));++cnt2;mpp.put(new Pair(i,j-1,min+1),true);}
     }
     public int orangesRotting(int[][] grid) {
 
