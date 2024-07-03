@@ -2,6 +2,6 @@
 
 #length count bytes
 #char_length count characters
-select tweet_id
-from Tweets
-where char_length(content) > 15;
+SELECT tweet_id
+FROM Tweets
+WHERE CHAR_LENGTH(content) > 15;
