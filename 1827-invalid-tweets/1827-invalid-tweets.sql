@@ -4,4 +4,4 @@
 #char_length count characters
 select tweet_id
 from Tweets
-where Char_length(content) > 15;
+where char_length(content) > 15;
