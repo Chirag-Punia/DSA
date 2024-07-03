@@ -1,48 +1,44 @@
-import java.util.*;
-
 class Solution {
     public class Pair {
         String s;
         int i;
 
         Pair(String s, int i) {
-            this.s = s;
             this.i = i;
+            this.s = s;
         }
     }
 
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        HashSet<String> wordSet = new HashSet<>(wordList);
-        if (!wordSet.contains(endWord))
+        HashSet<String> set = new HashSet<>(wordList);
+        if (!set.contains(endWord))
             return 0;
-        
-        Queue<Pair> queue = new LinkedList<>();
-        queue.offer(new Pair(beginWord, 1));
+        Queue<Pair> q = new LinkedList<>();
+        q.offer(new Pair(beginWord, 1));
         HashSet<String> visited = new HashSet<>();
         visited.add(beginWord);
-        
-        while (!queue.isEmpty()) {
-            Pair currentPair = queue.poll();
-            String currentWord = currentPair.s;
-            
-            if (currentWord.equals(endWord))
-                return currentPair.i;
-            
-            for (int j = 0; j < currentWord.length(); j++) {
-                char[] wordArray = currentWord.toCharArray();
-                for (char c = 'a'; c <= 'z'; c++) {
-                    if (wordArray[j] == c)
-                        continue;
-                    wordArray[j] = c;
-                    String newWord = new String(wordArray);
-                    if (wordSet.contains(newWord) && !visited.contains(newWord)) {
-                        queue.offer(new Pair(newWord, currentPair.i + 1));
-                        visited.add(newWord);
+        while (!q.isEmpty()) {
+            Pair item = q.poll();
+            if (item.s.toString().equals(endWord))
+                return item.i;
+            for (int j = 0; j < item.s.length(); j++) {
+                char originalChar = item.s.charAt(j);
+                for (char i = 'a'; i <= 'z'; i++) {
+                        if (i == originalChar)
+                            continue;
+                    StringBuilder temp = new StringBuilder(item.s);
+                    temp.setCharAt(j, i);
+                    String ss = temp.toString();
+                    if (set.contains(ss) && !visited.contains(ss)) {
+                        Pair newPair = new Pair(ss, item.i + 1);
+                        q.offer(newPair);
+                        visited.add(ss);
                     }
+
                 }
             }
         }
-        
-        return 0; 
+        return 0;
     }
+
 }
