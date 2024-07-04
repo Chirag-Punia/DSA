@@ -62,6 +62,7 @@ class Solution
 {
     public Map<Integer,Boolean> mpp;
     public Stack<Integer> s;
+    public Queue<Integer> q;
     public void dfs(ArrayList<ArrayList<Integer>> adj,int i){
         mpp.put(i,true);
         
@@ -71,19 +72,44 @@ class Solution
         }
         s.push(i);
     }
+    
     int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj) 
     {
         mpp = new HashMap<>();
         s = new Stack<>();
-        for(int i=0;i<V;i++){
-            if(!mpp.getOrDefault(i,false)) dfs(adj,i);
-        }
-        int i = 0;
+        q = new LinkedList<>();
+        //BFS
+        int k = 0;
         int[] ans = new int[V];
-        while(!s.isEmpty()){
-            ans[i] = s.pop();
-            i++;
+        int[] inOrder = new int[V];
+        for(int i = 0;i<V;i++){
+            for(int j = 0;j<adj.get(i).size();j++)inOrder[adj.get(i).get(j)]++;
+        }
+        for(int i = 0;i<V;i++)if(inOrder[i] == 0)q.offer(i);
+        while(!q.isEmpty()){
+            int c = q.poll();
+            ans[k++] = c;
+            for(int it : adj.get(c)){
+                inOrder[it]--;
+                if( inOrder[it] == 0) q.offer(it);
+            }
         }
         return ans;
+        
+        
+        
+        //DFS
+        // for(int i=0;i<V;i++){
+        //     if(!mpp.getOrDefault(i,false)) dfs(adj,i);
+        // }
+
+        // while(!s.isEmpty()){
+        //     ans[i] = s.pop();
+        //     i++;
+        // }
+        // return ans;
+        
+        
+        
     }
 }
