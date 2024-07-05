@@ -54,17 +54,15 @@ class Solution {
         }
         for(int i=0;i<n;i++)ans[i]=-1;
         q.offer(new Pair(src,0));
-        ans[src] =0;
         while(!q.isEmpty()){
             Pair c = q.poll();
             if(ans[c.node] == -1){
                 ans[c.node]=c.val;
-            for(int j=0;j<edges.get(c.node).size();j++){
-                int curr = edges.get(c.node).get(j);
-                if(ans[curr] == -1)q.offer(new Pair(curr,c.val + 1));
-            } 
+                for(int j=0;j<edges.get(c.node).size();j++){
+                    int curr = edges.get(c.node).get(j);
+                    if(ans[curr] == -1)q.offer(new Pair(curr,c.val + 1));
+                } 
             }
-            
         }
         return ans;
     }
