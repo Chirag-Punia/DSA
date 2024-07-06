@@ -57,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0066-plus-one](https://github.com/Chirag-Punia/DSA/tree/master/0066-plus-one) |
 | [0130-surrounded-regions](https://github.com/Chirag-Punia/DSA/tree/master/0130-surrounded-regions) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0542-01-matrix](https://github.com/Chirag-Punia/DSA/tree/master/0542-01-matrix) |
@@ -167,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/Chirag-Punia/DSA/tree/master/0013-roman-to-integer) |
+| [0066-plus-one](https://github.com/Chirag-Punia/DSA/tree/master/0066-plus-one) |
 | [0070-climbing-stairs](https://github.com/Chirag-Punia/DSA/tree/master/0070-climbing-stairs) |
 | [2645-pass-the-pillow](https://github.com/Chirag-Punia/DSA/tree/master/2645-pass-the-pillow) |
 ## Memoization
