@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Chirag-Punia/DSA/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1073-number-of-enclaves](https://github.com/Chirag-Punia/DSA/tree/master/1073-number-of-enclaves) |
 | [1293-three-consecutive-odds](https://github.com/Chirag-Punia/DSA/tree/master/1293-three-consecutive-odds) |
+| [1803-average-waiting-time](https://github.com/Chirag-Punia/DSA/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Chirag-Punia/DSA/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/Chirag-Punia/DSA/tree/master/3446-find-the-number-of-good-pairs-i) |
 ## Hash Table
@@ -209,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1642-water-bottles](https://github.com/Chirag-Punia/DSA/tree/master/1642-water-bottles) |
+| [1803-average-waiting-time](https://github.com/Chirag-Punia/DSA/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Chirag-Punia/DSA/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/Chirag-Punia/DSA/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2645-pass-the-pillow](https://github.com/Chirag-Punia/DSA/tree/master/2645-pass-the-pillow) |
