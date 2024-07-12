@@ -1,0 +1,26 @@
+import java.util.*;
+//https://www.naukri.com/code360/problems/binary-strings-with-no-consecutive-1s_893001?leftPanelTabValue=PROBLEM
+public class Solution {
+
+    public static List<String> arr;
+	public static void tmp(int i,int N ,StringBuilder ans,char lastchar){
+				if(i == N){
+					arr.add((new StringBuilder(ans)).toString());
+					return;
+				}
+				tmp(i+1,N,ans.append('0'),'0');
+				ans.deleteCharAt(ans.length() - 1);
+				if(lastchar != '1'){
+					tmp(i+1,N,ans.append('1'),'1');
+					ans.deleteCharAt(ans.length() - 1);
+				}
+		
+			}
+    public static List< String > generateString(int N) {
+        // Write your code here.
+        arr = new ArrayList<>();
+		StringBuilder ans = new StringBuilder();
+		tmp(0,N,ans,'0');
+		return arr;
+    }
+}
