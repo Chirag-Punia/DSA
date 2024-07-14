@@ -1,7 +1,7 @@
 class Solution {
     public List<String> ans;
     public void tmp(int o,int c, int n,String s){
-        if(s.length() == 2*n){ans.add(s);return;}
+        if(o == n && c == n){ans.add(s);return;}
         if(o < n)tmp(o+1,c,n,s+'(');
         if(o>c)tmp(o,c+1,n,s+')');
     }
