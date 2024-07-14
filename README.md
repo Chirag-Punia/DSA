@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
 | [0066-plus-one](https://github.com/Chirag-Punia/DSA/tree/master/0066-plus-one) |
+| [0078-subsets](https://github.com/Chirag-Punia/DSA/tree/master/0078-subsets) |
 | [0130-surrounded-regions](https://github.com/Chirag-Punia/DSA/tree/master/0130-surrounded-regions) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -268,4 +269,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/0022-generate-parentheses) |
+| [0078-subsets](https://github.com/Chirag-Punia/DSA/tree/master/0078-subsets) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0078-subsets](https://github.com/Chirag-Punia/DSA/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
