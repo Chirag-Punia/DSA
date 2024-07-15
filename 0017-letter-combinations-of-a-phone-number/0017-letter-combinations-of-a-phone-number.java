@@ -1,34 +1,29 @@
 class Solution {
     public List<String> ans;
-    public String mpp[]={"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
-    public void temp(List<Integer> digits,String tmp,int i){
-        if(i == digits.size()){
+    public void temp(String digits,String tmp,int i,HashMap<String,String> mpp){
+        if(i == digits.length()){
             ans.add(tmp);
             return;
         }
-        for(int j = 0;j<mpp[digits.get(i)].length();j++){
-            temp(digits,tmp+mpp[digits.get(i)].charAt(j),i+1);
+        for(int j = 0;j<mpp.get(Character.toString(digits.charAt(i))).length();j++){
+            temp(digits,tmp+mpp.get(Character.toString(digits.charAt(i))).charAt(j),i+1,mpp);
         }
     }
-    public static List<Integer> convertStringToDigits(String str) {
-        List<Integer> digits = new ArrayList<>();
-        for (char ch : str.toCharArray()) {
-            digits.add(Character.getNumericValue(ch));
-        }
-        return digits;
-    }
-    public List<String> letterCombinations(String d) {
+    public List<String> letterCombinations(String digits) {
         ans = new ArrayList<>();
-        if (d == null || d.length() == 0) {
+        if (digits == null || digits.length() == 0) {
             return ans;
         }
-        List<Integer> digits = convertStringToDigits(d);
-        HashMap<String,String> mpp2 = new HashMap<>();
-        mpp2.put("2","abc");
-        mpp2.put("2","abc");
-        mpp2.put("2","abc");
-        mpp2.put("2","abc");
-        temp(digits,"",0);
+        HashMap<String,String> mpp = new HashMap<>();
+        mpp.put("2","abc");
+        mpp.put("3","def");
+        mpp.put("4","ghi");
+        mpp.put("5","jkl");
+        mpp.put("6","mno");
+        mpp.put("7","pqrs");
+        mpp.put("8","tuv");
+        mpp.put("9","wxyz");
+        temp(digits,"",0,mpp);
         return ans;
     }
 }
