@@ -114,6 +114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Chirag-Punia/DSA/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/Chirag-Punia/DSA/tree/master/1720-crawler-log-folder) |
+| [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/Chirag-Punia/DSA/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2846-robot-collisions](https://github.com/Chirag-Punia/DSA/tree/master/2846-robot-collisions) |
 ## Monotonic Stack
@@ -189,6 +190,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/Chirag-Punia/DSA/tree/master/0131-palindrome-partitioning) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/Chirag-Punia/DSA/tree/master/1720-crawler-log-folder) |
+| [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/Chirag-Punia/DSA/tree/master/1818-maximum-score-from-removing-substrings) |
 ## Database
 |  |
