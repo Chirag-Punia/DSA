@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
 | [0066-plus-one](https://github.com/Chirag-Punia/DSA/tree/master/0066-plus-one) |
 | [0078-subsets](https://github.com/Chirag-Punia/DSA/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Chirag-Punia/DSA/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Chirag-Punia/DSA/tree/master/0090-subsets-ii) |
 | [0130-surrounded-regions](https://github.com/Chirag-Punia/DSA/tree/master/0130-surrounded-regions) |
 | [0216-combination-sum-iii](https://github.com/Chirag-Punia/DSA/tree/master/0216-combination-sum-iii) |
@@ -158,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0079-word-search](https://github.com/Chirag-Punia/DSA/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/Chirag-Punia/DSA/tree/master/0130-surrounded-regions) |
 | [0542-01-matrix](https://github.com/Chirag-Punia/DSA/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/Chirag-Punia/DSA/tree/master/0733-flood-fill) |
@@ -178,6 +180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Chirag-Punia/DSA/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/0022-generate-parentheses) |
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
+| [0079-word-search](https://github.com/Chirag-Punia/DSA/tree/master/0079-word-search) |
 | [0127-word-ladder](https://github.com/Chirag-Punia/DSA/tree/master/0127-word-ladder) |
 | [0131-palindrome-partitioning](https://github.com/Chirag-Punia/DSA/tree/master/0131-palindrome-partitioning) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
@@ -281,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/Chirag-Punia/DSA/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Chirag-Punia/DSA/tree/master/0040-combination-sum-ii) |
 | [0078-subsets](https://github.com/Chirag-Punia/DSA/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Chirag-Punia/DSA/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Chirag-Punia/DSA/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/Chirag-Punia/DSA/tree/master/0131-palindrome-partitioning) |
 | [0216-combination-sum-iii](https://github.com/Chirag-Punia/DSA/tree/master/0216-combination-sum-iii) |
