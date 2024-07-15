@@ -11,15 +11,16 @@ class Solution {
         mpp.put('8', "tuv");
         mpp.put('9', "wxyz");
     }
-    public void temp(String digits,String tmp,int i){
+    public void temp(String digits,StringBuilder tmp,int i){
         if(i == digits.length()){
-            ans.add(tmp);
+            ans.add(tmp.toString());
             return;
         }
         String letters = mpp.get(digits.charAt(i));
         for(int j = 0;j<letters.length();j++){
-            String newStr = tmp+letters.charAt(j);
-            temp(digits,newStr,i+1);
+            tmp.append(letters.charAt(j));
+            temp(digits,tmp,i+1);
+            tmp.deleteCharAt(tmp.length() - 1);
         }
     }
     public List<String> letterCombinations(String digits) {
@@ -27,7 +28,7 @@ class Solution {
         if (digits == null || digits.length() == 0) {
             return ans;
         }
-        temp(digits,"",0);
+        temp(digits,new StringBuilder(""),0);
         return ans;
     }
 }
