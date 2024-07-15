@@ -23,6 +23,11 @@ class Solution {
             return ans;
         }
         List<Integer> digits = convertStringToDigits(d);
+        HashMap<String,String> mpp2 = new HashMap<>();
+        mpp2.put("2","abc");
+        mpp2.put("2","abc");
+        mpp2.put("2","abc");
+        mpp2.put("2","abc");
         temp(digits,"",0);
         return ans;
     }
