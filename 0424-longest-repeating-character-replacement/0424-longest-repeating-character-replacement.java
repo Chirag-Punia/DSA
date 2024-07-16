@@ -20,27 +20,31 @@ class Solution {
         //         }
         //     }
         // }
-
-        int left = 0;
-        int right = 0;
-        int maxFreq = 0;
         HashMap<Character, Integer> mpp = new HashMap<>();
-        while(right < n){
+        int left = 0;
+        int maxFreq = 0; 
+        for (int right = 0; right < n; right++) {
             char curr = s.charAt(right);
             mpp.put(curr, mpp.getOrDefault(curr, 0) + 1);
             maxFreq = Math.max(maxFreq, mpp.get(curr));
 
+
             int change = (right - left + 1) - maxFreq;
-            if(((right - left + 1) - maxFreq) > k){
-                    char tmp = s.charAt(left);
-                    mpp.put(tmp, mpp.getOrDefault(tmp, 0) - 1);
-                    if(mpp.get(tmp) == 0)mpp.remove(tmp);
-                    left++;
+
+
+            if (change > k) {
+                char leftChar = s.charAt(left);
+                mpp.put(leftChar, mpp.get(leftChar) - 1);
+                if (mpp.get(leftChar) == 0) {
+                    mpp.remove(leftChar);
                 }
-            ans = Math.max(ans, right - left + 1); 
-            right++;
+                left++;
+            }
+
+
+            ans = Math.max(ans, right - left + 1);
         }
-        
+
         return ans;
     }
 }
