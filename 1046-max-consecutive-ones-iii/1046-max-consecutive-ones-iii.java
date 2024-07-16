@@ -11,7 +11,7 @@ class Solution {
             int maxLen = 0;
             for(int j = i;j < nums.length;j++){
                 if(nums[j] == 1)ans = Math.max(ans,++maxLen);
-                else if(nums[j] == 0 && flipCount < k)
+                else if(flipCount < k)
                 {ans = Math.max(ans,++maxLen);++flipCount;}
                 else break;
             }
