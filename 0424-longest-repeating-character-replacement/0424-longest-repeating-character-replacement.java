@@ -31,7 +31,7 @@ class Solution {
             maxFreq = Math.max(maxFreq, mpp.get(curr));
 
             int change = (right - left + 1) - maxFreq;
-            while(((right - left + 1) - maxFreq) > k){
+            if(((right - left + 1) - maxFreq) > k){
                     char tmp = s.charAt(left);
                     mpp.put(tmp, mpp.getOrDefault(tmp, 0) - 1);
                     if(mpp.get(tmp) == 0)mpp.remove(tmp);
