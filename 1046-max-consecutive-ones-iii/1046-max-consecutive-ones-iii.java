@@ -1,19 +1,19 @@
 class Solution {
-    public int longestOnes(int[] nums, int k) {
-        int left = 0, right = 0, maxLen = 0, flipCount = 0,n=nums.length;
-        while (right < n) {
-            if (nums[right] == 0)
-                ++flipCount;
-            while (k < flipCount) {
-                if (nums[left] == 0)
-                    --flipCount;
-                left++;
+    public int longestOnes(int[] t, int k) {
+        int l = 0, r = 0, m = 0, c = 0,n=t.length;
+        while (r < n) {
+            if (t[r] == 0)
+                ++c;
+            while (k < c) {
+                if (t[l] == 0)
+                    --c;
+                l++;
             }
-            maxLen = Math.max(maxLen, right - left + 1);
-            right++;
+            m = Math.max(m, r - l + 1);
+            r++;
         }
 
-        return maxLen;
+        return m;
 
     }
 }
