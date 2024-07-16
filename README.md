@@ -108,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0966-binary-subarrays-with-sum](https://github.com/Chirag-Punia/DSA/tree/master/0966-binary-subarrays-with-sum) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Chirag-Punia/DSA/tree/master/1370-count-number-of-nice-subarrays) |
+| [1460-number-of-substrings-containing-all-three-characters](https://github.com/Chirag-Punia/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Chirag-Punia/DSA/tree/master/2306-create-binary-tree-from-descriptions) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/Chirag-Punia/DSA/tree/master/3446-find-the-number-of-good-pairs-i) |
 ## Sorting
@@ -208,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0282-expression-add-operators](https://github.com/Chirag-Punia/DSA/tree/master/0282-expression-add-operators) |
 | [0424-longest-repeating-character-replacement](https://github.com/Chirag-Punia/DSA/tree/master/0424-longest-repeating-character-replacement) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
+| [1460-number-of-substrings-containing-all-three-characters](https://github.com/Chirag-Punia/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1720-crawler-log-folder](https://github.com/Chirag-Punia/DSA/tree/master/1720-crawler-log-folder) |
 | [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/Chirag-Punia/DSA/tree/master/1818-maximum-score-from-removing-substrings) |
@@ -332,6 +334,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/Chirag-Punia/DSA/tree/master/0966-binary-subarrays-with-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/Chirag-Punia/DSA/tree/master/1046-max-consecutive-ones-iii) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Chirag-Punia/DSA/tree/master/1370-count-number-of-nice-subarrays) |
+| [1460-number-of-substrings-containing-all-three-characters](https://github.com/Chirag-Punia/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 ## Prefix Sum
 |  |
 | ------- |
