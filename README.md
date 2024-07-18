@@ -83,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/Chirag-Punia/DSA/tree/master/0216-combination-sum-iii) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0542-01-matrix](https://github.com/Chirag-Punia/DSA/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/Chirag-Punia/DSA/tree/master/0733-flood-fill) |
 | [0966-binary-subarrays-with-sum](https://github.com/Chirag-Punia/DSA/tree/master/0966-binary-subarrays-with-sum) |
@@ -114,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/Chirag-Punia/DSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0424-longest-repeating-character-replacement](https://github.com/Chirag-Punia/DSA/tree/master/0424-longest-repeating-character-replacement) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0966-binary-subarrays-with-sum](https://github.com/Chirag-Punia/DSA/tree/master/0966-binary-subarrays-with-sum) |
@@ -341,6 +343,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0078-subsets](https://github.com/Chirag-Punia/DSA/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Chirag-Punia/DSA/tree/master/0090-subsets-ii) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 ## Sliding Window
 |  |
 | ------- |
@@ -362,4 +365,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/Chirag-Punia/DSA/tree/master/0208-implement-trie-prefix-tree) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 <!---LeetCode Topics End-->
