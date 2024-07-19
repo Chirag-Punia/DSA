@@ -1,47 +1,29 @@
-import java.util.ArrayList;
-import java.util.List;
-
 class Solution {
-    public List<Integer> luckyNumbers (int[][] matrix) {
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-        int[] minRow = new int[rows];
-        int[] maxCol = new int[cols];
-        List<Integer> ans = new ArrayList<>();
+    public List<Integer> luckyNumbers(int[][] matrix) {
+        int N = matrix.length, M = matrix[0].length;
 
-
-        for (int i = 0; i < rows; i++) {
-            minRow[i] = Integer.MAX_VALUE;
-        }
-
-
-        for (int j = 0; j < cols; j++) {
-            maxCol[j] = Integer.MIN_VALUE;
-        }
-
-
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                minRow[i] = Math.min(minRow[i], matrix[i][j]);
+        int rMinMax = Integer.MIN_VALUE;
+        for (int i = 0; i < N; i++) {
+            int rMin = Integer.MAX_VALUE;
+            for (int j = 0; j < M; j++) {
+                rMin = Math.min(rMin, matrix[i][j]);
             }
+            rMinMax = Math.max(rMinMax, rMin);
         }
 
-
-        for (int j = 0; j < cols; j++) {
-            for (int i = 0; i < rows; i++) {
-                maxCol[j] = Math.max(maxCol[j], matrix[i][j]);
+        int cMaxMin = Integer.MAX_VALUE;
+        for (int i = 0; i < M; i++) {
+            int cMax = Integer.MIN_VALUE;
+            for (int j = 0; j < N; j++) {
+                cMax = Math.max(cMax, matrix[j][i]);
             }
+            cMaxMin = Math.min(cMaxMin, cMax);
         }
 
-
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                if (matrix[i][j] == minRow[i] && matrix[i][j] == maxCol[j]) {
-                    ans.add(matrix[i][j]);
-                }
-            }
+        if (rMinMax == cMaxMin) {
+            return new ArrayList<>(Arrays.asList(rMinMax));
         }
 
-        return ans;
+        return new ArrayList<>();
     }
 }
