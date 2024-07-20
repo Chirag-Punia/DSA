@@ -8,8 +8,7 @@ class Solution {
         if(dp[i][j] != -1)return dp[i][j];
         int l = tmp(i,j+1,n,m);
         int r = tmp(i+1,j,n,m);
-        dp[i][j] = l+r;
-        return dp[i][j];
+        return dp[i][j] = l+r;
     }
     public int uniquePaths(int m, int n) {
         dp = new int[m][n];
@@ -17,6 +16,5 @@ class Solution {
             Arrays.fill(dp[i],-1);
         }
         return tmp(0,0,n,m);
-
     }
 }
