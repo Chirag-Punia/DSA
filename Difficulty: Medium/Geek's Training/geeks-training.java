@@ -27,28 +27,29 @@ class GFG{
 // } Driver Code Ends
 
 
-//User function Template for Java
 
+
+//User function Template for Java
 class Solution{
     //public Map<String,Integer> dp;
     public int[][] dp;
-    public int tmp(int[][] p, int last,int i){
+    public int tmp(int[][] p, int last,int day){
         
-        if(i >= p.length){
+        if(day >= p.length){
             return 0;
         }
-        //String key = i + ":" + last;
+        //String key = day + ":" + last;
         //if(dp.containsKey(key))return dp.get(key);
-        if(last != -1 && dp[i][last] != -1)return dp[i][last];
+        if(last != -1 && dp[day][last] != -1)return dp[day][last];
         int maxi = 0,points = 0;
         for(int j = 0;j<3;j++){
             if(j != last){
-                points = tmp(p,j,i+1) + p[i][j];
+                points = tmp(p,j,day+1) + p[day][j];
                 maxi = Math.max(maxi,points);
             }
         }
-        if(last != -1)dp[i][last] = maxi;
-        //dp.put((i + ":" + last) , maxi);
+        if(last != -1)dp[day][last] = maxi;
+        //dp.put((day + ":" + last) , maxi);
         return maxi;
     }
     public int maximumPoints(int points[][],int N){
@@ -58,10 +59,10 @@ class Solution{
         dp[0][0] = points[0][0];
         dp[0][1] = points[0][1];
         dp[0][2] = points[0][2];
-         for (int i = 1; i < N; i++) {
-            dp[i][0] = points[i][0] + Math.max(dp[i-1][1], dp[i-1][2]);
-            dp[i][1] = points[i][1] + Math.max(dp[i-1][0], dp[i-1][2]);
-            dp[i][2] = points[i][2] + Math.max(dp[i-1][0], dp[i-1][1]);
+         for (int day = 1; day < N; day++) {
+            dp[day][0] = points[day][0] + Math.max(dp[day-1][1], dp[day-1][2]);
+            dp[day][1] = points[day][1] + Math.max(dp[day-1][0], dp[day-1][2]);
+            dp[day][2] = points[day][2] + Math.max(dp[day-1][0], dp[day-1][1]);
         }
 
       
