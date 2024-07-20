@@ -1,10 +1,8 @@
 class Solution {
     public int[][] dp;
     public int tmp(int i,int j,int n,int m){
-        if(i == m-1 && j == n-1){
-            return 1;
-        }
-        if(i >= m || j >= n)return 0;
+        if(i == m-1 && j == n-1)return 1;
+        else if(i >= m || j >= n)return 0;
         if(dp[i][j] != -1)return dp[i][j];
         int l = tmp(i,j+1,n,m);
         int r = tmp(i+1,j,n,m);
