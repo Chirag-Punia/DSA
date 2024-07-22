@@ -97,6 +97,7 @@ class GFG
 // } Driver Code Ends
 
 
+
 //User function Template for Java
 
 // class Node  
@@ -113,38 +114,27 @@ class GFG
 
 
 class Solution{
-    public static boolean ans;
-    static int cnt;
-    static int xx;
-    Solution(){
-    }
-    public static void v(Node r,long i,long j){
-        if(r == null) return;
-        else if(i >= r.data ||  r.data >= j)ans =false;
-        if(r.left != null)cnt++;
-        v(r.left,i,r.data);
-        if(r.right != null)cnt++;
-        v(r.right,r.data,j);
-    }
-    public static void a(Node r){
-        if(r == null) return;
-        ans = true;
-        cnt = 1;
-        v(r,Long.MIN_VALUE,Long.MAX_VALUE);
-        if(ans) xx = Math.max(xx,cnt);
-        a(r.left);
-        a(r.right);
-    }
     
     // Return the size of the largest sub-tree which is also a BST
     static int largestBst(Node root)
     {
-        // Write your code here
-        ans = true;
-        cnt = 0;
-        xx = 1;
-        a(root);
-        return xx;
+        if(isBst(root, Integer.MIN_VALUE, Integer.MAX_VALUE)) {
+            return countnode(root);
+        }
+        int left = largestBst(root.left);
+        int right = largestBst(root.right);
+        return Math.max(left,right);
     }
+    
+    static boolean isBst(Node node, int mn, int mx) {
+        if(node==null) return true;
+        if(node.data < mn || node.data > mx) return false;
+        return isBst(node.left,mn,node.data-1) && isBst(node.right,node.data+1,mx);
+     }
+     
+     static int countnode(Node node) {
+         if(node == null) return 0;
+         return 1 + countnode(node.left) + countnode(node.right);
+     }
     
 }
