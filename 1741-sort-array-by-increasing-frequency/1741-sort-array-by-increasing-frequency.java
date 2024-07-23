@@ -1,34 +1,25 @@
-import java.util.*;
-
 class Solution {
     public int[] frequencySort(int[] nums) {
-
-        Map<Integer, Integer> frequencyMap = new HashMap<>();
-        for (int num : nums) {
-            frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
+        Map<Integer,Integer> mpp1 = new HashMap<>();
+        for(int num : nums){
+            mpp1.put(num,mpp1.getOrDefault(num,0)+1);
         }
-        
-        
-        List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(frequencyMap.entrySet());
-        entries.sort((e1, e2) -> {
-            int freqCompare = Integer.compare(e1.getValue(), e2.getValue());
-            if (freqCompare != 0) {
-                return freqCompare; 
+        Map<Integer,Integer> mpp = new TreeMap<>(new Comparator<Integer>(){
+            @Override
+            public int compare(Integer key1, Integer key2){
+                int tmp = mpp1.get(key1).compareTo(mpp1.get(key2));
+                if(tmp != 0)return tmp;
+                else return key2.compareTo(key1);
             }
-            return Integer.compare(e2.getKey(), e1.getKey()); 
         });
-        
-       
-        int index = 0;
-        int[] result = new int[nums.length];
-        for (Map.Entry<Integer, Integer> entry : entries) {
-            int value = entry.getKey();
-            int count = entry.getValue();
-            for (int i = 0; i < count; i++) {
-                result[index++] = value;
+        mpp.putAll(mpp1);
+        int[] ans = new int[nums.length];
+        int[] k = {0};
+        mpp.forEach((key,value) -> {
+            for(int i = 0;i<value;i++){
+                ans[k[0]++] = key;
             }
-        }
-        
-        return result;
+        });
+        return ans;
     }
 }
