@@ -103,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Chirag-Punia/DSA/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Chirag-Punia/DSA/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1720-crawler-log-folder](https://github.com/Chirag-Punia/DSA/tree/master/1720-crawler-log-folder) |
+| [1741-sort-array-by-increasing-frequency](https://github.com/Chirag-Punia/DSA/tree/master/1741-sort-array-by-increasing-frequency) |
 | [1803-average-waiting-time](https://github.com/Chirag-Punia/DSA/tree/master/1803-average-waiting-time) |
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Chirag-Punia/DSA/tree/master/1826-maximum-xor-with-an-element-from-array) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Chirag-Punia/DSA/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -133,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1207-delete-nodes-and-return-forest](https://github.com/Chirag-Punia/DSA/tree/master/1207-delete-nodes-and-return-forest) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Chirag-Punia/DSA/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/Chirag-Punia/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [1741-sort-array-by-increasing-frequency](https://github.com/Chirag-Punia/DSA/tree/master/1741-sort-array-by-increasing-frequency) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Chirag-Punia/DSA/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2502-sort-the-people](https://github.com/Chirag-Punia/DSA/tree/master/2502-sort-the-people) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/Chirag-Punia/DSA/tree/master/3446-find-the-number-of-good-pairs-i) |
@@ -143,6 +145,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/Chirag-Punia/DSA/tree/master/0726-number-of-atoms) |
+| [1741-sort-array-by-increasing-frequency](https://github.com/Chirag-Punia/DSA/tree/master/1741-sort-array-by-increasing-frequency) |
 | [2502-sort-the-people](https://github.com/Chirag-Punia/DSA/tree/master/2502-sort-the-people) |
 | [2846-robot-collisions](https://github.com/Chirag-Punia/DSA/tree/master/2846-robot-collisions) |
 ## Counting
