@@ -98,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1073-number-of-enclaves](https://github.com/Chirag-Punia/DSA/tree/master/1073-number-of-enclaves) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Chirag-Punia/DSA/tree/master/1207-delete-nodes-and-return-forest) |
 | [1293-three-consecutive-odds](https://github.com/Chirag-Punia/DSA/tree/master/1293-three-consecutive-odds) |
+| [1333-sort-the-jumbled-numbers](https://github.com/Chirag-Punia/DSA/tree/master/1333-sort-the-jumbled-numbers) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Chirag-Punia/DSA/tree/master/1370-count-number-of-nice-subarrays) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/Chirag-Punia/DSA/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Chirag-Punia/DSA/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
@@ -145,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/Chirag-Punia/DSA/tree/master/0726-number-of-atoms) |
+| [1333-sort-the-jumbled-numbers](https://github.com/Chirag-Punia/DSA/tree/master/1333-sort-the-jumbled-numbers) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/Chirag-Punia/DSA/tree/master/1741-sort-array-by-increasing-frequency) |
 | [2502-sort-the-people](https://github.com/Chirag-Punia/DSA/tree/master/2502-sort-the-people) |
 | [2846-robot-collisions](https://github.com/Chirag-Punia/DSA/tree/master/2846-robot-collisions) |
