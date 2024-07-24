@@ -105,20 +105,30 @@ class GfG {
 // } Driver Code Ends
 
 
-// User function Template for Java
 
 
 class Solution {
-    // Function to check whether a Binary Tree is BST or not.
-    boolean isBST(Node root) {
-        return helper(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    private int[] helper(Node root){
+        if(root == null){
+            return new int[]{1, Integer.MAX_VALUE, Integer.MIN_VALUE};
+        }
+        int[] left = helper(root.left);
+
+        if(left[0] == 1 && left[2] < root.data){
+            int[]right = helper(root.right);
+
+            if(right[0] == 1 && right[1] > root.data){
+                int r = (right[2] == Integer.MIN_VALUE ? root.data : right[2]);
+                int l = (left[1] == Integer.MAX_VALUE ? root.data : left[1]);
+                return new int[]{1, l, r};
+            }
+        }
+
+        return new int[]{0, Integer.MIN_VALUE, Integer.MAX_VALUE};
     }
-    
-    boolean helper(Node root, int left, int right) {
-        if(root == null) return true;
-        
-        if(root.data <= left || root.data >= right) return false;
-        
-        return helper(root.left, left, root.data) && helper(root.right, root.data, right);
+    boolean isBST(Node root) {
+        // code here.
+        int test[] = helper(root);
+        return test[0] == 1;
     }
 }
