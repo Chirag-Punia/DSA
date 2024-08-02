@@ -262,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Chirag-Punia/DSA/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/0022-generate-parentheses) |
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
+| [0067-add-binary](https://github.com/Chirag-Punia/DSA/tree/master/0067-add-binary) |
 | [0079-word-search](https://github.com/Chirag-Punia/DSA/tree/master/0079-word-search) |
 | [0127-word-ladder](https://github.com/Chirag-Punia/DSA/tree/master/0127-word-ladder) |
 | [0131-palindrome-partitioning](https://github.com/Chirag-Punia/DSA/tree/master/0131-palindrome-partitioning) |
@@ -336,6 +337,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/Chirag-Punia/DSA/tree/master/0013-roman-to-integer) |
 | [0062-unique-paths](https://github.com/Chirag-Punia/DSA/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/Chirag-Punia/DSA/tree/master/0066-plus-one) |
+| [0067-add-binary](https://github.com/Chirag-Punia/DSA/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/Chirag-Punia/DSA/tree/master/0070-climbing-stairs) |
 | [0282-expression-add-operators](https://github.com/Chirag-Punia/DSA/tree/master/0282-expression-add-operators) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Chirag-Punia/DSA/tree/master/1370-count-number-of-nice-subarrays) |
@@ -354,6 +356,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/Chirag-Punia/DSA/tree/master/0067-add-binary) |
 | [1642-water-bottles](https://github.com/Chirag-Punia/DSA/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/Chirag-Punia/DSA/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Chirag-Punia/DSA/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -391,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/Chirag-Punia/DSA/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/Chirag-Punia/DSA/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Chirag-Punia/DSA/tree/master/0090-subsets-ii) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
