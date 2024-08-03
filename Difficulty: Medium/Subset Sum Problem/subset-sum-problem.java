@@ -36,9 +36,9 @@ class GFG
 class Solution{
     public static int[][] dp;
     public static int s;
-     static boolean tmp(int arr[], int i, int sum) {
-        if(s == sum) return true;
-        if(i >= arr.length || s > sum) return false;
+    public static Boolean tmp(int[]arr,int i,int sum){
+        if(s == sum)return true;
+        if(s > sum || i >= arr.length)return false;
         if(dp[i][s] != -1)return dp[i][s] == 1;
         s+=arr[i];
         boolean include = tmp(arr,i+1,sum);
@@ -47,15 +47,12 @@ class Solution{
         dp[i][s] = (include || exclude)?1:0;
         return dp[i][s] == 1;
     }
-    
+
     static Boolean isSubsetSum(int N, int arr[], int sum){
         // code here
-        dp = new int[N][sum+1];
         s = 0;
-        for(int i = 0;i<N;i++){
-            Arrays.fill(dp[i],-1);
-        }
-        
+        dp = new int[N+1][sum+1];
+        for(int i=0;i<N;i++)Arrays.fill(dp[i],-1);
         return tmp(arr,0,sum);
     }
 }
