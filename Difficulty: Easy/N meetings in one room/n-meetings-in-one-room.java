@@ -1,12 +1,11 @@
 //{ Driver Code Starts
 import java.io.*;
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
 class GFG {
     public static void main(String args[]) throws IOException {
-        BufferedReader br =
-            new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine().trim());
 
         while (t-- > 0) {
@@ -17,14 +16,12 @@ class GFG {
             int end[] = new int[n];
 
             inputLine = br.readLine().trim().split(" ");
-            for (int i = 0; i < n; i++)
-                start[i] = Integer.parseInt(inputLine[i]);
+            for (int i = 0; i < n; i++) start[i] = Integer.parseInt(inputLine[i]);
 
             inputLine = br.readLine().trim().split(" ");
-            for (int i = 0; i < n; i++) 
-                end[i] = Integer.parseInt(inputLine[i]);
-                
-            int ans = new Solution().maxMeetings(start, end, n);
+            for (int i = 0; i < n; i++) end[i] = Integer.parseInt(inputLine[i]);
+
+            int ans = new Solution().maxMeetings(n, start, end);
             System.out.println(ans);
         }
     }
@@ -33,29 +30,30 @@ class GFG {
 // } Driver Code Ends
 
 
-class Solution 
-{
-    //Function to find the maximum number of meetings that can
-    //be performed in a meeting room.
-    public static int maxMeetings(int start[], int end[], int n)
-    {
+class Solution {
+    // Function to find the maximum number of meetings that can
+    // be performed in a meeting room.
+    public int maxMeetings(int n, int start[], int end[]) {
         // add your code here
-        int dp[][] = new int[n][2];
+        int dp[][] = new int[n][3];
+        int cnt = 1;
         for(int i = 0;i<n;i++){
             dp[i][0] = i;
-            dp[i][1] = end[i];
+            dp[i][1] = start[i];
+            dp[i][2] = end[i];
         }
-        Arrays.sort(dp,Comparator.comparingInt(o -> o[1]));
-        int var = dp[0][1];
-        int ans = 0;
-        if(start[dp[0][0]] < var) ans = 1;
-        
-        for(int i = 1;i<n;i++){
-            if(start[dp[i][0]] > var){
-                var = dp[i][1];
-                ans++;
+        Arrays.sort(dp, new Comparator<int[]>() {
+            public int compare(int[] a, int[] b) {
+                return Integer.compare(a[2], b[2]);
+            }
+        });
+        int endTime = dp[0][2];
+        for(int i = 1;i < n;i++){
+            if(endTime < dp[i][1]){
+                endTime = dp[i][2];
+                cnt++;
             }
         }
-        return ans;
+        return cnt;
     }
 }
