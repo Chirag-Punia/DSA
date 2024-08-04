@@ -3,6 +3,7 @@ class Solution {
         if(ind == 0)
         {
             if(amount%coins[0] == 0)
+            //IMP
                 return amount/coins[0];
             else
                 return Integer.MAX_VALUE-10000;
