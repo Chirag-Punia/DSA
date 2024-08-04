@@ -200,6 +200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0151-reverse-words-in-a-string](https://github.com/Chirag-Punia/DSA/tree/master/0151-reverse-words-in-a-string) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Chirag-Punia/DSA/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -286,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/Chirag-Punia/DSA/tree/master/0079-word-search) |
 | [0127-word-ladder](https://github.com/Chirag-Punia/DSA/tree/master/0127-word-ladder) |
 | [0131-palindrome-partitioning](https://github.com/Chirag-Punia/DSA/tree/master/0131-palindrome-partitioning) |
+| [0151-reverse-words-in-a-string](https://github.com/Chirag-Punia/DSA/tree/master/0151-reverse-words-in-a-string) |
 | [0208-implement-trie-prefix-tree](https://github.com/Chirag-Punia/DSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0282-expression-add-operators](https://github.com/Chirag-Punia/DSA/tree/master/0282-expression-add-operators) |
 | [0424-longest-repeating-character-replacement](https://github.com/Chirag-Punia/DSA/tree/master/0424-longest-repeating-character-replacement) |
