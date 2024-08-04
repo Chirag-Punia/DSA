@@ -1,35 +1,35 @@
 class Solution {
-    int[] dp;
-
-    int coinCount(int[] coins, int amount) {
-
-        if (amount == 0) {
+    public int coin(int[] coins , int amount , int ind , int[][] dp){
+        if(ind == 0)
+        {
+            if(amount%coins[0] == 0)
+                return amount/coins[0];
+            else
+                return Integer.MAX_VALUE-10000;
+        }
+        if(amount == 0)
             return 0;
-        }
-        if (amount < 0) {
-            return Integer.MAX_VALUE;
-        }
-
-        if (dp[amount] != -1) {
-            return dp[amount];
-        }
-
-        int minCoins = Integer.MAX_VALUE;
-        for (int i = 0; i < coins.length; i++) {
-            int ans = coinCount(coins, amount - coins[i]);
-
-            if (ans != Integer.MAX_VALUE) {
-                minCoins = Math.min(minCoins, 1 + ans);
-            }
-        }
-        return dp[amount] = minCoins;
+        if(dp[ind][amount] != -1)
+            return dp[ind][amount];
+        
+        
+        int notTake = coin(coins , amount , ind-1 , dp);
+        int take = Integer.MAX_VALUE;
+        if(amount >= coins[ind])
+            take = 1 + coin(coins , amount-coins[ind] , ind , dp);
+        
+        return dp[ind][amount] = Math.min(take , notTake);
     }
-
-    public int coinChange(int[] coins, int amount) {
-
-        dp = new int[amount + 1];
-        Arrays.fill(dp, -1);
-        int ans = coinCount(coins, amount);
-        return (ans == Integer.MAX_VALUE) ? -1 : ans;
+        public int coinChange(int[] coins, int amount) {
+        int n = coins.length;
+        int[][] dp = new int[n][amount+1];
+        for(int i = 0 ; i < n ; i ++)
+            for(int j = 0 ; j <= amount ; j++)
+                dp[i][j] = -1;
+        
+        int ret = Math.max(-1 , coin(coins , amount , n-1 , dp));
+        if(ret >= 1000000)
+            return -1;
+        return ret;
     }
 }
