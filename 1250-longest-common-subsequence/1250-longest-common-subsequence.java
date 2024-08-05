@@ -8,8 +8,9 @@ class Solution {
         if (memo.containsKey(key))
             return memo.get(key);
         if (s1.charAt(i) == s2.charAt(j))
-            return 1 + tmp(s1, s2, i + 1, j + 1);
-        memo.put(key, Math.max(tmp(s1, s2, i + 1, j), tmp(s1, s2, i, j + 1)));
+            memo.put(key,1 + tmp(s1, s2, i + 1, j + 1));
+        else 
+            memo.put(key, Math.max(tmp(s1, s2, i + 1, j), tmp(s1, s2, i, j + 1)));
         return memo.get(key);
     }
 
