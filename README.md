@@ -271,6 +271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0518-coin-change-ii](https://github.com/Chirag-Punia/DSA/tree/master/0518-coin-change-ii) |
 | [0542-01-matrix](https://github.com/Chirag-Punia/DSA/tree/master/0542-01-matrix) |
 | [1196-filling-bookcase-shelves](https://github.com/Chirag-Punia/DSA/tree/master/1196-filling-bookcase-shelves) |
+| [1250-longest-common-subsequence](https://github.com/Chirag-Punia/DSA/tree/master/1250-longest-common-subsequence) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Chirag-Punia/DSA/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1511-count-number-of-teams](https://github.com/Chirag-Punia/DSA/tree/master/1511-count-number-of-teams) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/Chirag-Punia/DSA/tree/master/1756-minimum-deletions-to-make-string-balanced) |
@@ -295,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0282-expression-add-operators](https://github.com/Chirag-Punia/DSA/tree/master/0282-expression-add-operators) |
 | [0424-longest-repeating-character-replacement](https://github.com/Chirag-Punia/DSA/tree/master/0424-longest-repeating-character-replacement) |
 | [0726-number-of-atoms](https://github.com/Chirag-Punia/DSA/tree/master/0726-number-of-atoms) |
+| [1250-longest-common-subsequence](https://github.com/Chirag-Punia/DSA/tree/master/1250-longest-common-subsequence) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/Chirag-Punia/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1720-crawler-log-folder](https://github.com/Chirag-Punia/DSA/tree/master/1720-crawler-log-folder) |
