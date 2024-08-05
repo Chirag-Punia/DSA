@@ -113,42 +113,34 @@ class GfG {
 
 // } Driver Code Ends
 
-
 //User function Template for Java
-
-
 class Solution
 {
-    public static class nodeInfo{
-        Node node;
-        int col;
-        nodeInfo(Node node,int col){
-            this.node = node;
-            this.col = col;
-        }
-    }
     //Function to return a list containing the bottom view of the given tree.
     public ArrayList <Integer> bottomView(Node root)
     {
         // Code here
-        ArrayList<Integer> ans = new ArrayList<>();
-        TreeMap<Integer,nodeInfo> mpp = new TreeMap<>();
-        Queue<nodeInfo> q = new LinkedList<>();
-        q.offer(new nodeInfo(root,0));
-        while(!q.isEmpty()){
-            nodeInfo c = q.poll();
-            mpp.put(c.col,c);
-            if(c.node.left != null){
-                q.offer(new nodeInfo(c.node.left,c.col - 1));
-            }
-            if(c.node.right != null){
-                q.offer(new nodeInfo(c.node.right,c.col + 1));
-            }
-            
+    ArrayList<Integer> ans = new ArrayList<>();
+    TreeMap<Integer,Integer> mpp = new TreeMap<>();
+    Queue<Node> q = new LinkedList<>();
+    root.hd=0;
+    q.offer(root);
+    while(!q.isEmpty()){
+        Node curr = q.poll();
+        mpp.put(curr.hd,curr.data);
+        if(curr.left != null){
+            curr.left.hd = curr.hd - 1;
+            q.add(curr.left);
         }
-        for(Map.Entry<Integer,nodeInfo> entry : mpp.entrySet()){
-            ans.add(entry.getValue().node.data);
+        if(curr.right != null){
+            curr.right.hd = curr.hd +  1;
+            q.offer(curr.right);
         }
-        return ans;
+    }
+    mpp.forEach((key,value) -> {
+        ans.add(value);
+    });
+        
+    return ans;
     }
 }
