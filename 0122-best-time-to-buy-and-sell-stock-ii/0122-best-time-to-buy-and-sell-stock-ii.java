@@ -32,10 +32,30 @@ class Solution {
         }
         return dp[0][1];
     }
+    private int tabulation2(int[] arr,int n){
+
+        int[] ahead = new int[2];
+        int[] prev = new int[2];
+        prev[0] = prev[1] = 0;
+        ahead[0] = ahead[1] = 0;
+        for(int i = n-1;i>=0;i--){
+            for(int j = 1;j>=0;j--){
+                if(j == 1){
+                    prev[j] = Math.max((-arr[i] + ahead[0]),ahead[1]);
+                }
+                else{
+                    prev[j] = Math.max((arr[i] + ahead[1]),ahead[0]);
+                }
+            }
+            ahead = prev;
+            
+        }
+        return prev[1];
+    }
     public int maxProfit(int[] arr) {
-        
+
         // dp = new int[arr.length+1][2];
         // for(int[] r : dp)Arrays.fill(r,-1);
-        return tabulation(arr,arr.length);
+        return tabulation2(arr,arr.length);
     }
 }
