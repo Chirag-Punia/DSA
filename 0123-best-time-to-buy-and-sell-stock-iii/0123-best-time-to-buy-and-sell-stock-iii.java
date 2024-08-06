@@ -48,7 +48,6 @@ class Solution {
         int[][] prev = new int[2][3];
         for(int i = 0;i<2;i++){
             Arrays.fill(ahead[i],0);
-            Arrays.fill(prev[i],0);
         }
         int profit = 0;
         for (int i = n - 1; i >= 0; i--) {
