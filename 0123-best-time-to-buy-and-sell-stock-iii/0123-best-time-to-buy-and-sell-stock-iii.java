@@ -43,13 +43,41 @@ class Solution {
         }
         return dp[0][1][0];
     }
+    private int tabulation2(int[] arr, int n) {
+        int[][] ahead = new int[2][3];
+        int[][] prev = new int[2][3];
+        for(int i = 0;i<2;i++){
+            Arrays.fill(ahead[i],0);
+            Arrays.fill(prev[i],0);
+        }
+        int profit = 0;
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = 1; j >= 0; j--) {
+                for (int trans = 0; trans < 2; trans++) {
+
+                    if (j == 1) {
+                        prev[j][trans] = Math.max((-arr[i] + ahead[0][trans]), ahead[1][trans]);
+                    } else {
+                        prev[j][trans] = Math.max((arr[i] + ahead[1][trans+1]), ahead[0][trans]);
+                    }
+                }
+                
+            }
+            for (int j = 0; j <= 1; j++) {
+            for (int trans = 0; trans < 3; trans++) {
+                ahead[j][trans] = prev[j][trans];
+            }
+        }
+        }
+        return ahead[1][0];
+    }
 
     public int maxProfit(int[] prices) {
         // dp = new int[prices.length][2][3];
         // for (int[][] r : dp)
         //     for (int[] s : r)
         //         Arrays.fill(s, -1);
-        return tabulation(prices,prices.length);
+        return tabulation2(prices,prices.length);
 
     }
 }
