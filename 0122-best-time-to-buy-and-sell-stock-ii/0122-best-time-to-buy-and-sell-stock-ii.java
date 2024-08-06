@@ -3,7 +3,7 @@ class Solution {
     Map<String,Integer> memo;
     int[][] dp;
     int tmp(int[] arr,int buy,int i){
-        String key = buy+""+i;
+        String key = buy+","+i;
         if(i >= arr.length){
             return 0;
         }
