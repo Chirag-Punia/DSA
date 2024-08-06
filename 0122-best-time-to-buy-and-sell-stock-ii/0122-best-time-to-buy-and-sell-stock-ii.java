@@ -1,25 +1,25 @@
 class Solution {
     int profit;
-    Map<String,Integer> memo;
     int[][] dp;
     int tmp(int[] arr,int buy,int i){
-        String key = buy+","+i;
         if(i >= arr.length){
             return 0;
         }
-        if(memo.containsKey(key))return memo.get(key);
+        if(dp[i][buy] != -1)return dp[i][buy];
         if(buy == 1){
             profit = Math.max((-arr[i] + tmp(arr,0,i+1)),tmp(arr,1,i+1));
         }
         else{
             profit = Math.max((arr[i] + tmp(arr,1,i+1)) , tmp(arr,0,i+1));
         }
-        memo.put(key,profit);
-        return profit;
+
+        return dp[i][buy] = profit;
     }
 
     public int maxProfit(int[] arr) {
-        memo = new HashMap<>();
+        
+        dp = new int[arr.length+1][2];
+        for(int[] r : dp)Arrays.fill(r,-1);
         profit = Integer.MIN_VALUE;
         return tmp(arr,1,0);
     }
