@@ -101,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/Chirag-Punia/DSA/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/Chirag-Punia/DSA/tree/master/0518-coin-change-ii) |
 | [0542-01-matrix](https://github.com/Chirag-Punia/DSA/tree/master/0542-01-matrix) |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Chirag-Punia/DSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0733-flood-fill](https://github.com/Chirag-Punia/DSA/tree/master/0733-flood-fill) |
 | [0966-binary-subarrays-with-sum](https://github.com/Chirag-Punia/DSA/tree/master/0966-binary-subarrays-with-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/Chirag-Punia/DSA/tree/master/1034-subarrays-with-k-different-integers) |
@@ -284,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/Chirag-Punia/DSA/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/Chirag-Punia/DSA/tree/master/0518-coin-change-ii) |
 | [0542-01-matrix](https://github.com/Chirag-Punia/DSA/tree/master/0542-01-matrix) |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Chirag-Punia/DSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [1196-filling-bookcase-shelves](https://github.com/Chirag-Punia/DSA/tree/master/1196-filling-bookcase-shelves) |
 | [1250-longest-common-subsequence](https://github.com/Chirag-Punia/DSA/tree/master/1250-longest-common-subsequence) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Chirag-Punia/DSA/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
@@ -422,6 +424,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Chirag-Punia/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Chirag-Punia/DSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Chirag-Punia/DSA/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/Chirag-Punia/DSA/tree/master/1818-maximum-score-from-removing-substrings) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Chirag-Punia/DSA/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
