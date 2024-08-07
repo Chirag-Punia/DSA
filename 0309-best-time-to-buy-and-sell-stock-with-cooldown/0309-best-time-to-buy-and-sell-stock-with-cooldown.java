@@ -20,20 +20,23 @@ class Solution {
     }
 
     private int tabulation(int[] arr, int n) {
-        int[][][] dp = new int[n + 1][2][3];
+        int[][][] dp = new int[n + 1][2][2];
         int profit = 0;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
             dp[n][0][i] = 0;
             dp[n][1][i] = 0;
         }
         for (int i = n - 1; i >= 0; i--) {
             for (int j = 1; j >= 0; j--) {
-                for (int trans = 0; trans < 2; trans++) {
+                for (int cool = 0; cool < 2; cool++) {
 
-                    if (j == 1) {
-                        dp[i][j][trans] = Math.max((-arr[i] + dp[i + 1][0][trans]), dp[i + 1][1][trans]);
-                    } else {
-                        dp[i][j][trans] = Math.max((arr[i] + dp[i + 1][1][trans+1]), dp[i + 1][0][trans]);
+                    if (j == 1 && cool == 0) {
+                        dp[i][j][cool] = Math.max((-arr[i] + dp[i + 1][0][0]), dp[i + 1][1][0]);
+                    } else if(j == 0) {
+                        dp[i][j][cool] = Math.max((arr[i] + dp[i + 1][1][1]), dp[i + 1][0][0]);
+                    }
+                    else if(cool == 1){
+                        dp[i][j][cool] = dp[i+1][1][0];
                     }
                 }
             }
@@ -50,19 +53,19 @@ class Solution {
         int profit = 0;
         for (int i = n - 1; i >= 0; i--) {
             for (int j = 1; j >= 0; j--) {
-                for (int trans = 0; trans < 2; trans++) {
+                for (int cool = 0; cool < 2; cool++) {
 
                     if (j == 1) {
-                        prev[j][trans] = Math.max((-arr[i] + ahead[0][trans]), ahead[1][trans]);
+                        prev[j][cool] = Math.max((-arr[i] + ahead[0][cool]), ahead[1][cool]);
                     } else {
-                        prev[j][trans] = Math.max((arr[i] + ahead[1][trans+1]), ahead[0][trans]);
+                        prev[j][cool] = Math.max((arr[i] + ahead[1][cool+1]), ahead[0][cool]);
                     }
                 }
                 
             }
             for (int j = 0; j <= 1; j++) {
-            for (int trans = 0; trans < 3; trans++) {
-                ahead[j][trans] = prev[j][trans];
+            for (int cool = 0; cool < 3; cool++) {
+                ahead[j][cool] = prev[j][cool];
             }
         }
         }
@@ -70,11 +73,11 @@ class Solution {
     }
 
     public int maxProfit(int[] prices) {
-        dp = new int[prices.length][2][2];
-        for (int[][] r : dp)
-            for (int[] s : r)
-                Arrays.fill(s, -1);
-        return tmp(prices,1,0,0);
+        // dp = new int[prices.length][2][2];
+        // for (int[][] r : dp)
+        //     for (int[] s : r)
+        //         Arrays.fill(s, -1);
+        return tabulation(prices,prices.length);
 
     }
 }
