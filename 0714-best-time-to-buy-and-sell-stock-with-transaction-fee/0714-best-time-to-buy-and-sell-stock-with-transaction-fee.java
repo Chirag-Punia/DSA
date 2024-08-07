@@ -1,5 +1,6 @@
 class Solution {
     int[][] dp;
+
     int tmp(int[] arr, int buy, int i, int fee) {
         if (i >= arr.length) {
             return 0;
@@ -20,58 +21,52 @@ class Solution {
         return dp[i][buy] = profit;
     }
 
-    private int tabulation(int[] arr, int n,int fee) {
+    private int tabulation(int[] arr, int n, int fee) {
         int[][] dp = new int[n + 1][2];
         int profit = 0;
-        for(int[] r : dp)Arrays.fill(r,0);
+        for (int[] r : dp)
+            Arrays.fill(r, 0);
         for (int i = n - 1; i >= 0; i--) {
             for (int j = 1; j >= 0; j--) {
 
-                    if (j == 1) {
-                        dp[i][j] = Math.max((-arr[i] + dp[i + 1][0]), dp[i + 1][1]);
-                    } else {
-                        dp[i][j] = Math.max((-fee + arr[i] + dp[i + 1][1]), dp[i + 1][0]);
-                    }
-                
+                if (j == 1) {
+                    dp[i][j] = Math.max((-arr[i] + dp[i + 1][0]), dp[i + 1][1]);
+                } else {
+                    dp[i][j] = Math.max((-fee + arr[i] + dp[i + 1][1]), dp[i + 1][0]);
+                }
+
             }
 
         }
         return dp[0][1];
     }
 
-    private int tabulation2(int[] arr, int n, int k) {
-        int[][] ahead = new int[2][k + 1];
-        int[][] prev = new int[2][k + 1];
-        for (int i = 0; i < 2; i++) {
-            Arrays.fill(ahead[i], 0);
-        }
-        int profit = 0;
+    private int tabulation2(int[] arr, int n, int fee) {
+        int[] ahead = new int[2];
+        int[] prev = new int[2];
+        ahead[0] = ahead[1] = 0;
         for (int i = n - 1; i >= 0; i--) {
             for (int j = 1; j >= 0; j--) {
-                for (int trans = 0; trans < k; trans++) {
-
+          
                     if (j == 1) {
-                        prev[j][trans] = Math.max((-arr[i] + ahead[0][trans]), ahead[1][trans]);
+                        prev[j] = Math.max((-arr[i] + ahead[0]), ahead[1]);
                     } else {
-                        prev[j][trans] = Math.max((arr[i] + ahead[1][trans + 1]), ahead[0][trans]);
+                        prev[j] = Math.max((-fee+arr[i] + ahead[1]), ahead[0]);
                     }
-                }
-
             }
-            for (int j = 0; j <= 1; j++) {
-                for (int trans = 0; trans < k; trans++) {
-                    ahead[j][trans] = prev[j][trans];
-                }
-            }
+            ahead[0] = prev[0];
+            ahead[1] = prev[1];
+                
+            
         }
-        return ahead[1][0];
+        return ahead[1];
     }
 
     public int maxProfit(int[] prices, int fee) {
         // dp = new int[prices.length][2];
         // for (int[] r : dp)
-        //     Arrays.fill(r, -1);
-        return tabulation(prices, prices.length,fee);
+        // Arrays.fill(r, -1);
+        return tabulation2(prices, prices.length, fee);
 
     }
 }
