@@ -45,8 +45,8 @@ class Solution {
         return dp[0][1][0];
     }
     private int tabulation2(int[] arr, int n) {
-        int[][] ahead = new int[2][3];
-        int[][] prev = new int[2][3];
+        int[][] ahead = new int[2][2];
+        int[][] prev = new int[2][2];
         for(int i = 0;i<2;i++){
             Arrays.fill(ahead[i],0);
         }
@@ -55,16 +55,20 @@ class Solution {
             for (int j = 1; j >= 0; j--) {
                 for (int cool = 0; cool < 2; cool++) {
 
-                    if (j == 1) {
-                        prev[j][cool] = Math.max((-arr[i] + ahead[0][cool]), ahead[1][cool]);
-                    } else {
-                        prev[j][cool] = Math.max((arr[i] + ahead[1][cool+1]), ahead[0][cool]);
+                    if (j == 1 && cool == 0) {
+                        prev[j][cool] = Math.max((-arr[i] + ahead[0][0]), ahead[1][0]);
+                    } else if(j == 0) {
+                        prev[j][cool] = Math.max((arr[i] + ahead[1][1]), ahead[0][0]);
+                    }
+                    else if(cool == 1){
+                        prev[j][cool] = ahead[1][0];
                     }
                 }
+
                 
             }
             for (int j = 0; j <= 1; j++) {
-            for (int cool = 0; cool < 3; cool++) {
+            for (int cool = 0; cool < 2; cool++) {
                 ahead[j][cool] = prev[j][cool];
             }
         }
@@ -77,7 +81,7 @@ class Solution {
         // for (int[][] r : dp)
         //     for (int[] s : r)
         //         Arrays.fill(s, -1);
-        return tabulation(prices,prices.length);
+        return tabulation2(prices,prices.length);
 
     }
 }
