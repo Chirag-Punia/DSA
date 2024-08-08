@@ -30,11 +30,25 @@ class Solution {
         }
         return dp[0][0];
     }
-
+    int tabulation2(int[] nums,int n){
+        int[] ahead = new int[n+1];
+        int[] prev = new int[n+1];
+        for(int i = 0;i<=n;i++)ahead[i] = 0;
+        for(int i = n - 1;i>=0;i--){
+            for(int prev_idx = i - 1;prev_idx>=-1;prev_idx--){
+                prev[prev_idx+1] = ahead[prev_idx+1];
+                if(prev_idx == -1 || nums[prev_idx] < nums[i]){
+                    prev[prev_idx + 1] = Math.max(prev[prev_idx + 1] ,1 + ahead[i+1]);
+                }
+            }
+            for(int j = 0;j<=n;j++)ahead[j] = prev[j];
+        }
+        return ahead[0];
+    }
     public int lengthOfLIS(int[] nums) {
         ans = 0;
         dp.clear();
         arr.clear();
-        return tabulation(nums, nums.length);
+        return tabulation2(nums, nums.length);
     }
 }
