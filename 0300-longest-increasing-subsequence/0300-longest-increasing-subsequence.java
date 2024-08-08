@@ -1,22 +1,22 @@
 class Solution {
-    int ans;
-    List<Integer> arr = new ArrayList<>();
-    Map<String, Integer> dp = new HashMap<>();
+    // int ans;
+    // List<Integer> arr = new ArrayList<>();
+    // Map<String, Integer> dp = new HashMap<>();
 
-    int tmp(int[] nums, int i, int prev) {
-        String key = i + "," + prev;
-        if (i >= nums.length) {
-            return 0;
-        }
-        if (dp.containsKey(key))
-            return dp.get(key);
-        int include = 0,len = 0;
-        len = tmp(nums, i + 1, prev);
-        if (prev == -1 || nums[prev] < nums[i])
-            len = Math.max(len, 1 + tmp(nums, i + 1, i));
-        dp.put(key, len);
-        return len;
-    }
+    // int tmp(int[] nums, int i, int prev) {
+    //     String key = i + "," + prev;
+    //     if (i >= nums.length) {
+    //         return 0;
+    //     }
+    //     if (dp.containsKey(key))
+    //         return dp.get(key);
+    //     int include = 0,len = 0;
+    //     len = tmp(nums, i + 1, prev);
+    //     if (prev == -1 || nums[prev] < nums[i])
+    //         len = Math.max(len, 1 + tmp(nums, i + 1, i));
+    //     dp.put(key, len);
+    //     return len;
+    // }
     int tabulation(int[] nums,int n){
         int[][] dp = new int[n+1][n+1];
         for(int[] r: dp)Arrays.fill(r,0);
@@ -46,9 +46,9 @@ class Solution {
         return ahead[0];
     }
     public int lengthOfLIS(int[] nums) {
-        ans = 0;
-        dp.clear();
-        arr.clear();
+        // ans = 0;
+        // dp.clear();
+        // arr.clear();
         return tabulation2(nums, nums.length);
     }
 }
