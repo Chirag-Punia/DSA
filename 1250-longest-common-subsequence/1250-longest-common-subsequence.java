@@ -32,6 +32,7 @@ class Solution {
      int tabulation2(String s1, String s2) {
         int n = s1.length();
         int m = s2.length();
+        //??????
         int[] ahead = new int[m+1];
         int[] prev = new int[m+1];
         for (int i = n-1; i >= 0; i--) {
