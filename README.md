@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/Chirag-Punia/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0078-subsets](https://github.com/Chirag-Punia/DSA/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Chirag-Punia/DSA/tree/master/0079-word-search) |
+| [0088-merge-sorted-array](https://github.com/Chirag-Punia/DSA/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/Chirag-Punia/DSA/tree/master/0090-subsets-ii) |
 | [0118-pascals-triangle](https://github.com/Chirag-Punia/DSA/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Chirag-Punia/DSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -187,6 +188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
+| [0088-merge-sorted-array](https://github.com/Chirag-Punia/DSA/tree/master/0088-merge-sorted-array) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Chirag-Punia/DSA/tree/master/0719-find-k-th-smallest-pair-distance) |
@@ -234,6 +236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/Chirag-Punia/DSA/tree/master/0088-merge-sorted-array) |
 | [0151-reverse-words-in-a-string](https://github.com/Chirag-Punia/DSA/tree/master/0151-reverse-words-in-a-string) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
