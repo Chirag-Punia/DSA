@@ -20,38 +20,27 @@ class GFG {
 // } Driver Code Ends
 
 
+
+
 // User function Template for Java
 
 class Solution {
-    int[][] dp;
-    public int tmp(String s1, String s2, int i, int j) {
-        if (i >= s1.length() || j >= s2.length()) {
-            return 0;
-        }
-        if(dp[i][j] != -1)return dp[i][j];
-        int currentCount = 0;
-        
-        if (s1.charAt(i) == s2.charAt(j)) {
-            currentCount = 1 + tmp(s1, s2, i + 1, j + 1);
-        }
-
-        tmp(s1, s2, i + 1, j);
-        tmp(s1, s2, i, j + 1);
-
-        return dp[i][j] = currentCount;
-    }
-    public int longestCommonSubstr(String s1, String s2) {
-        // code here
-        int n = s1.length();
-        int m  = s2.length();
-        dp = new int[n][m];
-        for(int[] r : dp)Arrays.fill(r,-1);
-        int maxLength = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                maxLength = Math.max(maxLength, tmp(s1, s2, i, j)); 
-            }
-        }
-        return maxLength;
+    public int longestCommonSubstr(String str1, String str2) {
+        int n=str1.length();
+    	int m=str2.length();
+    	int dp[][]=new int[n+1][m+1];
+    	int omax=0;
+    	
+    	for(int i=1;i<dp.length;i++) {
+    		for(int j=1;j<dp[0].length;j++) {
+    			if(str1.charAt(i-1)==str2.charAt(j-1)) {
+    				dp[i][j]=1+dp[i-1][j-1];
+    				omax=Math.max(omax, dp[i][j]);
+    			}else {
+    				dp[i][j]=0;
+    			}
+    		}
+    	}
+    	return omax;
     }
 }
