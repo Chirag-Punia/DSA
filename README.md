@@ -243,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/Chirag-Punia/DSA/tree/master/0005-longest-palindromic-substring) |
 | [0088-merge-sorted-array](https://github.com/Chirag-Punia/DSA/tree/master/0088-merge-sorted-array) |
 | [0151-reverse-words-in-a-string](https://github.com/Chirag-Punia/DSA/tree/master/0151-reverse-words-in-a-string) |
 | [0287-find-the-duplicate-number](https://github.com/Chirag-Punia/DSA/tree/master/0287-find-the-duplicate-number) |
@@ -311,6 +312,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/Chirag-Punia/DSA/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/0022-generate-parentheses) |
 | [0062-unique-paths](https://github.com/Chirag-Punia/DSA/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/Chirag-Punia/DSA/tree/master/0063-unique-paths-ii) |
@@ -344,6 +346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Chirag-Punia/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0005-longest-palindromic-substring](https://github.com/Chirag-Punia/DSA/tree/master/0005-longest-palindromic-substring) |
 | [0006-zigzag-conversion](https://github.com/Chirag-Punia/DSA/tree/master/0006-zigzag-conversion) |
 | [0008-string-to-integer-atoi](https://github.com/Chirag-Punia/DSA/tree/master/0008-string-to-integer-atoi) |
 | [0012-integer-to-roman](https://github.com/Chirag-Punia/DSA/tree/master/0012-integer-to-roman) |
