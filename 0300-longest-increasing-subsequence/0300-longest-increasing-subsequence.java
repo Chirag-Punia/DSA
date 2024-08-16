@@ -49,6 +49,8 @@ class Solution {
         // ans = 0;
         // dp.clear();
         // arr.clear();
-        return tabulation2(nums, nums.length);
+        // int[] dp = new int[nums.length + 1];
+        return tabulation2(nums,nums.length);
+        
     }
 }
