@@ -92,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/Chirag-Punia/DSA/tree/master/0040-combination-sum-ii) |
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/Chirag-Punia/DSA/tree/master/0051-n-queens) |
+| [0056-merge-intervals](https://github.com/Chirag-Punia/DSA/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/Chirag-Punia/DSA/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Chirag-Punia/DSA/tree/master/0064-minimum-path-sum) |
 | [0066-plus-one](https://github.com/Chirag-Punia/DSA/tree/master/0066-plus-one) |
@@ -203,6 +204,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
+| [0056-merge-intervals](https://github.com/Chirag-Punia/DSA/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/Chirag-Punia/DSA/tree/master/0088-merge-sorted-array) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
