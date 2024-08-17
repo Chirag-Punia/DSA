@@ -53,15 +53,6 @@ class Solution {
         return cnt;
     }
 
-    int tmp(int[][] matrix, int R, int C, int left, int right, int ans, int req) {
-        if (left > right) return ans;
-        int mid = (left + right) / 2;
-        if (countSmallEqual(matrix, R, C, mid) <= req) {
-            return tmp(matrix, R, C, mid + 1, right, mid, req); 
-        } else {
-            return tmp(matrix, R, C, left, mid - 1, ans, req);
-        }
-    }
 
     int median(int matrix[][], int R, int C) {
          int low = Integer.MAX_VALUE, high = Integer.MIN_VALUE;
