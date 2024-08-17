@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search Tree
 |  |
 | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/Chirag-Punia/DSA/tree/master/0004-median-of-two-sorted-arrays) |
 | [0069-sqrtx](https://github.com/Chirag-Punia/DSA/tree/master/0069-sqrtx) |
 | [0074-search-a-2d-matrix](https://github.com/Chirag-Punia/DSA/tree/master/0074-search-a-2d-matrix) |
 | [0098-validate-binary-search-tree](https://github.com/Chirag-Punia/DSA/tree/master/0098-validate-binary-search-tree) |
@@ -85,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/Chirag-Punia/DSA/tree/master/0004-median-of-two-sorted-arrays) |
 | [0037-sudoku-solver](https://github.com/Chirag-Punia/DSA/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/Chirag-Punia/DSA/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Chirag-Punia/DSA/tree/master/0040-combination-sum-ii) |
@@ -585,4 +587,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Chirag-Punia/DSA/tree/master/0789-kth-largest-element-in-a-stream) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/Chirag-Punia/DSA/tree/master/0004-median-of-two-sorted-arrays) |
 <!---LeetCode Topics End-->
