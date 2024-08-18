@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 class Solution {
     StringBuilder sb = new StringBuilder();
     int cnt = 0;
