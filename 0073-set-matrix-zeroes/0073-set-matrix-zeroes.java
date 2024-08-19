@@ -1,22 +1,46 @@
 class Solution {
     public void setZeroes(int[][] matrix) {
-        int n = matrix.length;
-        int m = matrix[0].length;
-        List<Integer> I = new ArrayList<>();
-        List<Integer> J = new ArrayList<>();
+
+        int n = matrix.length,m = matrix[0].length,col0 = 1;
+
         for(int i = 0;i<n;i++){
             for(int j = 0;j<m;j++){
                 if(matrix[i][j] == 0){
-                    I.add(i);
-                    J.add(j);
+                    if(j == 0)
+                        col0 = 0;
+                    else{
+                        matrix[i][0] = 0;
+                        matrix[0][j] = 0;
+                    }
                 }
             }
         }
-        for(int k = 0;k<J.size();k++)
-            for(int i = 0;i<n;i++)
-                matrix[i][J.get(k)] = 0;
-        for(int k = 0;k<I.size();k++)
-            for(int i = 0;i<m;i++)
-                matrix[I.get(k)][i] = 0;
+
+        // coloumn markings
+        for(int j = 1;j<m;j++){
+            if(matrix[0][j] == 0){
+                for(int i = 1;i<n;i++){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+
+        //Row markings
+        for(int i = 0;i<n;i++){
+            if(matrix[i][0] == 0){
+                for(int j = 1;j<m;j++){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+        
+        if(col0 == 0){
+            for(int i = 0;i<n;i++){
+                matrix[i][0] = 0;
+            }
+        }
+
+
+        
     }
 }
