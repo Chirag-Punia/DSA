@@ -90,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Chirag-Punia/DSA/tree/master/0004-median-of-two-sorted-arrays) |
+| [0016-3sum-closest](https://github.com/Chirag-Punia/DSA/tree/master/0016-3sum-closest) |
 | [0037-sudoku-solver](https://github.com/Chirag-Punia/DSA/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/Chirag-Punia/DSA/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Chirag-Punia/DSA/tree/master/0040-combination-sum-ii) |
@@ -208,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0016-3sum-closest](https://github.com/Chirag-Punia/DSA/tree/master/0016-3sum-closest) |
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/Chirag-Punia/DSA/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/Chirag-Punia/DSA/tree/master/0088-merge-sorted-array) |
@@ -261,6 +263,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Chirag-Punia/DSA/tree/master/0005-longest-palindromic-substring) |
+| [0016-3sum-closest](https://github.com/Chirag-Punia/DSA/tree/master/0016-3sum-closest) |
 | [0088-merge-sorted-array](https://github.com/Chirag-Punia/DSA/tree/master/0088-merge-sorted-array) |
 | [0151-reverse-words-in-a-string](https://github.com/Chirag-Punia/DSA/tree/master/0151-reverse-words-in-a-string) |
 | [0287-find-the-duplicate-number](https://github.com/Chirag-Punia/DSA/tree/master/0287-find-the-duplicate-number) |
