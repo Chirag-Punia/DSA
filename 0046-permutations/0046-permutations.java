@@ -8,6 +8,7 @@ class Solution {
             arr.clear();
             return;
         }
+        //window of swapping
         for(int k = i;k<nums.length;k++){
             swap(nums,i,k);
             helper(nums,i+1);
