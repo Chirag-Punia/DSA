@@ -331,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Chirag-Punia/DSA/tree/master/0005-longest-palindromic-substring) |
+| [0010-regular-expression-matching](https://github.com/Chirag-Punia/DSA/tree/master/0010-regular-expression-matching) |
 | [0022-generate-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/0022-generate-parentheses) |
 | [0062-unique-paths](https://github.com/Chirag-Punia/DSA/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/Chirag-Punia/DSA/tree/master/0063-unique-paths-ii) |
@@ -371,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/Chirag-Punia/DSA/tree/master/0005-longest-palindromic-substring) |
 | [0006-zigzag-conversion](https://github.com/Chirag-Punia/DSA/tree/master/0006-zigzag-conversion) |
 | [0008-string-to-integer-atoi](https://github.com/Chirag-Punia/DSA/tree/master/0008-string-to-integer-atoi) |
+| [0010-regular-expression-matching](https://github.com/Chirag-Punia/DSA/tree/master/0010-regular-expression-matching) |
 | [0012-integer-to-roman](https://github.com/Chirag-Punia/DSA/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/Chirag-Punia/DSA/tree/master/0013-roman-to-integer) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Chirag-Punia/DSA/tree/master/0017-letter-combinations-of-a-phone-number) |
@@ -499,6 +501,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0010-regular-expression-matching](https://github.com/Chirag-Punia/DSA/tree/master/0010-regular-expression-matching) |
 | [0024-swap-nodes-in-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0024-swap-nodes-in-pairs) |
 | [0060-permutation-sequence](https://github.com/Chirag-Punia/DSA/tree/master/0060-permutation-sequence) |
 | [0273-integer-to-english-words](https://github.com/Chirag-Punia/DSA/tree/master/0273-integer-to-english-words) |
