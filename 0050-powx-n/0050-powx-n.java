@@ -38,7 +38,7 @@ class Solution {
         // that always push 0 to the left.
 
         while (n != 0) {
-            if ((n & 1) == 1) {
+            if (n%2 == 1) {
                 temp = ans * temp;
             }
             ans = ans * ans;
