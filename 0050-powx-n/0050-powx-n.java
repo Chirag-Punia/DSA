@@ -13,9 +13,13 @@ class Solution {
         while (n != 0) {
             if (n % 2 == 1) {
                 temp = ans * temp;
+                n = n - 1;
             }
-            ans = ans * ans;
-            n >>>= 1;
+            else{
+                ans = ans * ans;
+                n >>>= 1;
+            }
+            
         }
         return temp;
 
