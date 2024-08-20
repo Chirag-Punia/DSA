@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/Chirag-Punia/DSA/tree/master/0300-longest-increasing-subsequence) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0450-delete-node-in-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0450-delete-node-in-a-bst) |
+| [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Chirag-Punia/DSA/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0783-search-in-a-binary-search-tree](https://github.com/Chirag-Punia/DSA/tree/master/0783-search-in-a-binary-search-tree) |
@@ -132,6 +133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/Chirag-Punia/DSA/tree/master/0416-partition-equal-subset-sum) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0455-assign-cookies](https://github.com/Chirag-Punia/DSA/tree/master/0455-assign-cookies) |
+| [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/Chirag-Punia/DSA/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/Chirag-Punia/DSA/tree/master/0518-coin-change-ii) |
 | [0542-01-matrix](https://github.com/Chirag-Punia/DSA/tree/master/0542-01-matrix) |
@@ -619,10 +621,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Indexed Tree
 |  |
 | ------- |
+| [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
 | [1511-count-number-of-teams](https://github.com/Chirag-Punia/DSA/tree/master/1511-count-number-of-teams) |
 ## Ordered Set
 |  |
 | ------- |
+| [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Chirag-Punia/DSA/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 ## Bitmask
 |  |
@@ -645,8 +649,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Chirag-Punia/DSA/tree/master/0004-median-of-two-sorted-arrays) |
+| [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
 ## Game Theory
 |  |
 | ------- |
 | [1240-stone-game-ii](https://github.com/Chirag-Punia/DSA/tree/master/1240-stone-game-ii) |
+## Segment Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
+## Merge Sort
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
 <!---LeetCode Topics End-->
