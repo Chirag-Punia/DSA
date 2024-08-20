@@ -478,6 +478,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/Chirag-Punia/DSA/tree/master/0013-roman-to-integer) |
 | [0029-divide-two-integers](https://github.com/Chirag-Punia/DSA/tree/master/0029-divide-two-integers) |
 | [0043-multiply-strings](https://github.com/Chirag-Punia/DSA/tree/master/0043-multiply-strings) |
+| [0050-powx-n](https://github.com/Chirag-Punia/DSA/tree/master/0050-powx-n) |
 | [0060-permutation-sequence](https://github.com/Chirag-Punia/DSA/tree/master/0060-permutation-sequence) |
 | [0062-unique-paths](https://github.com/Chirag-Punia/DSA/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/Chirag-Punia/DSA/tree/master/0066-plus-one) |
@@ -526,6 +527,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0010-regular-expression-matching](https://github.com/Chirag-Punia/DSA/tree/master/0010-regular-expression-matching) |
 | [0024-swap-nodes-in-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0024-swap-nodes-in-pairs) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Chirag-Punia/DSA/tree/master/0025-reverse-nodes-in-k-group) |
+| [0050-powx-n](https://github.com/Chirag-Punia/DSA/tree/master/0050-powx-n) |
 | [0060-permutation-sequence](https://github.com/Chirag-Punia/DSA/tree/master/0060-permutation-sequence) |
 | [0273-integer-to-english-words](https://github.com/Chirag-Punia/DSA/tree/master/0273-integer-to-english-words) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Chirag-Punia/DSA/tree/master/1951-find-the-winner-of-the-circular-game) |
