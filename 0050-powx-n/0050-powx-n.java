@@ -44,7 +44,7 @@ class Solution {
             ans = ans * ans;
 
             // IMPORTANT
-            n >>>= 1;
+            n >>= 1;
         }
         return temp;
 
