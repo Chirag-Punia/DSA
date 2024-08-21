@@ -29,41 +29,48 @@ class GFG {
 // } Driver Code Ends
 
 
+
 class Solution {
-    public class Pair{
-        int node;
-        int val;
-        Pair(int i,int j){
-            this.node=i;
-            this.val=j;
-        }
-    }
-    public int[] ans;
-    public Queue<Pair> q;
-    public int[] shortestPath(int[][] e,int n,int m ,int src) {
+    
+    public int[] shortestPath(int[][] edges,int n,int m ,int src) {
         // Code here
-        ans = new int[n];
-        q = new LinkedList();
-        List<List<Integer>> edges = new ArrayList<>();
+        int[] dist=new int[n];
+        Arrays.fill(dist,Integer.MAX_VALUE);
+        
+        List<Integer>[] graph=new ArrayList[n];
+        
         for(int i=0;i<n;i++){
-            edges.add(new ArrayList<>());
+            graph[i]=new ArrayList<Integer>();
         }
-        for(int i=0;i<m;i++){
-            edges.get(e[i][0]).add(e[i][1]);
-            edges.get(e[i][1]).add(e[i][0]);
+        
+        for(int[] edge:edges){
+            graph[edge[0]].add(edge[1]);
+            graph[edge[1]].add(edge[0]);
         }
-        for(int i=0;i<n;i++)ans[i]=-1;
-        q.offer(new Pair(src,0));
-        while(!q.isEmpty()){
-            Pair c = q.poll();
-            if(ans[c.node] == -1){
-                ans[c.node]=c.val;
-                for(int j=0;j<edges.get(c.node).size();j++){
-                    int curr = edges.get(c.node).get(j);
-                    if(ans[curr] == -1)q.offer(new Pair(curr,c.val + 1));
-                } 
+        Queue<Integer> queue=new LinkedList<Integer>();
+        queue.add(src);
+        dist[src]=0;
+        
+        Set<Integer> visited=new HashSet<Integer>();
+        visited.add(src);
+        while(!queue.isEmpty()){
+            int curr=queue.poll();
+           
+            
+            for(int adj:graph[curr]){
+                if(!visited.contains(adj)){
+                    queue.add(adj);
+                    dist[adj]=dist[curr]+1;
+                     visited.add(adj);
+                }
             }
         }
-        return ans;
+        for(int i=0;i<n;i++){
+            if(dist[i]==Integer.MAX_VALUE)
+            dist[i]=-1;
+        }
+        
+        return dist;
+        
     }
 }
