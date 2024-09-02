@@ -26,9 +26,10 @@ class DiningPhilosophers {
         eat.run();
 
         putLeftFork.run();
-        s[(philosopher+1)%5].release();
-        putRightFork.run();
         s[philosopher].release();
+        putRightFork.run();
+        s[(philosopher+1)%5].release();
+        
         
     }
 }
