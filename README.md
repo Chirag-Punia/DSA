@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1046-max-consecutive-ones-iii](https://github.com/Chirag-Punia/DSA/tree/master/1046-max-consecutive-ones-iii) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Chirag-Punia/DSA/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Chirag-Punia/DSA/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Chirag-Punia/DSA/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Chirag-Punia/DSA/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 ## Binary Tree
 |  |
@@ -184,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1803-average-waiting-time](https://github.com/Chirag-Punia/DSA/tree/master/1803-average-waiting-time) |
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Chirag-Punia/DSA/tree/master/1826-maximum-xor-with-an-element-from-array) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Chirag-Punia/DSA/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Chirag-Punia/DSA/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2035-count-sub-islands](https://github.com/Chirag-Punia/DSA/tree/master/2035-count-sub-islands) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/Chirag-Punia/DSA/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/Chirag-Punia/DSA/tree/master/2132-convert-1d-array-into-2d-array) |
@@ -568,6 +570,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1642-water-bottles](https://github.com/Chirag-Punia/DSA/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/Chirag-Punia/DSA/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Chirag-Punia/DSA/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Chirag-Punia/DSA/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/Chirag-Punia/DSA/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/Chirag-Punia/DSA/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/Chirag-Punia/DSA/tree/master/2299-merge-nodes-in-between-zeros) |
@@ -649,6 +652,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1046-max-consecutive-ones-iii](https://github.com/Chirag-Punia/DSA/tree/master/1046-max-consecutive-ones-iii) |
 | [1240-stone-game-ii](https://github.com/Chirag-Punia/DSA/tree/master/1240-stone-game-ii) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Chirag-Punia/DSA/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Chirag-Punia/DSA/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 ## Trie
 |  |
 | ------- |
