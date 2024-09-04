@@ -34,29 +34,25 @@ class GFG {
 
 
 class Solution {
-    public static ArrayList<Integer> ans = new ArrayList<>();
-    public static HashMap<Integer,Boolean> mpp = new HashMap<>();
     // Function to return Breadth First Traversal of given graph.
-    public static void bfs(int V, ArrayList<ArrayList<Integer>> adj){
+    public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
+        // Code here
+        Map<Integer,Boolean> mpp = new HashMap<>();
+        ArrayList<Integer> ans = new ArrayList<>();
         Queue<Integer> q = new LinkedList<>();
         q.offer(0);
+        mpp.put(0,true);
         while(!q.isEmpty()){
-            int c = q.poll();
-            if(!mpp.getOrDefault(c,false)){
-                ans.add(c);
-                mpp.put(c,true);
-            
-                for(int ele:adj.get(c)){
-                    if(!mpp.getOrDefault(ele,false)) q.offer(ele);
+            int curr = q.poll();
+            ans.add(curr);
+            for(int i = 0;i<adj.get(curr).size();i++){
+                int tmp = adj.get(curr).get(i);
+                if(!mpp.getOrDefault(tmp,false)){
+                    q.offer(tmp);
+                    mpp.put(tmp,true);
                 }
             }
         }
-    }
-    public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
-        // Code here
-        mpp = new HashMap<>();
-        ans = new ArrayList<>();
-        bfs(V,adj);
         return ans;
     }
 }
