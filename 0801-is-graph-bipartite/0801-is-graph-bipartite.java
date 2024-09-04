@@ -1,30 +1,33 @@
 class Solution {
-    public int[] color;
-
-    public class Pair {
+    class Pair{
         int node;
-        int color;
-
-        Pair(int i, int j) {
-            this.node = i;
-            this.color = j;
+        int parent;
+        Pair(int node,int parent){
+            this.node = node;
+            this.parent = parent;
         }
     }
-
-    public boolean dfs(int[][] graph, Pair p) {
-        color[p.node] = p.color;
-        for (int i = 0; i < graph[p.node].length; i++) {
-            Pair tmp = new Pair(graph[p.node][i], 1 - p.color);
-            if (color[graph[p.node][i]] == -1 && dfs(graph, tmp) == false)return false;
-            else if (color[graph[p.node][i]] == p.color)return false;
-        }
-        return true;
-    }
-
     public boolean isBipartite(int[][] graph) {
-        color = new int[graph.length];
-        for (int i = 0; i < color.length; i++)color[i] = -1;
-        for(int i = 0;i<graph.length;i++)if(color[i] == -1 && dfs(graph,new Pair(i,0)) == false)return false;
+        int n = graph.length;
+        for(int start = 0;start < n;start++){
+            Queue<Pair> q = new LinkedList<>();
+            q.offer(new Pair(start,0));
+            int[] color = new int[n];
+            Arrays.fill(color,-1);
+            while(!q.isEmpty()){
+                Pair curr = q.poll();
+                if(color[curr.node] == -1){
+                    if(color[curr.parent] == 0)
+                        color[curr.node] = 1;
+                    else
+                        color[curr.node] = 0;
+                    for(int i = 0;i<graph[curr.node].length;i++)
+                        q.offer(new Pair(graph[curr.node][i],curr.node));
+                }
+                else if(color[curr.node] == color[curr.parent])return false;
+                    
+            }
+        }
         return true;
     }
 }
