@@ -31,36 +31,48 @@ class GFG {
 }
 // } Driver Code Ends
 
+class Pair<K, V> {
+    private K key;
+    private V value;
+
+    public Pair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public K getKey() {
+        return key;
+    }
+
+    public V getValue() {
+        return value;
+    }
+}
 
 class Solution {
     // Function to detect cycle in an undirected graph.
-    public static Map<Integer,Boolean> mpp;
-    public static boolean ans;
-    public static void dfs(ArrayList<ArrayList<Integer>> adj,int i,int p){
-        if(mpp.getOrDefault(i,false)){
-            ans = false;
-            return;
-        }
-        mpp.put(i,true);
-        if(ans){
-        for(int j = 0;j<adj.get(i).size();j++){
-            int curr =adj.get(i).get(j);
-            if(curr != p ) {dfs(adj,curr,i);if (!ans) return;}
-        }
-        }
-        
-    }
-    
-    public static boolean isCycle(int V, ArrayList<ArrayList<Integer>> adj) {
+    public boolean isCycle(int V, ArrayList<ArrayList<Integer>> adj) {
         // Code here
-        ans = true;
-        mpp = new HashMap<>();
-        for (int i = 0; i < V; i++) {
-            if (!mpp.getOrDefault(i, false)) {
-                dfs(adj, i, -1);
-                if (!ans) return true;
+        Map<Integer,Boolean> mpp = new HashMap<>();
+        for(int j = 0;j<V;j++){
+            if(!mpp.getOrDefault(j,false)){
+                Queue<Pair<Integer,Integer>> q = new LinkedList<>();
+                q.offer(new Pair<>(j,-1));
+                mpp.put(j,true);
+                while(!q.isEmpty()){
+                    Pair<Integer,Integer> curr = q.poll();
+                    for(int i = 0;i<adj.get(curr.getKey()).size();i++){
+                        int temp = adj.get(curr.getKey()).get(i);
+                        if(!mpp.getOrDefault(temp,false)){
+                            q.offer(new Pair<>(temp,curr.getKey()));
+                            mpp.put(temp,true);
+                        }
+                        else if(temp != curr.getValue())return true;
+                    }
+                }
             }
         }
-        return !ans;
+        
+        return false;
     }
 }
