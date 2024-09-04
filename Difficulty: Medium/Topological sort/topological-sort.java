@@ -60,56 +60,33 @@ class Main {
 
 class Solution
 {
-    public Map<Integer,Boolean> mpp;
-    public Stack<Integer> s;
-    public Queue<Integer> q;
-    public void dfs(ArrayList<ArrayList<Integer>> adj,int i){
-        mpp.put(i,true);
-        
-        for(int j=0;j<adj.get(i).size();j++){
-            int c = adj.get(i).get(j);
-            if(!mpp.getOrDefault(c,false)) dfs(adj,c);
-        }
-        s.push(i);
-    }
-    
-    int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj) 
+    //Function to return list containing vertices in Topological order. 
+    static int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj) 
     {
-        mpp = new HashMap<>();
-        s = new Stack<>();
-        q = new LinkedList<>();
-        //BFS
-        int k = 0;
+        // add your code here
+        int[] cnt = new int[V];
         int[] ans = new int[V];
-        int[] inOrder = new int[V];
-        for(int i = 0;i<V;i++){
-            for(int j = 0;j<adj.get(i).size();j++)inOrder[adj.get(i).get(j)]++;
+        int k = 0;
+        for(int i = 0;i<adj.size();i++){
+            for(int j = 0;j<adj.get(i).size();j++){
+                cnt[adj.get(i).get(j)]++;
+            }
         }
-        for(int i = 0;i<V;i++)if(inOrder[i] == 0)q.offer(i);
+        Queue<Integer> q = new LinkedList<>();
+        for(int i=0;i<cnt.length;i++){
+            if(cnt[i] == 0)q.add(i);
+        }
         while(!q.isEmpty()){
-            int c = q.poll();
-            ans[k++] = c;
-            for(int it : adj.get(c)){
-                inOrder[it]--;
-                if( inOrder[it] == 0) q.offer(it);
+            int curr = q.poll();
+            ans[k] = curr;
+            k++;
+            for(int i=0;i<adj.get(curr).size();i++){
+            
+                if(--cnt[adj.get(curr).get(i)] == 0){
+                    q.offer(adj.get(curr).get(i));
+                }
             }
         }
         return ans;
-        
-        
-        
-        //DFS
-        // for(int i=0;i<V;i++){
-        //     if(!mpp.getOrDefault(i,false)) dfs(adj,i);
-        // }
-
-        // while(!s.isEmpty()){
-        //     ans[i] = s.pop();
-        //     i++;
-        // }
-        // return ans;
-        
-        
-        
     }
 }
