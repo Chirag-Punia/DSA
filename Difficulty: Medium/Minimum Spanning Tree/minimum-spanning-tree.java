@@ -38,6 +38,25 @@ public class Main {
 // User function Template for Java
 
 class Solution {
+    static class DisjointSet{
+        int[] parent;
+        int[] rank;
+        DisjointSet(int n){
+            parent = new int[n];
+            rank = new int[n];
+            for(int i = 0;i<n;i++){
+                parent[i] = i;
+            }
+        }
+        int find(int X){
+            if(X == parent[X])return X;
+            return parent[X] = find(parent[X]);
+        }
+        void union(int A,int X){
+            parent[find(A)] = parent[X];
+            
+        }
+    }
     static class Pair implements Comparable<Pair>{
         int node;
         int parent;
@@ -54,23 +73,23 @@ class Solution {
     }
     static int spanningTree(int V, int E, List<List<int[]>> adj) {
         // Code Here.
+        DisjointSet ds = new DisjointSet(V);
         PriorityQueue<Pair> pq = new PriorityQueue<>();
-        int[] vis = new int[V];
-        Arrays.fill(vis,-1);
-        pq.offer(new Pair(-1,0,0));
-        int sum = 0;
-        while(!pq.isEmpty()){
-            Pair curr = pq.poll();
-            if(vis[curr.node] == 1)continue;
-            vis[curr.node] = 1;
-            sum += curr.w;
-            for(int i = 0;i<adj.get(curr.node).size();i++){
-                int[] tmp = adj.get(curr.node).get(i);
-                if(vis[tmp[0]] == -1)
-                    pq.offer(new Pair(curr.node,tmp[0],tmp[1]));
+        int s = 0;
+        for (int i = 0; i < V; i++) {
+            for (int[] neighbor : adj.get(i)) {
+                int node = neighbor[0];
+                int w = neighbor[1];
+                pq.offer(new Pair(i, node, w));
             }
         }
-        return sum;
-        
+        while(!pq.isEmpty()){
+            Pair curr = pq.poll();
+            if(ds.find(curr.parent) != ds.find(curr.node)){
+                ds.union(curr.node,curr.parent);
+                s+=curr.w;
+            }
+        }
+    return s;
     }
 }
