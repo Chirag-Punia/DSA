@@ -46,53 +46,48 @@ class Gfg
 
 class Solution
 {
-    Stack<Integer> s;
-
-    void dfs1(ArrayList<ArrayList<Integer>> adj, int i, boolean[] vis) {
-        vis[i] = true;
-        for (int j = 0; j < adj.get(i).size(); j++) {
-            int next = adj.get(i).get(j);
-            if (!vis[next]) {
-                dfs1(adj, next, vis);
+    //Function to find number of strongly connected components in the graph.
+    public void dfs(int node,ArrayList<ArrayList<Integer>> adj,Stack<Integer> s,Map<Integer,Boolean> mpp){
+        mpp.put(node,true);
+        for(int i : adj.get(node)){
+            if(!mpp.getOrDefault(i,false)){
+                dfs(i,adj,s,mpp);
             }
         }
-        s.push(i);
+        s.push(node);
     }
-
-    void dfs(ArrayList<ArrayList<Integer>> adj, int i, boolean[] vis) {
-        vis[i] = true;
-        for (int j = 0; j < adj.get(i).size(); j++) {
-            int next = adj.get(i).get(j);
-            if (!vis[next]) {
-                dfs(adj, next, vis);
+    public void dfs1(int node,ArrayList<ArrayList<Integer>> adj,Map<Integer,Boolean> mpp){
+        mpp.put(node,true);
+        for(int i : adj.get(node)){
+            if(!mpp.getOrDefault(i,false)){
+                dfs1(i,adj,mpp);
             }
         }
     }
     public int kosaraju(int V, ArrayList<ArrayList<Integer>> adj)
     {
         //code here
-        s = new Stack<>();
-        boolean[] vis = new boolean[V];
-        
-        for(int i = 0;i<V;i++){
-            if(!vis[i])dfs1(adj,i,vis);
+        Map<Integer,Boolean> mpp = new HashMap<>();
+        Stack<Integer> s = new Stack<>();
+        int cnt  = 0;
+        for(int i=0;i<V;i++){
+            if(!mpp.getOrDefault(i,false))
+                dfs(i,adj,s,mpp);
         }
-        ArrayList<ArrayList<Integer>> adjT = new ArrayList<>();
+        ArrayList<ArrayList<Integer>> transpose = new ArrayList<>();
         for(int i = 0;i<V;i++){
-            adjT.add(new ArrayList<>());
+            transpose.add(new ArrayList<>());
         }
-        //reverseGRAPH
-        for(int i = 0;i<V;i++){
-            for(int j = 0;j<adj.get(i).size();j++){
-                adjT.get(adj.get(i).get(j)).add(i);
+        for (int i = 0; i < V; i++) {
+            for (int it : adj.get(i)) {
+                transpose.get(it).add(i);
             }
         }
-        vis = new boolean[V];
-        int cnt = 0;
+        mpp = new HashMap<>();
         while(!s.isEmpty()){
-            int c = s.pop();
-            if(!vis[c]){
-                dfs(adjT,c,vis);
+            int curr = s.pop();
+            if(!mpp.getOrDefault(curr,false)){
+                dfs1(curr,transpose,mpp);
                 cnt++;
             }
         }
