@@ -54,49 +54,57 @@ class DriverClass
 
 //User function Template for Java
 
-
 class Solution
 {
-    public static class Pair{
+    static class Pair implements Comparable<Pair> {
         int node;
-        int val;
-        Pair(int i,int j){
-            this.node=i;
-            this.val=j;
+        int i;
+
+        Pair(int node, int i) {
+            this.node = node;
+            this.i = i;
+        }
+
+        public int compareTo(Pair other) {
+            return this.i - other.i;
         }
     }
-    public static int[] ans;
-    static int[] dijkstra(int n, ArrayList<ArrayList<ArrayList<Integer>>> e, int S)
-    {
-        ans = new int[n];
-        PriorityQueue<Pair> q = new PriorityQueue<>(Comparator.comparingInt(pair -> pair.val));
-        List<List<Pair>> edges = new ArrayList<>();
-        for(int i=0;i<n;i++){
-            edges.add(new ArrayList<>());
+
+    static int[] dijkstra(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj, int S) {
+        PriorityQueue<Pair> pq = new PriorityQueue<>();
+        int[] dist = new int[V];
+        int[] parent = new int[V];
+
+        for (int i = 0; i < V; i++) {
+            dist[i] = Integer.MAX_VALUE;
+            parent[i] = i;
         }
-        for (int i = 0; i < n; i++) {
-            for (ArrayList<Integer> edge : e.get(i)) {
-                edges.get(i).add(new Pair(edge.get(0), edge.get(1)));
-            }
-        }
-        for(int i=0;i<n;i++)ans[i]=Integer.MAX_VALUE;
-        q.offer(new Pair(S,0));
-        ans[S]=0;
-        while(!q.isEmpty()){
-            Pair c = q.poll();
-            if(c.val > ans[c.node] ) continue;
-            for(Pair curr : edges.get(c.node)){
-                    int newDist = c.val + curr.val;
-                    if(newDist < ans[curr.node]){ans[curr.node]=newDist;q.offer(new Pair(curr.node,newDist));}
-                } 
-            }
-            for (int i = 0; i < n; i++) {
-                if (ans[i] == Integer.MAX_VALUE) {
-                ans[i] = -1;
+
+        dist[S] = 0;
+        pq.add(new Pair(S, 0));
+
+        while (!pq.isEmpty()) {
+            Pair curr = pq.poll();
+
+            int currNode = curr.node;
+            int currDist = curr.i;
+
+            for (int k = 0; k < adj.get(currNode).size(); k++) {
+                ArrayList<Integer> arr = adj.get(currNode).get(k);
+                int neighbor = arr.get(0);
+                int weight = arr.get(1);
+
+                if (dist[neighbor] > currDist + weight) {
+                    dist[neighbor] = currDist + weight;
+                    parent[neighbor] = currNode;
+                    pq.offer(new Pair(neighbor, dist[neighbor]));
                 }
             }
-        return ans;
-       
+        }
+
+        return dist;
     }
 }
+
+
 
