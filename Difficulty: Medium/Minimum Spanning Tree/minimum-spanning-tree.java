@@ -38,54 +38,38 @@ public class Main {
 // User function Template for Java
 
 class Solution {
-    public static class Pair implements Comparable<Pair> {
-        int weight;
+    static class Pair implements Comparable<Pair>{
         int node;
         int parent;
-        
-        Pair(int weight, int node, int parent) {
-            this.weight = weight;
-            this.node = node;
+        int w;
+        Pair(int parent,int node,int w){
             this.parent = parent;
+            this.node = node;
+            this.w = w;
         }
-        
         @Override
-        public int compareTo(Pair o) {
-            return this.weight - o.weight;
+        public int compareTo(Pair o){
+            return this.w - o.w;
         }
     }
     static int spanningTree(int V, int E, List<List<int[]>> adj) {
         // Code Here.
         PriorityQueue<Pair> pq = new PriorityQueue<>();
-        boolean[] visited = new boolean[V];
+        int[] vis = new int[V];
+        Arrays.fill(vis,-1);
+        pq.offer(new Pair(-1,0,0));
         int sum = 0;
-
-      
-        pq.offer(new Pair(0, 0, -1));
-
-        while (!pq.isEmpty()) {
+        while(!pq.isEmpty()){
             Pair curr = pq.poll();
-            
-
-            if (visited[curr.node]) {
-                continue;
-            }
-
-     
-            visited[curr.node] = true;
-            sum += curr.weight;
-
-            for (int[] neighbor : adj.get(curr.node)) {
-                int nextNode = neighbor[0];
-                int edgeWeight = neighbor[1];
-
-                
-                if (!visited[nextNode]) {
-                    pq.offer(new Pair(edgeWeight, nextNode, curr.node));
-                }
+            if(vis[curr.node] == 1)continue;
+            vis[curr.node] = 1;
+            sum += curr.w;
+            for(int i = 0;i<adj.get(curr.node).size();i++){
+                int[] tmp = adj.get(curr.node).get(i);
+                if(vis[tmp[0]] == -1)
+                    pq.offer(new Pair(curr.node,tmp[0],tmp[1]));
             }
         }
-
         return sum;
         
     }
