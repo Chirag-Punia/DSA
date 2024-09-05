@@ -42,6 +42,7 @@ class DriverClass {
 }
 // } Driver Code Ends
 
+
 // User function Template for Java
 
 /*
@@ -51,30 +52,33 @@ class DriverClass {
 */
 class Solution {
     static int[] bellman_ford(int V, ArrayList<ArrayList<Integer>> edges, int S) {
-        // Write your code here
-        
         int[] dist = new int[V];
-        for(int i = 0;i<V;i++){
-            dist[i] = (int)1e8;
-        }
+        Arrays.fill(dist, (int) 1e8);
         dist[S] = 0;
-        int n = V-1;
-        while(n > 0){
-            for(int i = 0;i<edges.size();i++){
-                int curr = dist[edges.get(i).get(0)] + edges.get(i).get(2);
-                if(dist[edges.get(i).get(0)] != 1e8 && curr < dist[edges.get(i).get(1)]){
-                    dist[edges.get(i).get(1)] = curr;
+
+        for (int i = 0; i < V - 1; i++) {
+            for (int j = 0; j < edges.size(); j++) {
+                int u = edges.get(j).get(0);
+                int v = edges.get(j).get(1);
+                int w = edges.get(j).get(2);
+                
+                if (dist[u] != (int) 1e8 && dist[u] + w < dist[v]) {
+                    dist[v] = dist[u] + w;
                 }
             }
-            n--;
         }
-        for(int i = 0;i<edges.size();i++){
-                int curr = dist[edges.get(i).get(0)] + edges.get(i).get(2);
-                if(dist[edges.get(i).get(0)] != 1e8 && curr < dist[edges.get(i).get(1)]){
-                    return new int[]{-1};
-                }
-            }
         
+        for (int j = 0; j < edges.size(); j++) {
+            int u = edges.get(j).get(0);
+            int v = edges.get(j).get(1);
+            int w = edges.get(j).get(2);
+            
+            if (dist[u] != (int) 1e8 && dist[u] + w < dist[v]) {
+                return new int[] { -1 };
+            }
+        }
+
         return dist;
     }
 }
+
