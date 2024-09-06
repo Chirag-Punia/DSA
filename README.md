@@ -224,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0133-clone-graph](https://github.com/Chirag-Punia/DSA/tree/master/0133-clone-graph) |
 | [0138-copy-list-with-random-pointer](https://github.com/Chirag-Punia/DSA/tree/master/0138-copy-list-with-random-pointer) |
 | [0139-word-break](https://github.com/Chirag-Punia/DSA/tree/master/0139-word-break) |
+| [0146-lru-cache](https://github.com/Chirag-Punia/DSA/tree/master/0146-lru-cache) |
 | [0208-implement-trie-prefix-tree](https://github.com/Chirag-Punia/DSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0264-ugly-number-ii](https://github.com/Chirag-Punia/DSA/tree/master/0264-ugly-number-ii) |
@@ -300,6 +301,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/Chirag-Punia/DSA/tree/master/0146-lru-cache) |
 | [0173-binary-search-tree-iterator](https://github.com/Chirag-Punia/DSA/tree/master/0173-binary-search-tree-iterator) |
 | [0208-implement-trie-prefix-tree](https://github.com/Chirag-Punia/DSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Chirag-Punia/DSA/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -581,6 +583,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Chirag-Punia/DSA/tree/master/0083-remove-duplicates-from-sorted-list) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/Chirag-Punia/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0138-copy-list-with-random-pointer](https://github.com/Chirag-Punia/DSA/tree/master/0138-copy-list-with-random-pointer) |
+| [0146-lru-cache](https://github.com/Chirag-Punia/DSA/tree/master/0146-lru-cache) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Chirag-Punia/DSA/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/Chirag-Punia/DSA/tree/master/2299-merge-nodes-in-between-zeros) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/Chirag-Punia/DSA/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -757,4 +760,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1203-print-in-order](https://github.com/Chirag-Punia/DSA/tree/master/1203-print-in-order) |
 | [1316-fizz-buzz-multithreaded](https://github.com/Chirag-Punia/DSA/tree/master/1316-fizz-buzz-multithreaded) |
 | [1340-the-dining-philosophers](https://github.com/Chirag-Punia/DSA/tree/master/1340-the-dining-philosophers) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/Chirag-Punia/DSA/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
