@@ -136,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Chirag-Punia/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/Chirag-Punia/DSA/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0130-surrounded-regions](https://github.com/Chirag-Punia/DSA/tree/master/0130-surrounded-regions) |
+| [0139-word-break](https://github.com/Chirag-Punia/DSA/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/Chirag-Punia/DSA/tree/master/0152-maximum-product-subarray) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Chirag-Punia/DSA/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0198-house-robber](https://github.com/Chirag-Punia/DSA/tree/master/0198-house-robber) |
@@ -222,6 +223,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0127-word-ladder](https://github.com/Chirag-Punia/DSA/tree/master/0127-word-ladder) |
 | [0133-clone-graph](https://github.com/Chirag-Punia/DSA/tree/master/0133-clone-graph) |
 | [0138-copy-list-with-random-pointer](https://github.com/Chirag-Punia/DSA/tree/master/0138-copy-list-with-random-pointer) |
+| [0139-word-break](https://github.com/Chirag-Punia/DSA/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/Chirag-Punia/DSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0264-ugly-number-ii](https://github.com/Chirag-Punia/DSA/tree/master/0264-ugly-number-ii) |
@@ -413,6 +415,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Chirag-Punia/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/Chirag-Punia/DSA/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0131-palindrome-partitioning](https://github.com/Chirag-Punia/DSA/tree/master/0131-palindrome-partitioning) |
+| [0139-word-break](https://github.com/Chirag-Punia/DSA/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/Chirag-Punia/DSA/tree/master/0152-maximum-product-subarray) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Chirag-Punia/DSA/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0198-house-robber](https://github.com/Chirag-Punia/DSA/tree/master/0198-house-robber) |
@@ -459,6 +462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/Chirag-Punia/DSA/tree/master/0079-word-search) |
 | [0127-word-ladder](https://github.com/Chirag-Punia/DSA/tree/master/0127-word-ladder) |
 | [0131-palindrome-partitioning](https://github.com/Chirag-Punia/DSA/tree/master/0131-palindrome-partitioning) |
+| [0139-word-break](https://github.com/Chirag-Punia/DSA/tree/master/0139-word-break) |
 | [0151-reverse-words-in-a-string](https://github.com/Chirag-Punia/DSA/tree/master/0151-reverse-words-in-a-string) |
 | [0208-implement-trie-prefix-tree](https://github.com/Chirag-Punia/DSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0273-integer-to-english-words](https://github.com/Chirag-Punia/DSA/tree/master/0273-integer-to-english-words) |
@@ -567,6 +571,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/Chirag-Punia/DSA/tree/master/0070-climbing-stairs) |
+| [0139-word-break](https://github.com/Chirag-Punia/DSA/tree/master/0139-word-break) |
 ## Linked List
 |  |
 | ------- |
@@ -679,6 +684,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Trie
 |  |
 | ------- |
+| [0139-word-break](https://github.com/Chirag-Punia/DSA/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/Chirag-Punia/DSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Chirag-Punia/DSA/tree/master/1826-maximum-xor-with-an-element-from-array) |
