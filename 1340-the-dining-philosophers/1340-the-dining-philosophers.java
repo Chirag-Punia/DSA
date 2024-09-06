@@ -17,26 +17,18 @@ class DiningPhilosophers {
                            Runnable putRightFork) throws InterruptedException {
 
 
-        if (philosopher % 2 == 0) {
-            s[philosopher].acquire();
-            s[(philosopher + 1) % 5].acquire();
-        } else {
-            s[(philosopher + 1) % 5].acquire();
-            s[philosopher].acquire();
-        }
-
-
+   
+        
         pickLeftFork.run();
         pickRightFork.run();
 
         eat.run();
 
-
         putLeftFork.run();
+
         putRightFork.run();
-
-
-        s[philosopher].release();
-        s[(philosopher + 1) % 5].release();
+     
+        
+        
     }
 }
