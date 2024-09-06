@@ -29,25 +29,23 @@ class GFG
 //User function Template for Java
 
 class Solution{
-    static Map<String,Integer> mpp;
-    static int[][] dp;
-    static int tmp(int[] arr,int i,int j){
-        String key = i+","+j;
-        if(i == j)return 0;
-        if(dp[i][j] != -1) return dp[i][j];
+    static int tmp(int[] arr,int i,int j,int[][] dp){
+        if(i==j)return 0;
+        if(dp[i][j] != -1)return dp[i][j];
         int mini = Integer.MAX_VALUE;
-        for(int k = i;k<=j - 1;k++){
-            int currCalc = (arr[i-1]*arr[k]*arr[j]);
-            int calc = currCalc + tmp(arr,i,k) + tmp(arr,k+1,j);
-            mini = Math.min(mini,calc);
+        for(int k = i;k<j;k++){
+            int steps = (arr[i-1] * arr[k] * arr[j]) + tmp(arr,i,k,dp)
+            + tmp(arr,k+1,j,dp);
+            
+            mini = Math.min(mini,steps);
         }
         return dp[i][j] = mini;
     }
     static int matrixMultiplication(int N, int arr[])
     {
         // code here
-        dp = new int[N+1][N+1];
-        for(int[] r : dp)Arrays.fill(r,-1);
-        return tmp(arr,1,N-1);
+        int[][] dp = new int[N][N];
+        for(int[] row : dp)Arrays.fill(row,-1);
+        return tmp(arr,1,N-1,dp);
     }
 }
