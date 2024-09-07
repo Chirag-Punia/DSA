@@ -17,22 +17,34 @@ class Solution {
     }
 
     public int findKthLargest(int[] nums, int k) {
-        int n = nums.length;
+        // int n = nums.length;
+        // int temp = -1;
 
+        // for (int i = n / 2 - 1; i >= 0; i--) {
+        //     heapify(i, nums, n);
+        // }
 
-        for (int i = n / 2 - 1; i >= 0; i--) {
-            heapify(i, nums, n);
+        // for (int i = n - 1; i >= n - k; i--) {
+
+        //     temp = nums[0];
+        //     nums[0] = nums[i];
+        //     nums[i] = temp;
+        //     heapify(0, nums, i);
+
+        // }
+
+        // return temp;
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>(k);
+        for(int num : nums){
+            if(pq.size() < k)pq.offer(num);
+            else if(num > pq.peek()){
+                pq.poll();
+                pq.offer(num);
+            }
         }
-
-
-        for (int i = n - 1; i >= n - k; i--) {
-
-            int temp = nums[0];
-            nums[0] = nums[i];
-            nums[i] = temp;
-            heapify(0, nums, i);
-        }
-
-        return nums[n - k];
+        return pq.peek();
+            
+        
     }
 }
