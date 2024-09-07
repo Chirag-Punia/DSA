@@ -23,30 +23,28 @@ class Node {
 
 class Solution {
     public Node connect(Node root) {
-        if(root == null)return root;
-        List<Node> arr = new ArrayList<>();
-        List<List<Node>> ans = new ArrayList<>();
-        Queue<Node> q = new LinkedList<>();
-        q.offer(root);
-        while(!q.isEmpty()){
-            int size = q.size();
-            arr = new ArrayList<>();
-            for(int i = 0;i<size;i++){
-                Node curr = q.poll();
-                arr.add(curr);
-                if(curr.left != null)
-                    q.offer(curr.left);
-                if(curr.right != null)
-                    q.offer(curr.right);
-            }
-            ans.add(arr);
-        }
-        for(List<Node> a : ans){
-            for(int i = 0;i<a.size()-1;i++){
-                a.get(i).next = a.get(i+1);
-            }
-            a.get(a.size() - 1).next = null;
-        }
+        Queue<Node> queue=new LinkedList<>();
+        queue.offer(root);
+        bfs(queue);
         return root;
+    }
+    public void bfs(Queue<Node> queue){
+        Queue<Node> q=new LinkedList<>();
+        while(!queue.isEmpty()){
+            Node curr=queue.poll();
+            if(curr==null){
+                continue;
+            }
+            if(curr.left!=null){
+                q.offer(curr.left);
+            }
+            if(curr.right!=null){
+                q.offer(curr.right);
+            }
+            curr.next=queue.peek();
+        }
+        if(!q.isEmpty()){
+            bfs(q);
+        }
     }
 }
