@@ -145,6 +145,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/Chirag-Punia/DSA/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/Chirag-Punia/DSA/tree/master/0200-number-of-islands) |
 | [0213-house-robber-ii](https://github.com/Chirag-Punia/DSA/tree/master/0213-house-robber-ii) |
+| [0215-kth-largest-element-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0216-combination-sum-iii](https://github.com/Chirag-Punia/DSA/tree/master/0216-combination-sum-iii) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0287-find-the-duplicate-number](https://github.com/Chirag-Punia/DSA/tree/master/0287-find-the-duplicate-number) |
@@ -264,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/Chirag-Punia/DSA/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/Chirag-Punia/DSA/tree/master/0088-merge-sorted-array) |
+| [0215-kth-largest-element-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0229-majority-element-ii](https://github.com/Chirag-Punia/DSA/tree/master/0229-majority-element-ii) |
 | [0295-find-median-from-data-stream](https://github.com/Chirag-Punia/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -739,6 +741,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0215-kth-largest-element-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0264-ugly-number-ii](https://github.com/Chirag-Punia/DSA/tree/master/0264-ugly-number-ii) |
 | [0295-find-median-from-data-stream](https://github.com/Chirag-Punia/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Chirag-Punia/DSA/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -753,6 +756,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Chirag-Punia/DSA/tree/master/0004-median-of-two-sorted-arrays) |
+| [0215-kth-largest-element-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
 ## Game Theory
 |  |
@@ -778,4 +782,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0146-lru-cache](https://github.com/Chirag-Punia/DSA/tree/master/0146-lru-cache) |
 | [0460-lfu-cache](https://github.com/Chirag-Punia/DSA/tree/master/0460-lfu-cache) |
+## Quickselect
+|  |
+| ------- |
+| [0215-kth-largest-element-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0215-kth-largest-element-in-an-array) |
 <!---LeetCode Topics End-->
