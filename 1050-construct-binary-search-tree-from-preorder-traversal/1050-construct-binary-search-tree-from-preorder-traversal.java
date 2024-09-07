@@ -13,20 +13,16 @@
  *     }
  * }
  */
-
 class Solution {
-    public static int i;
-    public Solution(){
-        this.i = 0;
+    TreeNode tmp(int[] preOrder,int b,int[] i){
+        if(i[0] >= preOrder.length || preOrder[i[0]] > b)return null;
+        TreeNode node = new TreeNode(preOrder[i[0]++]);
+        node.left = tmp(preOrder,node.val,i);
+        node.right = tmp(preOrder,b,i);
+        return node;
     }
-    public static TreeNode build(int[] p,int b){
-        if(i >= p.length || p[i] > b) return null;
-        TreeNode newNode = new TreeNode(p[i++]);
-        newNode.left = build(p,newNode.val);
-        newNode.right = build(p,b);
-        return newNode;
-    }
-    public static TreeNode bstFromPreorder(int[] p) {
-        return build(p,Integer.MAX_VALUE);
+    public TreeNode bstFromPreorder(int[] preorder) {
+        int[] i = {0};
+        return tmp(preorder,Integer.MAX_VALUE,i);
     }
 }
