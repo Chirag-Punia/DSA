@@ -1,7 +1,5 @@
 # Write your MySQL query statement below
 
-#length count bytes
-#char_length count characters
-SELECT tweet_id
-FROM Tweets
-WHERE CHAR_LENGTH(content) > 15;
+select t.tweet_id
+from Tweets t
+where length(t.content) > 15;
