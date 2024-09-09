@@ -613,6 +613,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0138-copy-list-with-random-pointer](https://github.com/Chirag-Punia/DSA/tree/master/0138-copy-list-with-random-pointer) |
 | [0146-lru-cache](https://github.com/Chirag-Punia/DSA/tree/master/0146-lru-cache) |
 | [0460-lfu-cache](https://github.com/Chirag-Punia/DSA/tree/master/0460-lfu-cache) |
+| [0725-split-linked-list-in-parts](https://github.com/Chirag-Punia/DSA/tree/master/0725-split-linked-list-in-parts) |
 | [1484-linked-list-in-binary-tree](https://github.com/Chirag-Punia/DSA/tree/master/1484-linked-list-in-binary-tree) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Chirag-Punia/DSA/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/Chirag-Punia/DSA/tree/master/2299-merge-nodes-in-between-zeros) |
