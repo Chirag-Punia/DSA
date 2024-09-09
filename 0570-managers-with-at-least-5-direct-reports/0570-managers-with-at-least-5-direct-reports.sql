@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 
-select e2.name
+select COALESCE(e2.name, 'NULL') as name
 from Employee E1
 left join Employee E2
 on E1.managerId = E2.id
