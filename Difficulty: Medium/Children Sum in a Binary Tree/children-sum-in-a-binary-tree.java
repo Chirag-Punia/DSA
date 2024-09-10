@@ -112,6 +112,8 @@ class GfG {
 // } Driver Code Ends
 
 
+
+
 //User function Template for Java
 
 
@@ -140,7 +142,9 @@ class Solution
         if (root.left == null && root.right == null) return root.data;
         int l = tmp(root.left);
         int r = tmp(root.right);
-        if(l+r != root.data)ans=0;
+            if(l+r != root.data)ans=0;
+        
+        
         return root.data;
     }
     public static int isSumProperty(Node root)
