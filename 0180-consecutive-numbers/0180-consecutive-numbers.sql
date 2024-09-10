@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 
-select l3.id as ConsecutiveNums
+select l3.num as ConsecutiveNums
 from Logs l1
 left join Logs l2
 on l1.id = l2.id + 1
