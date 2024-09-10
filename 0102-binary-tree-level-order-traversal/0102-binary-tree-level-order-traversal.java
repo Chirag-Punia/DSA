@@ -1,50 +1,38 @@
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode() {}
- * TreeNode(int val) { this.val = val; }
- * TreeNode(int val, TreeNode left, TreeNode right) {
- * this.val = val;
- * this.left = left;
- * this.right = right;
- * }
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
  * }
  */
 class Solution {
-
     public List<List<Integer>> levelOrder(TreeNode root) {
-        Queue<TreeNode> q = new LinkedList<>();
-        q.add(root);
-        q.add(null);
+        List<Integer> arr = new ArrayList<>();
         List<List<Integer>> ans = new ArrayList<>();
-        List<Integer> temp = new ArrayList<>();
-        if (root == null) {
-            return ans;
-        }
-        while (!q.isEmpty()) {
-            TreeNode c = q.remove();
-            if (c == null) {
-
-                ans.add(temp);
-                temp = new ArrayList<>();
-                if(q.isEmpty()){
-                    break;
-                }
-                q.add(null);
-
-            } else {
-                temp.add(c.val);
-                if (c.left != null) {
-                    q.add(c.left);
-                }
-                if (c.right != null) {
-                    q.add(c.right);
-                }
-
+        if(root == null)return ans;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        while(!q.isEmpty()){
+            int size = q.size();
+            arr = new ArrayList<>();
+            for(int i = 0;i<size;i++){
+                
+                TreeNode curr = q.poll();
+                arr.add(curr.val);
+                if(curr.left != null)
+                    q.add(curr.left);
+                if(curr.right != null)
+                    q.add(curr.right);
             }
+            ans.add(arr);
         }
         return ans;
     }
