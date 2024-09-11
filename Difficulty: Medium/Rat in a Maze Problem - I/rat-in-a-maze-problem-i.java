@@ -29,35 +29,44 @@ class Rat {
 
 // } Driver Code Ends
 
+
 class Solution {
-    static ArrayList<String> ls;
-    public ArrayList<String> findPath(int[][] mat) {
-       ls=new ArrayList<>();
-       int n=mat.length;
-       int m=mat[0].length;
-       if(mat[0][0]==0){
-           return ls;
-       }
-       boolean vis[][]=new boolean[n][m];
-       solve(mat,0,0,vis,n,m,"");
-       return ls;
-    }
-    public static void solve(int mat[][],int i,int j,boolean vis[][],int n,int m,String ans){
-         if(i<0||i>=n||j<0||j>=m||vis[i][j]||mat[i][j]==0){
-             return ;
-         }
+    public void tmp(int[][] mat,int i,int j,StringBuilder sb,ArrayList<String> ans,Map<String,Boolean> mpp){
         
-        if(i==n-1&&j==m-1){
-            ls.add(ans);
-            return ;
+        if(i == mat.length - 1 && j == mat[0].length - 1){
+            ans.add(sb.toString());
+            return;
+        }
+        if(i > mat.length - 1 || j > mat[0].length - 1)return;
+        int[] x = {0,0,1,-1};
+        int[] y = {1,-1,0,0};
+        for(int k = 0;k<4;k++){
+            int newX = i + x[k];
+            int newY = j + y[k];
+            String key = newX + "," + newY;
+            if(!mpp.getOrDefault(key,false)  && newX < mat.length && newX >= 0 && newY < mat[0].length && newY >= 0 && mat[newX][newY] == 1){
+                if(k == 0) sb.append('R');
+                if(k == 1) sb.append('L');
+                if(k == 2) sb.append('D');
+                if(k == 3) sb.append('U');
+                mpp.put(key , true);
+                tmp(mat,newX,newY,sb,ans,mpp);
+                sb.deleteCharAt(sb.length() - 1);
+                mpp.put(key, false);
+            }
         }
         
-        vis[i][j]=true;
-        solve(mat,i-1,j,vis,n,m,ans+'U');
-        solve(mat,i+1,j,vis,n,m,ans+'D');
-        solve(mat,i,j-1,vis,n,m,ans+'L');
-        solve(mat,i,j+1,vis,n,m,ans+'R');
-        vis[i][j]=false;
-         
+    }
+    public ArrayList<String> findPath(int[][] mat) {
+        // Your code here
+        ArrayList<String> arr = new ArrayList<>();
+        Map<String,Boolean> mpp = new HashMap<>();
+        StringBuilder sb = new StringBuilder();
+        if (mat[0][0] == 1) {
+            mpp.put("0,0", true);
+            tmp(mat, 0, 0, sb, arr, mpp);
+        }
+        return arr;
+        
     }
 }
