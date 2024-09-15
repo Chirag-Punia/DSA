@@ -277,6 +277,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1207-delete-nodes-and-return-forest](https://github.com/Chirag-Punia/DSA/tree/master/1207-delete-nodes-and-return-forest) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Chirag-Punia/DSA/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/Chirag-Punia/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/Chirag-Punia/DSA/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Chirag-Punia/DSA/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/Chirag-Punia/DSA/tree/master/1741-sort-array-by-increasing-frequency) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/Chirag-Punia/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -529,6 +530,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1250-longest-common-subsequence](https://github.com/Chirag-Punia/DSA/tree/master/1250-longest-common-subsequence) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/Chirag-Punia/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/Chirag-Punia/DSA/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1720-crawler-log-folder](https://github.com/Chirag-Punia/DSA/tree/master/1720-crawler-log-folder) |
 | [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/Chirag-Punia/DSA/tree/master/1756-minimum-deletions-to-make-string-balanced) |
@@ -719,6 +721,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/Chirag-Punia/DSA/tree/master/0090-subsets-ii) |
 | [0287-find-the-duplicate-number](https://github.com/Chirag-Punia/DSA/tree/master/0287-find-the-duplicate-number) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
+| [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/Chirag-Punia/DSA/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/Chirag-Punia/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Chirag-Punia/DSA/tree/master/1826-maximum-xor-with-an-element-from-array) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Chirag-Punia/DSA/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
@@ -742,6 +745,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/Chirag-Punia/DSA/tree/master/0966-binary-subarrays-with-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/Chirag-Punia/DSA/tree/master/1046-max-consecutive-ones-iii) |
 | [1240-stone-game-ii](https://github.com/Chirag-Punia/DSA/tree/master/1240-stone-game-ii) |
+| [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/Chirag-Punia/DSA/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Chirag-Punia/DSA/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Chirag-Punia/DSA/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 ## Trie
