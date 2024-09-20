@@ -1,33 +1,43 @@
 class RandomizedSet {
-    Map<Integer,Boolean> mpp;
+    Map<Integer,Integer> mpp;
+    List<Integer> arr;
+    int i;
+    Random random;
     public RandomizedSet() {
         
         this.mpp = new HashMap<>();
+        this.arr = new ArrayList<>();
+        this.random = new Random();
+        this.i = 0;
     }
     
     public boolean insert(int val) {
         if(mpp.containsKey(val))return false;
-        mpp.put(val,true);
+        mpp.put(val,i);
+        arr.add(val);
+        i++;
         return true;
     }
     
     public boolean remove(int val) {
         if(mpp.containsKey(val)){
+            int idx = mpp.get(val);
+            int lastEle = arr.get(arr.size() - 1);
+            
+            arr.set(idx,lastEle);
+            mpp.put(lastEle,idx);
+
+            arr.remove(arr.size() - 1);
             mpp.remove(val);
+            i--;
             return true;
         }
         return false;
     }
     
     public int getRandom() {
-        int[] arr = new int[mpp.size()];
-        int[] i = {0};
-        mpp.forEach((key,value) -> {
-            arr[i[0]++] = key;
-        });
-        Random random = new Random();
-        int randIdx = random.nextInt(mpp.size());
-        return arr[randIdx];
+        int randIdx = random.nextInt(arr.size());
+        return arr.get(randIdx);
     }
 }
 
