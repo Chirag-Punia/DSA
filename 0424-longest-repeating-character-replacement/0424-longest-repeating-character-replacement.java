@@ -11,9 +11,8 @@ class Solution {
             maxf = Math.max(maxf,mpp.get(curr));
             int changes = (right - left + 1) - maxf;
             if(changes > k){
-                char c = s.charAt(left);
+                char c = s.charAt(left)++;
                 mpp.put(c,mpp.get(c) - 1);
-                left++;
                 if(mpp.get(c) == 0)mpp.remove(c);
             }
             ans = Math.max(right - left + 1,ans);
