@@ -1,44 +1,22 @@
 class Solution {
-
-    public static int binarySearch(int[] arr,int target,int left,int right){
-        int mid  = (left+right)/2;
-        if(left <= right){
-            if(arr[mid] == target){
-            return mid;
-        }
-        else if(arr[left] <= arr[mid]){
-            if(arr[left] <= target && target <= arr[mid]){
-                return binarySearch(arr,target,left,mid-1);
-            }
-            else{
-                return binarySearch(arr,target,mid + 1,right);
-            }
+    public int binarySearch(int[] nums,int left,int right,int t){
+        if(left > right)return -1;
+        int mid = left + (right - left)/2;
+        if(nums[mid] == t)return mid;
+        else if(nums[mid] > nums[left]){
+            if(nums[left] <= t && nums[mid] >= t)
+                return binarySearch(nums,left,mid-1,t);
+            else 
+                return binarySearch(nums,mid + 1,right,t);
         }
         else{
-            if(target <= arr[right] && target >= arr[mid]){
-                return binarySearch(arr,target,mid + 1,right);
-            }
-            else{
-                return binarySearch(arr,target,left,mid-1);
-            }
-            
-        }
-        }
-
-        return - 1;
-        
-
+            if(nums[right] <= t && nums[mid] >= t)
+                return binarySearch(nums,mid + 1,right,t);
+            else
+                return binarySearch(nums,left,mid-1,t);
+        }     
     }
     public int search(int[] nums, int target) {
-        
-        return binarySearch(nums,target,0,nums.length-1);
-
-        //BRUTE FORCE
-        // for(int i = 0;i<nums.length;i++){
-        //     if(nums[i] == target){
-        //         return i;
-        //     }
-        // }
-        // return -1;
+        return binarySearch(nums,0,nums.length-1,target);
     }
 }
