@@ -3,7 +3,7 @@ class Solution {
         if(left > right)return -1;
         int mid = left + (right - left)/2;
         if(nums[mid] == t)return mid;
-        else if(nums[mid] > nums[left]){
+        else if(nums[mid] >= nums[left]){
             if(nums[left] <= t && nums[mid] >= t)
                 return binarySearch(nums,left,mid-1,t);
             else 
