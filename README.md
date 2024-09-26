@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Chirag-Punia/DSA/tree/master/0719-find-k-th-smallest-pair-distance) |
+| [0729-my-calendar-i](https://github.com/Chirag-Punia/DSA/tree/master/0729-my-calendar-i) |
 | [0783-search-in-a-binary-search-tree](https://github.com/Chirag-Punia/DSA/tree/master/0783-search-in-a-binary-search-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/Chirag-Punia/DSA/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Chirag-Punia/DSA/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -196,6 +197,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0624-maximum-distance-in-arrays](https://github.com/Chirag-Punia/DSA/tree/master/0624-maximum-distance-in-arrays) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Chirag-Punia/DSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Chirag-Punia/DSA/tree/master/0719-find-k-th-smallest-pair-distance) |
+| [0729-my-calendar-i](https://github.com/Chirag-Punia/DSA/tree/master/0729-my-calendar-i) |
 | [0733-flood-fill](https://github.com/Chirag-Punia/DSA/tree/master/0733-flood-fill) |
 | [0870-magic-squares-in-grid](https://github.com/Chirag-Punia/DSA/tree/master/0870-magic-squares-in-grid) |
 | [0890-lemonade-change](https://github.com/Chirag-Punia/DSA/tree/master/0890-lemonade-change) |
@@ -365,6 +367,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Chirag-Punia/DSA/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Chirag-Punia/DSA/tree/master/0380-insert-delete-getrandom-o1) |
 | [0460-lfu-cache](https://github.com/Chirag-Punia/DSA/tree/master/0460-lfu-cache) |
+| [0729-my-calendar-i](https://github.com/Chirag-Punia/DSA/tree/master/0729-my-calendar-i) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Chirag-Punia/DSA/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Iterator
 |  |
@@ -816,6 +819,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
+| [0729-my-calendar-i](https://github.com/Chirag-Punia/DSA/tree/master/0729-my-calendar-i) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Chirag-Punia/DSA/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 ## Bitmask
 |  |
@@ -856,6 +860,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/Chirag-Punia/DSA/tree/master/0493-reverse-pairs) |
+| [0729-my-calendar-i](https://github.com/Chirag-Punia/DSA/tree/master/0729-my-calendar-i) |
 ## Merge Sort
 |  |
 | ------- |
