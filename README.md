@@ -286,6 +286,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/Chirag-Punia/DSA/tree/master/0424-longest-repeating-character-replacement) |
 | [0432-all-oone-data-structure](https://github.com/Chirag-Punia/DSA/tree/master/0432-all-oone-data-structure) |
 | [0460-lfu-cache](https://github.com/Chirag-Punia/DSA/tree/master/0460-lfu-cache) |
+| [0567-permutation-in-string](https://github.com/Chirag-Punia/DSA/tree/master/0567-permutation-in-string) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0726-number-of-atoms](https://github.com/Chirag-Punia/DSA/tree/master/0726-number-of-atoms) |
 | [0870-magic-squares-in-grid](https://github.com/Chirag-Punia/DSA/tree/master/0870-magic-squares-in-grid) |
@@ -405,6 +406,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/Chirag-Punia/DSA/tree/master/0295-find-median-from-data-stream) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Chirag-Punia/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0455-assign-cookies](https://github.com/Chirag-Punia/DSA/tree/master/0455-assign-cookies) |
+| [0567-permutation-in-string](https://github.com/Chirag-Punia/DSA/tree/master/0567-permutation-in-string) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Chirag-Punia/DSA/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Chirag-Punia/DSA/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Chirag-Punia/DSA/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -570,6 +572,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0516-longest-palindromic-subsequence](https://github.com/Chirag-Punia/DSA/tree/master/0516-longest-palindromic-subsequence) |
 | [0539-minimum-time-difference](https://github.com/Chirag-Punia/DSA/tree/master/0539-minimum-time-difference) |
 | [0564-find-the-closest-palindrome](https://github.com/Chirag-Punia/DSA/tree/master/0564-find-the-closest-palindrome) |
+| [0567-permutation-in-string](https://github.com/Chirag-Punia/DSA/tree/master/0567-permutation-in-string) |
 | [0592-fraction-addition-and-subtraction](https://github.com/Chirag-Punia/DSA/tree/master/0592-fraction-addition-and-subtraction) |
 | [0664-strange-printer](https://github.com/Chirag-Punia/DSA/tree/master/0664-strange-printer) |
 | [0726-number-of-atoms](https://github.com/Chirag-Punia/DSA/tree/master/0726-number-of-atoms) |
@@ -790,6 +793,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/Chirag-Punia/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Chirag-Punia/DSA/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0424-longest-repeating-character-replacement](https://github.com/Chirag-Punia/DSA/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/Chirag-Punia/DSA/tree/master/0567-permutation-in-string) |
 | [0966-binary-subarrays-with-sum](https://github.com/Chirag-Punia/DSA/tree/master/0966-binary-subarrays-with-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/Chirag-Punia/DSA/tree/master/1034-subarrays-with-k-different-integers) |
 | [1046-max-consecutive-ones-iii](https://github.com/Chirag-Punia/DSA/tree/master/1046-max-consecutive-ones-iii) |
