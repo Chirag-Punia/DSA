@@ -3,8 +3,9 @@ class Solution {
         int n = nums.length;
         Set<List<Integer>> ans = new HashSet<>();
         List<Integer> arr = new ArrayList<>();
+        Map<Integer,Integer> mpp = new HashMap<>();
         for(int i = 0;i<n;i++){
-            Map<Integer,Integer> mpp = new HashMap<>();
+            mpp.clear();
             for(int j = i+1;j<n;j++){
                 int rem = -(nums[i] + nums[j]);
                 if(mpp.containsKey(rem)){
