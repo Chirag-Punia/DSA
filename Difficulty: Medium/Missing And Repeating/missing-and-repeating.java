@@ -1,59 +1,48 @@
 //{ Driver Code Starts
-// Initial Template for Java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Stack;
 
-import java.io.*;
-import java.util.*;
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-class GFG {
-    // Driver code
-    public static void main(String[] args) throws Exception {
-        BufferedReader br =
-            new BufferedReader(new InputStreamReader(System.in));
-        int t = Integer.parseInt(br.readLine().trim());
+        int t = Integer.parseInt(br.readLine());
+
         while (t-- > 0) {
-            int n = Integer.parseInt(br.readLine().trim());
-            String[] str = br.readLine().split(" ");
+            String input = br.readLine();
+            String[] inputs = input.split(" ");
+            int[] arr = new int[inputs.length];
 
-            int[] a = new int[n];
-            for (int i = 0; i < n; i++) {
-                a[i] = Integer.parseInt(str[i]);
+            for (int i = 0; i < inputs.length; i++) {
+                arr[i] = Integer.parseInt(inputs[i]);
             }
 
-            int[] ans = new Solve().findTwoElement(a, n);
+            int[] ans = new Solve().findTwoElement(arr);
             System.out.println(ans[0] + " " + ans[1]);
         }
     }
 }
+
 // } Driver Code Ends
 
-
-
-
 // User function Template for Java
-
-
 class Solve {
-    int[] findTwoElement(int arr[], int n) {
-        HashMap<Integer, Integer> h1 = new HashMap<>();
-        HashSet<Integer> uniqueElements = new HashSet<>();
-        int[] out = new int[2];
-        
-        
-        for (int i = 0; i < n; i++) {
-            h1.put(arr[i], h1.getOrDefault(arr[i], 0) + 1);
-            uniqueElements.add(arr[i]);
+    int[] findTwoElement(int arr[]) {
+        // code here
+        int[] mpp = new int[arr.length + 1];
+        int repeat = 0;
+        int missing = 0;
+        for(int a: arr){
+            mpp[a] += 1;
         }
-        
-        
-        for (int i = 1; i <= n; i++) {
-            if (!uniqueElements.contains(i)) {
-                out[1] = i; 
-            }
-            if (h1.getOrDefault(i, 0) > 1) {
-                out[0] = i; 
-            }
+        for(int i = 1;i<=arr.length;i++){
+            if(mpp[i] == 2)repeat = i;
+            if(mpp[i] == 0)missing = i;
         }
+        int[] ans = {repeat,missing};
+        return ans;
         
-        return out;
     }
 }
