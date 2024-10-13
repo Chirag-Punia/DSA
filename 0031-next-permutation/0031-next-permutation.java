@@ -1,51 +1,37 @@
 class Solution {
-
-    public void nextPermutation(int[] A) {
-
-        int index = -1;
-        for (int i = A.length - 2; i >= 0; i--) {
-            if (A[i + 1] > A[i]) {
-                index = i;
+    private void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+    }
+    public void nextPermutation(int[] nums) {
+        int bp = -1;
+        int n = nums.length;
+        for(int i = n - 2;i>=0;i--){
+            if(nums[i] < nums[i+1]){
+                bp = i;
                 break;
             }
         }
-        int ans = Integer.MAX_VALUE;
-        if (index == -1) {
-            int start = index + 1;
-            int end = A.length - 1;
-            while (start < end) {
-                int x = A[start];
-                A[start] = A[end];
-                A[end] = x;
-                start++;
-                end--;
-            }
-        } else {
-            int ansIndex = -1;
-            for (int i = A.length - 1; i >= index; i--) {
-                if (A[i] > A[index]) {
-                    if(ans > A[i]){
-                        ansIndex = i;
-                        ans = A[i];
-                    }
-                }
-            }
-
-            int temp = A[ansIndex];
-            A[ansIndex] = A[index];
-            A[index] = temp;
-
-            int start = index + 1;
-            int end = A.length - 1;
-            while (start < end) {
-                int x = A[start];
-                A[start] = A[end];
-                A[end] = x;
-                start++;
-                end--;
-            }
-
+        if (bp == -1) {
+            reverse(nums, 0, n - 1);
+            return;
         }
+        for (int i = n - 1; i > bp; i--) {
+            if (nums[i] > nums[bp]) {
+                int temp = nums[bp];
+                nums[bp] = nums[i];
+                nums[i] = temp;
+                break;
+            }
+        }
+
+
+        reverse(nums, bp + 1, n - 1);
 
     }
 }
