@@ -1,37 +1,29 @@
 class Solution {
-    public static boolean binarySearch(int[] arr,int target,int left,int right){
-        int mid  = (left+right)/2;
-        if(left <= right){
-        if(arr[mid] == target){
+    boolean binary(int[] nums, int low, int high, int target) {
+        if (low > high)
+            return false;
+        int mid = (high + low) / 2;
+        if (nums[mid] == target)
             return true;
+        if (nums[mid] == nums[low] && nums[mid] == nums[high]) {
+            return binary(nums, low + 1, high - 1, target);
         }
-        if(arr[left] == arr[mid] && arr[right] == arr[mid]){
-                return binarySearch(arr,target,left+1,right-1);
+        if (nums[low] <= nums[mid]) {
+            if (target >= nums[low] && target <= nums[mid]) {
+                return binary(nums, low, mid - 1, target);
+            } else {
+                return binary(nums, mid + 1, high, target);
             }
-        else if(arr[left] <= arr[mid]){
-            if(arr[left] <= target && target <= arr[mid]){
-                return binarySearch(arr,target,left,mid-1);
-            }
-            else{
-                return binarySearch(arr,target,mid + 1,right);
-            }
-        }
-        else{
-            if(target <= arr[right] && target >= arr[mid]){
-                return binarySearch(arr,target,mid + 1,right);
-            }
-            else{
-                return binarySearch(arr,target,left,mid-1);
+        } else {
+            if (target >= nums[mid] && target <= nums[high]) {
+                return binary(nums, mid + 1, high, target);
+            } else {
+                return binary(nums, low, mid - 1, target);
             }
         }
-        }
-
-        return false;
-        
-
     }
 
     public boolean search(int[] nums, int target) {
-        return binarySearch(nums, target, 0, nums.length - 1);
+        return binary(nums, 0, nums.length - 1, target);
     }
 }
