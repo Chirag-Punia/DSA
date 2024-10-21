@@ -1,28 +1,27 @@
 //{ Driver Code Starts
-import java.util.*;
-import java.lang.*;
 import java.io.*;
+import java.util.*;
 
-class GFG {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int tc = scan.nextInt();
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(br.readLine().trim());
 
-        while (tc-- > 0) {
-            int N = scan.nextInt();
-            int M = scan.nextInt();
-            int E = scan.nextInt();
+        while (t-- > 0) {
+            int n = Integer.parseInt(br.readLine().trim());      // Number of vertices
+            String[] arrInput = br.readLine().trim().split(" "); // Input for edges
 
-            boolean graph[][] = new boolean[N][N];
-
-            for (int i = 0; i < E; i++) {
-                int u = scan.nextInt() - 1;
-                int v = scan.nextInt() - 1;
-                graph[u][v] = true;
-                graph[v][u] = true;
+            List<int[]> edges = new ArrayList<>();
+            for (int i = 0; i < arrInput.length; i += 2) {
+                int u = Integer.parseInt(arrInput[i]);
+                int v = Integer.parseInt(arrInput[i + 1]);
+                edges.add(new int[] {u, v});
             }
 
-            System.out.println(new solve().graphColoring(graph, M, N) ? 1 : 0);
+            int m = Integer.parseInt(br.readLine().trim()); // Number of colors
+
+            Solution sol = new Solution();
+            System.out.println(sol.graphColoring(n, edges, m) ? "true" : "false");
         }
     }
 }
@@ -30,42 +29,46 @@ class GFG {
 // } Driver Code Ends
 
 
-class solve {
-    // Function to determine if graph can be coloured with at most M colours
-    // such
-    // that no two adjacent vertices of graph are coloured with same colour.
-    public boolean isSafe(List<List<Integer>> adj,int i,int[] color,int val){
-        for(int neig : adj.get(i)){
-                if(val == color[neig])
-                    return false;
+class Solution {
+    boolean isSafe(List<List<Integer>> adj, int[] colors, int curr, int color) {
+        List<Integer> neighbors = adj.get(curr);
+        for (int neighbor : neighbors) {
+            if (colors[neighbor] == color) {
+                return false;
+            }
         }
         return true;
     }
-    public boolean tmp(List<List<Integer>> adj,int i,int[] color,int m){
-        if(i == adj.size())return true;
-        for(int col = 1 ; col <= m; col++){
-            if(isSafe(adj,i,color,col)){
-                color[i] = col;
-                if(tmp(adj,i+1,color,m)) return true;
-                color[i] = 0;
+
+    boolean dfs(List<List<Integer>> adj, int node, int[] colors, int m) {
+        if (node == adj.size()) {
+            return true;
+        }
+
+        for (int color = 1; color <= m; color++) {
+            if (isSafe(adj, colors, node, color)) {
+                colors[node] = color;
+                if (dfs(adj, node + 1, colors, m)) {
+                    return true;
+                }
+                colors[node] = 0;
             }
         }
         return false;
-        
     }
-    public boolean graphColoring(boolean graph[][], int colors, int V) {
-        // Your code here
+
+    boolean graphColoring(int v, List<int[]> edges, int m) {
         List<List<Integer>> adj = new ArrayList<>();
-        int n = graph.length;
-        int m = graph[0].length;
-        for(int i = 0;i<V;i++)adj.add(new ArrayList<>());
-        for(int i = 0;i<n;i++)
-            for(int j = 0;j<m;j++)
-                if(i != j && graph[i][j] == true)
-                    adj.get(i).add(j);
-                
-        int[] color = new int[V];
-        return tmp(adj,0,color,colors);
+        for (int i = 0; i < v; i++) {
+            adj.add(new ArrayList<>());
+        }
         
+        for (int[] edge : edges) {
+            adj.get(edge[0]).add(edge[1]);
+            adj.get(edge[1]).add(edge[0]);
+        }
+
+        int[] colors = new int[v];
+        return dfs(adj, 0, colors, m);
     }
 }
