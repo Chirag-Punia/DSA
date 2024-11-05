@@ -155,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/Chirag-Punia/DSA/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Chirag-Punia/DSA/tree/master/0040-combination-sum-ii) |
 | [0041-first-missing-positive](https://github.com/Chirag-Punia/DSA/tree/master/0041-first-missing-positive) |
+| [0042-trapping-rain-water](https://github.com/Chirag-Punia/DSA/tree/master/0042-trapping-rain-water) |
 | [0046-permutations](https://github.com/Chirag-Punia/DSA/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/Chirag-Punia/DSA/tree/master/0047-permutations-ii) |
 | [0049-group-anagrams](https://github.com/Chirag-Punia/DSA/tree/master/0049-group-anagrams) |
@@ -385,6 +386,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/Chirag-Punia/DSA/tree/master/0042-trapping-rain-water) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/Chirag-Punia/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Chirag-Punia/DSA/tree/master/0145-binary-tree-postorder-traversal) |
 | [0173-binary-search-tree-iterator](https://github.com/Chirag-Punia/DSA/tree/master/0173-binary-search-tree-iterator) |
@@ -405,6 +407,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/Chirag-Punia/DSA/tree/master/0042-trapping-rain-water) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Chirag-Punia/DSA/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 ## Design
 |  |
@@ -433,6 +436,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0016-3sum-closest](https://github.com/Chirag-Punia/DSA/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/Chirag-Punia/DSA/tree/master/0018-4sum) |
 | [0031-next-permutation](https://github.com/Chirag-Punia/DSA/tree/master/0031-next-permutation) |
+| [0042-trapping-rain-water](https://github.com/Chirag-Punia/DSA/tree/master/0042-trapping-rain-water) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/Chirag-Punia/DSA/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/Chirag-Punia/DSA/tree/master/0088-merge-sorted-array) |
 | [0151-reverse-words-in-a-string](https://github.com/Chirag-Punia/DSA/tree/master/0151-reverse-words-in-a-string) |
@@ -537,6 +541,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/Chirag-Punia/DSA/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/Chirag-Punia/DSA/tree/master/0010-regular-expression-matching) |
 | [0022-generate-parentheses](https://github.com/Chirag-Punia/DSA/tree/master/0022-generate-parentheses) |
+| [0042-trapping-rain-water](https://github.com/Chirag-Punia/DSA/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/Chirag-Punia/DSA/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/Chirag-Punia/DSA/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/Chirag-Punia/DSA/tree/master/0063-unique-paths-ii) |
