@@ -279,6 +279,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2727-number-of-senior-citizens](https://github.com/Chirag-Punia/DSA/tree/master/2727-number-of-senior-citizens) |
 | [2846-robot-collisions](https://github.com/Chirag-Punia/DSA/tree/master/2846-robot-collisions) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Chirag-Punia/DSA/tree/master/3235-minimum-cost-to-convert-string-i) |
+| [3291-find-if-array-can-be-sorted](https://github.com/Chirag-Punia/DSA/tree/master/3291-find-if-array-can-be-sorted) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Chirag-Punia/DSA/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/Chirag-Punia/DSA/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/Chirag-Punia/DSA/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -374,6 +375,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/Chirag-Punia/DSA/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2846-robot-collisions](https://github.com/Chirag-Punia/DSA/tree/master/2846-robot-collisions) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Chirag-Punia/DSA/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
+| [3291-find-if-array-can-be-sorted](https://github.com/Chirag-Punia/DSA/tree/master/3291-find-if-array-can-be-sorted) |
 ## Counting
 |  |
 | ------- |
@@ -862,6 +864,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Chirag-Punia/DSA/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/Chirag-Punia/DSA/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/Chirag-Punia/DSA/tree/master/2323-minimum-bit-flips-to-convert-number) |
+| [3291-find-if-array-can-be-sorted](https://github.com/Chirag-Punia/DSA/tree/master/3291-find-if-array-can-be-sorted) |
 ## Sliding Window
 |  |
 | ------- |
