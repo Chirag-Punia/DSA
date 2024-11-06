@@ -1,24 +1,35 @@
 class Solution {
     public int leastInterval(char[] tasks, int n) {
-        HashMap<Character,Integer> mpp = new HashMap<>();
+        Map<Character,Integer> mpp = new HashMap<>();
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-        List<Integer> a;
-        List<Integer> b;
-        for(char i : tasks) mpp.put(i,mpp.getOrDefault(i,0)+1);
-        for(Map.Entry<Character,Integer> entry : mpp.entrySet()) pq.offer(entry.getValue());
+        for(char a : tasks){
+            mpp.put(a,mpp.getOrDefault(a,0)+1);
+        }
+        mpp.forEach((key,value) -> {
+            pq.offer(value);
+        });
         int ans = 0;
+        int cnt = n;
         while(!pq.isEmpty()){
-            a = new ArrayList<>();
-            b = new ArrayList<>();
-            for(int i = 0;i<=n;i++) if(!pq.isEmpty()) a.add(pq.poll());
-            for(int i = 0;i<a.size();i++){
-                int t = a.get(i) - 1;
-                b.add(t);
-                if(b.get(i) != 0) pq.offer(b.get(i));
+            List<Integer> arr = new ArrayList<>();
+            while(cnt >= 0 && !pq.isEmpty()){
+                int curr = pq.poll();
+                arr.add(curr - 1);
+                cnt--;
             }
-            if(pq.isEmpty()) ans = ans + b.size();
-            else ans = ans + n + 1;            
+            for(int a : arr){
+                if(a > 0)pq.offer(a);
+            }
+            if(pq.isEmpty()){
+                ans += arr.size();
+            }
+            else{
+                ans += n + 1;
+            }
+            cnt = n;
+
         }
         return ans;
+
     }
 }
