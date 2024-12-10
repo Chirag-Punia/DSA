@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Chirag-Punia/DSA/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Chirag-Punia/DSA/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Chirag-Punia/DSA/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Chirag-Punia/DSA/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 ## Binary Tree
 |  |
 | ------- |
@@ -353,6 +354,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/Chirag-Punia/DSA/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2502-sort-the-people](https://github.com/Chirag-Punia/DSA/tree/master/2502-sort-the-people) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/Chirag-Punia/DSA/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Chirag-Punia/DSA/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Chirag-Punia/DSA/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Chirag-Punia/DSA/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/Chirag-Punia/DSA/tree/master/3446-find-the-number-of-good-pairs-i) |
@@ -403,6 +405,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2163-kth-distinct-string-in-an-array](https://github.com/Chirag-Punia/DSA/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/Chirag-Punia/DSA/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/Chirag-Punia/DSA/tree/master/2494-sum-of-prefix-scores-of-strings) |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Chirag-Punia/DSA/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Chirag-Punia/DSA/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Stack
 |  |
@@ -679,6 +682,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/Chirag-Punia/DSA/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [3195-separate-black-and-white-balls](https://github.com/Chirag-Punia/DSA/tree/master/3195-separate-black-and-white-balls) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Chirag-Punia/DSA/tree/master/3235-minimum-cost-to-convert-string-i) |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Chirag-Punia/DSA/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Chirag-Punia/DSA/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Chirag-Punia/DSA/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Database
@@ -913,6 +917,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/Chirag-Punia/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Chirag-Punia/DSA/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Chirag-Punia/DSA/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Chirag-Punia/DSA/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/Chirag-Punia/DSA/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 ## Prefix Sum
 |  |
