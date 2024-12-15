@@ -14,33 +14,26 @@
  * }
  */
 class Solution {
-    public static boolean ans;
-    Solution(){
-        this.ans = true;
-    }
-    public static void temp(TreeNode p,TreeNode q){
+    public void temp(TreeNode p, TreeNode q,boolean[] ans){
         if(p == null && q == null){
             return;
         }
         if(p == null && q != null){
-            ans = false;
+            ans[0] = false;
             return;
         }
-        if(q == null && p != null){
-            ans = false;
+        if(p != null && q == null){
+            ans[0] = false;
             return;
         }
+        if(p.val != q.val)ans[0] = false;
 
-        if(p.val != q.val){
-            ans = false;
-            return;
-        }
-        temp(p.left,q.left);
-        temp(p.right,q.right);
+        temp(p.left,q.left,ans);
+        temp(p.right,q.right,ans);
     }
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        temp(p,q);
-        return ans;
-        
+        boolean[] ans = {true};
+        temp(p,q,ans);
+        return ans[0];
     }
 }
