@@ -14,30 +14,21 @@
  * }
  */
 class Solution {
-    private static boolean ans;
-    public Solution() {
-        this.ans = true;
-    }
-    public static int temp(TreeNode root){
-        if (root == null){
-            return 0;
+    public int helper(TreeNode root,boolean[] ans){
+        if(root == null)return 0;
+        int l = 0,r = 0;
+        if(ans[0]){
+        l = helper(root.left,ans);
+        r = helper(root.right,ans);
         }
-        int l = temp(root.left);
-        if(l == -1){
-            return -1;
-        }
-        int r = temp(root.right);
-        if(r == -1){
-            return -1;
-        }
-        if(Math.abs(l - r) > 1){
-            return -1;
-        }
-        return  Math.max(l,r) + 1;
-    }
+        if(Math.abs(l-r) > 1)ans[0] = false;
+        return 1 + Math.max(l,r);
 
+    }
     public boolean isBalanced(TreeNode root) {
-        
-        return temp(root) != -1;
+        boolean[] ans = {true};
+        helper(root,ans);
+        return ans[0];
+
     }
 }
