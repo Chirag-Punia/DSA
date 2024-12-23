@@ -233,6 +233,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0542-01-matrix](https://github.com/Chirag-Punia/DSA/tree/master/0542-01-matrix) |
 | [0621-task-scheduler](https://github.com/Chirag-Punia/DSA/tree/master/0621-task-scheduler) |
 | [0624-maximum-distance-in-arrays](https://github.com/Chirag-Punia/DSA/tree/master/0624-maximum-distance-in-arrays) |
+| [0628-maximum-product-of-three-numbers](https://github.com/Chirag-Punia/DSA/tree/master/0628-maximum-product-of-three-numbers) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/Chirag-Punia/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Chirag-Punia/DSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Chirag-Punia/DSA/tree/master/0719-find-k-th-smallest-pair-distance) |
@@ -398,6 +399,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/Chirag-Punia/DSA/tree/master/0455-assign-cookies) |
 | [0539-minimum-time-difference](https://github.com/Chirag-Punia/DSA/tree/master/0539-minimum-time-difference) |
 | [0621-task-scheduler](https://github.com/Chirag-Punia/DSA/tree/master/0621-task-scheduler) |
+| [0628-maximum-product-of-three-numbers](https://github.com/Chirag-Punia/DSA/tree/master/0628-maximum-product-of-three-numbers) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/Chirag-Punia/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Chirag-Punia/DSA/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0726-number-of-atoms](https://github.com/Chirag-Punia/DSA/tree/master/0726-number-of-atoms) |
@@ -784,6 +786,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/Chirag-Punia/DSA/tree/master/0539-minimum-time-difference) |
 | [0564-find-the-closest-palindrome](https://github.com/Chirag-Punia/DSA/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/Chirag-Punia/DSA/tree/master/0592-fraction-addition-and-subtraction) |
+| [0628-maximum-product-of-three-numbers](https://github.com/Chirag-Punia/DSA/tree/master/0628-maximum-product-of-three-numbers) |
 | [0650-2-keys-keyboard](https://github.com/Chirag-Punia/DSA/tree/master/0650-2-keys-keyboard) |
 | [0670-maximum-swap](https://github.com/Chirag-Punia/DSA/tree/master/0670-maximum-swap) |
 | [0870-magic-squares-in-grid](https://github.com/Chirag-Punia/DSA/tree/master/0870-magic-squares-in-grid) |
