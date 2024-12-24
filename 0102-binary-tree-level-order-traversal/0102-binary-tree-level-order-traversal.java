@@ -28,7 +28,7 @@ class Solution {
                 if(curr.left != null)q.offer(curr.left);
                 if(curr.right != null)q.offer(curr.right);
             }
-            ans.add(new ArrayList<>(arr));
+            ans.add(arr);
         }
         return ans;
     }
