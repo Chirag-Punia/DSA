@@ -14,19 +14,18 @@
  * }
  */
 class Solution {
-    public static boolean ans;
-    Solution(){
-        this.ans = true;
-    }
-    public void v(TreeNode r,long i,long j){
-        if(r == null) return;
-        else if(i >= r.val ||  r.val >= j)ans =false;
-        v(r.left,i,r.val);
-        v(r.right,r.val,j);
+    void temp(TreeNode root,long mini,long maxi,boolean[] ans){
+        if(ans[0]){
+            if(root == null)return;
+            if(root.val <= mini)ans[0]=false;
+            if(root.val >= maxi)ans[0]=false;
+            temp(root.left,(long)mini,(long)root.val,ans);
+            temp(root.right,(long)root.val,(long)maxi,ans);
+        }
     }
     public boolean isValidBST(TreeNode root) {
-        ans = true;
-        v(root,Long.MIN_VALUE,Long.MAX_VALUE);
-        return ans;
+        boolean[] ans = {true};
+        temp(root,Long.MIN_VALUE,Long.MAX_VALUE,ans);
+        return ans[0];
     }
 }
