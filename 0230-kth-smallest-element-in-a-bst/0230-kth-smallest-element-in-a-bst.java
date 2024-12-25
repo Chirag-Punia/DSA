@@ -14,24 +14,20 @@
  * }
  */
 class Solution {
-    private int ans;
-    private int i;
-    public Solution(){
-        this.ans = -1;
-        this.i = 0;
-    }
-    public void i(TreeNode r,int k){
-        if(r == null){
-            return;
+
+    void temp(TreeNode root,int[] cnt,int k,int[] ans){
+        if(ans[0] == 0){  
+            if(root == null)return;
+            temp(root.left,cnt,k,ans);
+            cnt[0]++;
+            if(cnt[0] == k)ans[0] = root.val;
+            temp(root.right,cnt,k,ans);
         }
-        i(r.left,k);
-        i++;
-        if(i == k) ans = r.val;
-        i(r.right,k);
     }
     public int kthSmallest(TreeNode root, int k) {
-        ans = -1;
-        i(root,k);
-        return ans;
+        int[] cnt = {0};
+        int[] ans = {0};
+        temp(root,cnt,k,ans);
+        return ans[0];
     }
 }
