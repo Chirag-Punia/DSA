@@ -3,7 +3,7 @@ class Solution {
     List<Integer> arr = new ArrayList<>();
     void helper(int[] nums,int i){
         if(i == nums.length){
-            for(int m = 0;m<nums.length;m++)arr.add(nums[m]);
+            for(int m : nums)arr.add(m);
             ans.add(new ArrayList<>(arr));
             arr.clear();
             return;
