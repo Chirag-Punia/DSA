@@ -321,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/Chirag-Punia/DSA/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Chirag-Punia/DSA/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2727-number-of-senior-citizens](https://github.com/Chirag-Punia/DSA/tree/master/2727-number-of-senior-citizens) |
+| [2792-neighboring-bitwise-xor](https://github.com/Chirag-Punia/DSA/tree/master/2792-neighboring-bitwise-xor) |
 | [2846-robot-collisions](https://github.com/Chirag-Punia/DSA/tree/master/2846-robot-collisions) |
 | [2868-continuous-subarrays](https://github.com/Chirag-Punia/DSA/tree/master/2868-continuous-subarrays) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Chirag-Punia/DSA/tree/master/3235-minimum-cost-to-convert-string-i) |
@@ -950,6 +951,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/Chirag-Punia/DSA/tree/master/2323-minimum-bit-flips-to-convert-number) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/Chirag-Punia/DSA/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Chirag-Punia/DSA/tree/master/2533-bitwise-xor-of-all-pairings) |
+| [2792-neighboring-bitwise-xor](https://github.com/Chirag-Punia/DSA/tree/master/2792-neighboring-bitwise-xor) |
 | [3291-find-if-array-can-be-sorted](https://github.com/Chirag-Punia/DSA/tree/master/3291-find-if-array-can-be-sorted) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/Chirag-Punia/DSA/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3394-minimum-array-end](https://github.com/Chirag-Punia/DSA/tree/master/3394-minimum-array-end) |
